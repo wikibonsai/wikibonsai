@@ -1,0 +1,34 @@
+{
+  "name": "wikibonsai",
+  "displayName": "WikiBonsai",
+  "version": "0.0.1",
+  "description": "A place for semantically inclined digital gardeners.",
+  "license": "GPL-3.0",
+  "author": {
+    "name": "manunamz",
+    "email": "manuanmz@pm.me"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wikibonsai/vscode-wikibonsai"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "bin": {
+    "wikibonsai": "./dist/index.js"
+  },
+  "main": "out/index.js",
+  "scripts": {
+    "build": "tsc -p . --outDir dist && chmod +x dist/index.js"
+  },
+  "engines": {
+    "node": ">= 12.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^12.6.6",
+    "ts-node": "^8.3.0",
+    "typescript": "~3"
+  }
+}

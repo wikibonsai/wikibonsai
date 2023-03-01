@@ -1,0 +1,18 @@
+# Dependency directories
+node_modules/
+
+# Distribution
+dist/
+releases/
+
+# Test output
+.nyc_output/
+
+# Optional npm cache directory
+.npm
+
+# vim
+*.swp
+
+# vscode
+.vscode/

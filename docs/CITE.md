@@ -1,0 +1,73 @@
+# Citations, Sources, and Influences
+
+Below are a collection of resources that influenced and inspired this project.
+
+## Books
+
+- [How To Read A Book][bk-how-to-read]
+- [Make It Stick][bk-make-stick]
+- [Systemantics][bk-systemantics]
+- [The Language of Creation][bk-lang-create]
+- [The Sense of Style][bk-style-sense]
+
+## Papers
+
+- [How Can We Develop Transformative Tools For Thought?][ppr-tools-for-thought]
+- [Why Forget?][ppr-why-forget]
+
+## Posts
+
+- [The Zettelkasten Method][pst-lesswrong-zettel-method]
+- [What Is ChatGPT Doing … and Why Does It Work?][pst-how-chatgpt]
+
+## Sites
+
+- [Andy's Notes][site-andys-notes]
+- [Digital Gardeners][site-digital-gardeners]
+- [zettelkasten.de][site-zettel]
+
+## Tech
+
+### Open Source
+
+- [Anki][git-anki]
+- [Gollum][git-gollum]
+- [Jekyll][git-jekyll]
+- [TiddlyWiki][git-tiddlywiki]
+- [vscode-memo][git-vscode-memo]
+- [foam][git-vscode-foam]
+
+### Closed Source
+
+- [Obsidian][app-obsidian]
+- [Remnote][app-remnote]
+- [Roam Research][app-roam]
+
+
+[app-obsidian]: <https://obsidian.md/>
+[app-remnote]: <https://www.remnote.com/>
+[app-roam]: <https://roamresearch.com/>
+
+[bk-how-to-read]: <https://www.goodreads.com/book/show/567610.How_to_Read_a_Book>
+[bk-lang-create]: <https://www.goodreads.com/en/book/show/40192316>
+[bk-make-stick]: <https://www.goodreads.com/book/show/18770267-make-it-stick?from_search=true&from_srp=true&qid=iNTKEG1DV3&rank=1>
+[bk-style-sense]: <https://www.goodreads.com/book/show/20821371-the-sense-of-style?from_search=true&from_srp=true&qid=VWlJ65s2no&rank=1>
+[bk-systemantics]: <https://www.goodreads.com/book/show/583785.The_Systems_Bible>
+
+[git-anki]: <https://github.com/ankitects/anki>
+[git-gollum]: <https://github.com/gollum/gollum>
+[git-jekyll]: <https://github.com/jekyll/jekyll>
+[git-tiddlywiki]: <https://github.com/TiddlyWiki/TiddlyWiki>
+[git-vscode-memo]: <https://github.com/svsool/memo>
+[git-vscode-foam]: <https://github.com/foambubble/foam>
+
+[ppr-tools-for-thought]: <https://numinous.productions/ttft/>
+[ppr-why-forget]: <https://www.semanticscholar.org/paper/Why-Forget-On-the-Adaptive-Value-of-Memory-Loss-N%C3%B8rby/f2edf8cb541508e68c72c150038066c432c023ff>
+
+[pst-how-chatgpt]: <https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/>
+[pst-lesswrong-zettel-method]: <https://www.lesswrong.com/posts/NfdHG6oHBJ8Qxc26s/the-zettelkasten-method-1>
+[pst-rank-n-file]: <https://reallifemag.com/rank-and-file/>
+
+[site-andys-notes]: <https://notes.andymatuschak.org/About_these_notes>
+[site-digital-gardeners]: <https://github.com/MaggieAppleton/digital-gardeners>
+[site-zettel]: <https://zettelkasten.de/>
