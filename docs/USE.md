@@ -7,11 +7,11 @@ This document describes, step-by-step, how to get up and running with a WikiBons
 So, to get started:
 
 1. Install the [wikbonsai VSCode extension][wikbon-repo-vscode-wikibonsai] or open up your PKM app of choice.
-2. Clone the starter [garden bed][wikbon-repo-garden-bed].
+2. Clone the starter [garden bed][wikbon-repo-garden-beds].
 
 Or...
 
-- If you just want to see the end result, you can check out the [the bird's eye view](#a-birds-eye-view) and the ["How To Read A Book" garden bed][wikbon-repo-garden-bed--how-to-read-a-book].
+- If you just want to see the end result, you can check out the [the bird's eye view](#a-birds-eye-view) and the ["How To Read A Book" garden bed][wikbon-repo-garden-beds--how-to-read-a-book].
 
 As a sidenote, it is common in the PKM space to see people with two vaults, or separate collections of notes. One a touch chaotic and meant for tracking widely across all of one's work, while another is more ordered and finely curated. WikiBonsai aims for the latter vault-type where order, orientation, and sense-making are the primary goal, but is not limited to only that use.
 
@@ -316,8 +316,8 @@ The following are not precisely tree structures, but are exemplary examples of s
 [wikbon-doc-design]: <https://github.com/wikibonsai/wikibonsai/tree/main/docs/DESIGN.md>
 [wikbon-doc-design--legacy-techniques-of-organizing-information]: <https://github.com/wikibonsai/wikibonsai/tree/main/docs/DESIGN.md#legacy-techniques-of-organizing-information>
 
-[wikbon-repo-garden-bed]: <https://github.com/wikibonsai/garden-bed>
+[wikbon-repo-garden-beds]: <https://github.com/wikibonsai/garden-beds>
 [wikbon-repo-caml-mkdn]: <https://github.com/wikibonsai/caml-mkdn>
 [wikbon-doc-design--an-api-for-the-mind]: <https://github.com/wikibonsai/wikibonsai/tree/main/docs/DESIGN.md#an-api-for-the-mind>
-[wikbon-repo-garden-bed--how-to-read-a-book]: <https://github.com/wikibonsai/garden-bed/tree/main/bk.how-to-read-a-book>
+[wikbon-repo-garden-beds--how-to-read-a-book]: <https://github.com/wikibonsai/garden-beds/tree/main/bk.how-to-read-a-book>
 [wikbon-repo-vscode-wikibonsai]: <https://github.com/wikibonsai/vscode-wikibonsai>
