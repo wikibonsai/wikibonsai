@@ -75,7 +75,7 @@ As social creatures, we are very easily influenced and easily influence others. 
 
 ### Freedom From Censorship (Of The Environment)
 
-The following is one possible technical definition of "censorship" -- "given some information space where each unique piece of information maps to a unique coordinate in that information space, then censorship is the total blockage of or restricted movement to any point or between any points in that space"[^wiki]. This project aims to provide tools for individuals to build such information spaces and evangelize this definition of censorship, which is more precise than is typical and helps uncover concrete courses of action to address censorship. (Another major requirement is that **unexplored** spaces remain freely accessible)
+The following is one possible technical definition of "censorship": "Given an information space, with a coordinate system mutually agreed upon by all participating agents, where each unique piece of information maps to a unique coordinate, censorship would include the nonconsensual distortion of the coordinate system, the total blockage or restricted movement to or between any points in that space, or the disallowance of departing the given information space."[^wiki]. This project aims to provide tools for individuals to build such information spaces and evangelize this definition of censorship, which is more precise than is typical and helps uncover concrete courses of action to address censorship.
 
 ### Independence of Orientation (Of The Individual In The Environment)
 
