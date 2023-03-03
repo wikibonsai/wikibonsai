@@ -71,11 +71,11 @@ This project keeps in mind a few of those possible preconditions with a particul
 
 ### Freedom From Influence (For The Individual)
 
-As social creatures, we are very easily influenced and easily influence others. Thus, it is paramount that we have opportunities to ponder in private and think in solitude. This project deals primarily with raw text (markdown) so that handling one's own data on their own computer or system is an easy task, but also remains easily transferrable between systems. No data is collected from a person's notes (though underlying frameworks' and applications' privacy policies will need to be evaluated separately).[^censor-ex]
+As social creatures, we are very easily influenced and easily influence others. Thus, it is paramount that we have opportunities to ponder in private and think in solitude. This project deals primarily with raw text (markdown) so that handling one's own data on their own computer or system is an easy task, but also remains easily transferrable between systems. No data is collected from a person's notes (though underlying frameworks' and applications' privacy policies will need to be evaluated separately).
 
 ### Freedom From Censorship (Of The Environment)
 
-The following is one possible technical definition of "censorship": "Given an information space, with a coordinate system mutually agreed upon by all participating agents, where each unique piece of information maps to a unique coordinate, censorship would include the nonconsensual distortion of the coordinate system, the total blockage or restricted movement to or between any points in that space, or the disallowance of departing the given information space."[^wiki]. This project aims to provide tools for individuals to build such information spaces and evangelize this definition of censorship, which is more precise than is typical and helps uncover concrete courses of action to address censorship.
+The following is one possible technical definition of "censorship": "Given an information space, with a coordinate system mutually agreed upon by all participating agents, where each unique piece of information maps to a unique coordinate, censorship would include the nonconsensual distortion of the coordinate system, the total blockage or restricted movement to or between any points in that space, or the disallowance of departing the given information space.". This project aims to provide tools for individuals to build such information spaces and evangelize this definition of censorship, which is more precise than is typical and helps uncover concrete courses of action to address censorship.
 
 ### Independence of Orientation (Of The Individual In The Environment)
 
@@ -103,14 +103,12 @@ We are about to make another innovative leap [from internet search to AI chatbot
 In the beginning, WikiBonsai was only about learning and education: "How can I take better notes? How may I better understand?" But in the end, it became about discovering what free will might really mean. So when any child asks, "Why are we learning this?" perhaps we should tell them: Because we are only as free as the space that we have explored and made sense of.[^portal]
 
 
-[^censor-ex]: Here is a classic example: To have the ability to pinpoint the exact location of some resource. If it's not there then you know that resource isn't in the entire collection. This will be familiar to people who have searched for books in a library or for a specific page on wikipedia.
 [^graph]: "Webs" are more precisely called "graphs" in computer science and data structures.
 [^internet]: As a sidenote, the internet seems to be overrun with too much fluidity -- think newsfeeds, "streams", etc.
 [^neura]: But there are no guarantees with regard to how Neuralink will change things...
 [^portal]: Play until you find your [portal][utb-the-portal-story].
 [^roam]: Shoutout to [Roam Research][app-roam]!
 [^soc-dil]: "Think about Wikipedia: A page you see is the same for you as for other people. What if they gave each person a customized definition to serve their personal interests? That's [social media] feed[s]." ~ [The Social Dilemma @00:50][doc-social-dilemma]
-[^wiki]: Wikipedia has recently become an oft cited example of good information architecture. This technical definition explains why.
 [^wonder-except]: For some examples of exploration preservation check [these out[wikbon-doc-use--appendix-in-the-wild] of that wonder in digital form check [this out][minecraft-library].
 
 [app-roam]: <https://roamresearch.com/>
