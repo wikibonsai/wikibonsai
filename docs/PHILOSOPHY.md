@@ -109,7 +109,7 @@ In the beginning, WikiBonsai was only about learning and education: "How can I t
 [^portal]: Play until you find your [portal][utb-the-portal-story].
 [^roam]: Shoutout to [Roam Research][app-roam]!
 [^soc-dil]: "Think about Wikipedia: A page you see is the same for you as for other people. What if they gave each person a customized definition to serve their personal interests? That's [social media] feed[s]." ~ [The Social Dilemma @00:50][doc-social-dilemma]
-[^wonder-except]: For some examples of exploration preservation check [these out[wikbon-doc-use--appendix-in-the-wild] of that wonder in digital form check [this out][minecraft-library].
+[^wonder-except]: Actually, there is some [library wonder out there][minecraft-library].
 
 [app-roam]: <https://roamresearch.com/>
 [dewey-decimal]: <https://www.librarything.com/mds>
@@ -128,4 +128,3 @@ In the beginning, WikiBonsai was only about learning and education: "How can I t
 [wiki-penrose]: <https://en.wikipedia.org/wiki/Penrose_tiling>
 
 [wikbon-doc-story--walled-gardens]: <https://github.com/wikibonsai/wikibonsai/tree/main/docs/STORY.md#walled-gardens>
-[wikbon-doc-use--appendix-in-the-wild]: <https://github.com/wikibonsai/wikibonsai/tree/main/docs/USE.md#appendix-in-the-wild>
