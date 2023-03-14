@@ -31,11 +31,12 @@ Below are a collection of resources that influenced and inspired this project.
 ### Open Source
 
 - [Anki][git-anki]
+- [foam][git-vscode-foam]
 - [Gollum][git-gollum]
 - [Jekyll][git-jekyll]
+- [memo][git-vscode-memo]
 - [TiddlyWiki][git-tiddlywiki]
-- [vscode-memo][git-vscode-memo]
-- [foam][git-vscode-foam]
+- [wiki.js][git-wiki]
 
 ### Closed Source
 
@@ -60,6 +61,7 @@ Below are a collection of resources that influenced and inspired this project.
 [git-tiddlywiki]: <https://github.com/TiddlyWiki/TiddlyWiki>
 [git-vscode-memo]: <https://github.com/svsool/memo>
 [git-vscode-foam]: <https://github.com/foambubble/foam>
+[git-wiki]: <https://github.com/requarks/wiki>
 
 [ppr-tools-for-thought]: <https://numinous.productions/ttft/>
 [ppr-why-forget]: <https://www.semanticscholar.org/paper/Why-Forget-On-the-Adaptive-Value-of-Memory-Loss-N%C3%B8rby/f2edf8cb541508e68c72c150038066c432c023ff>
