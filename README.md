@@ -39,6 +39,8 @@ The following sections are organized by stack depth: Projects toward the top are
 
 The documentation in this repository describe the philosophies, mechanics, and terminologies that are adopted throughout all of the WikiBonsai projects:
 
+- For Input:
+  - [Questions][wikbon-doc-questions]
 - For Lore:
   - [Guiding Philosophy][wikbon-doc-philosophy]
   - [Origin Story][wikbon-doc-story]
@@ -137,6 +139,7 @@ As with pretty much all human endeavors, this project does not represent any kin
 [wikbon-doc-philosophy]: <https://github.com/wikibonsai/wikibonsai/tree/main/docs/PHILOSOPHY.md>
 [wikbon-doc-philosophy--a-jungle-gym-for-thought]: <https://github.com/wikibonsai/wikibonsai/tree/main/docs/PHILOSOPHY.md#a-jungle-gym-for-thought>
 [wikbon-doc-philosophy--finding-free-will]: <https://github.com/wikibonsai/wikibonsai/tree/main/docs/PHILOSOPHY.md#finding-free-will>
+[wikbon-doc-questions]: <https://github.com/wikibonsai/wikibonsai/tree/main/docs/Q.md>
 [wikbon-doc-secure]: <https://github.com/wikibonsai/wikibonsai/tree/main/docs/SECURE.md>
 [wikbon-doc-story]: <https://github.com/wikibonsai/wikibonsai/tree/main/docs/STORY.md>
 [wikbon-doc-terms]: <https://github.com/wikibonsai/wikibonsai/tree/main/docs/TERMS.md>
