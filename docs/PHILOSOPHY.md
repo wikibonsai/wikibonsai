@@ -45,7 +45,7 @@ WikiBonsai is a kind of ["digital garden"][site-digital-gardeners] where you can
 
 WikiBonsai's central structure is a "semantic tree", which is a personal tree of knowledge. It provides an over-arching organizational framework for the systematic integration of new words and concepts. This in turn can ameliorate and explicitly address overspecialization based on the shape of one's tree.
 
-The tree is also called a "knowledge bonsai", because "bonsai" is a beautiful recreation of nature in miniature form. This is a deliberate acknowledgement of our own limitations as inviduals. We may never be able to completely understand everything, but we can certainly clean up some mess around us and cultivate something beautiful within our realm of responsibility.
+The tree is also called a "knowledge bonsai", because "bonsai" is a beautiful recreation of nature in miniature form. This is a deliberate acknowledgement of our own limitations as individuals. We may never be able to completely understand everything, but we can certainly clean up some mess around us and cultivate something beautiful within our realm of responsibility.
 
 ## Babel
 
