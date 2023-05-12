@@ -105,12 +105,6 @@ As with pretty much all human endeavors, this project does not represent any kin
 
 [**just keep tending...🪴**][wikbon-doc-use]
 
----
-
-<div style="display: flex; justify-content: center;">
-  <span>🇺🇸 Made in the USA 🦅 🐊</span>
-</div>
-
 
 [^ai]: 🤖 AI Collaboration: To date, code and prose of the WikiBonsai project was not written by AI, but was _occasionally_ consulted to improve overall quality. This may or may not change going forward.
 [^mind]: Not too dissimilar from a ["bicycle for the mind"][utb-mind-bike].
@@ -162,3 +156,8 @@ As with pretty much all human endeavors, this project does not represent any kin
 [wikbon-repo-vscode-wikibonsai]: <https://github.com/wikibonsai/vscode-wikibonsai>
 [wikbon-repo-wikirefs]: <https://github.com/wikibonsai/wikirefs>
 [wikbon-repo-wikirefs-spec]: <https://github.com/wikibonsai/wikirefs/tree/main/spec>
+
+
+<div style="display: flex; justify-content: center;">
+  <span>🇺🇸 Made in the USA 🦅 🐊</span>
+</div>
