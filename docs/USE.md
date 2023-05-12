@@ -283,7 +283,10 @@ The semantic tree is a very useful orienting structure once many concepts have b
 - [Dewey Decimal System (on LibraryThing)][wild-ex-librarything]
 - [Lesswrong Tag Tree][wild-ex-lesswrong]
 - [Mathworld][wild-ex-mathworld]
+- [Mozilla Documentation][wild-ex-mozdoc]
 - [Mcmaster][wild-ex-mcmaster]
+- [Subreddit Directory][wild-ex-subreddits]
+- [The Brain][wild-ex-the-brain]
 - [Wikipedia Outlines][wild-ex-wiki-outline]
 
 The following are not precisely tree structures, but are exemplary examples of spatially structured information:
@@ -310,8 +313,11 @@ The following are not precisely tree structures, but are exemplary examples of s
 [wild-ex-librarything]: <https://www.librarything.com/mds/>
 [wild-ex-mathworld]: <https://mathworld.wolfram.com/>
 [wild-ex-mcmaster]: <https://mcmaster.com/>
+[wild-ex-mozdoc]: <https://developer.mozilla.org/>
 [wild-ex-roadmap]: <https://roadmap.sh/>
 [wild-ex-wiki-outline]: <https://en.wikipedia.org/wiki/Wikipedia:Contents/Outlines>
+[wild-ex-subreddits]: <https://www.reddit.com/r/findareddit/wiki/directory/#wiki_career_advice_.2F_job_searching>
+[wild-ex-the-brain]: <https://thebrain.mcgill.ca/flash/pop/pop_plan/plan_d.html>
 
 [wikbon-doc-design]: <https://github.com/wikibonsai/wikibonsai/tree/main/docs/DESIGN.md>
 [wikbon-doc-design--legacy-techniques-of-organizing-information]: <https://github.com/wikibonsai/wikibonsai/tree/main/docs/DESIGN.md#legacy-techniques-of-organizing-information>
