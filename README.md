@@ -33,8 +33,6 @@ A "digital garden" may be considered a "WikiBonsai" if it supports [`[[wikirefs]
 
 ## Project Info
 
-The following sections are organized by stack depth: Projects toward the top are ready-to-use and meant for the end user, while projects toward the bottom are meant for developers to build with and integrate into other solutions:
-
 ### Docs
 
 The documentation in this repository describe the philosophies, mechanics, and terminologies that are adopted throughout all of the WikiBonsai projects:
@@ -56,13 +54,13 @@ The documentation in this repository describe the philosophies, mechanics, and t
 
 ### Repos
 
-The following links point to sub-projects of the WikiBonsai project:
+The following links point to sub-projects of the WikiBonsai project and are organized by stack depth. Projects toward the top are ready-to-use and meant for the end user, while projects toward the bottom are meant for developers to build with and integrate into other solutions:
 
 - For Use:
   - [garden-beds][wikbon-repo-garden-beds]: A collection of starter WikiBonsai digital gardens.
   - [germs][wikbon-repo-germs]: A collection of markdown files meant to be added to pre-existing WikiBonsai, or other style, digital gardens.
   - [vscode-wikibonsai][wikbon-repo-vscode-wikibonsai]: A [VSCode][git-vscode] extension for tending a WikiBonsai digital garden.
-  - [tendr][wikbon-repo-tendr]: A CLI tool for tending a markdown-based WikiBonsai digital garden.
+  - [tendr-cli][wikbon-repo-tendr-cli]: A CLI tool for tending a markdown-based WikiBonsai digital garden.
   - [astro-wikibonsai][wikbon-repo-astro-wikibonsai]: An example setup to enable WikiBonsai workflows for an astro-based statically generated site (SSG).
   - [eleventy-wikibonsai][wikbon-repo-eleventy-wikibonsai]: An example setup to enable WikiBonsai workflows for eleventy-based static site generation (SSG).
 - For Dev
@@ -151,7 +149,7 @@ As with pretty much all human endeavors, this project does not represent any kin
 [wikbon-repo-remark-caml]: <https://github.com/wikibonsai/remark-caml>
 [wikbon-repo-remark-wikirefs]: <https://github.com/wikibonsai/remark-wikirefs>
 [wikbon-repo-semtree]: <https://github.com/wikibonsai/semtree>
-[wikbon-repo-tendr]: <https://github.com/wikibonsai/tendr>
+[wikbon-repo-tendr-cli]: <https://github.com/wikibonsai/tendr-cli>
 [wikbon-repo-treehouze]: <https://github.com/wikibonsai/treehouze>
 [wikbon-repo-vscode-wikibonsai]: <https://github.com/wikibonsai/vscode-wikibonsai>
 [wikbon-repo-wikirefs]: <https://github.com/wikibonsai/wikirefs>
