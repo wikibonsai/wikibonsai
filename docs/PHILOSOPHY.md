@@ -39,7 +39,7 @@ In this way, one may breathe new life into language.
 
 ## The Garden
 
-WikiBonsai is a kind of ["digital garden"][site-digital-gardeners] where you can tend, weed, water, and [plot out a patch of personal space][wikbon-doc-story--walled-gardens]. It's a place to demarcate the line between what you've explored and what you've not, to munch on food for thought and understand what's begot. By cultivating a digital garden, the concepts and ideas inside can cross-pollinate to stimulate growth of all kinds and break down knowledge silos between fields and topics. Stronger connections can begin to root the beginnings of more systematic order...
+WikiBonsai is a kind of ["digital garden"][site-digital-gardeners] where you can tend, weed, water, and [plot out a patch of personal space][wibomd-doc-story--walled-gardens]. It's a place to demarcate the line between what you've explored and what you've not, to munch on food for thought and understand what's begot. By cultivating a digital garden, the concepts and ideas inside can cross-pollinate to stimulate growth of all kinds and break down knowledge silos between fields and topics. Stronger connections can begin to root the beginnings of more systematic order...
 
 ## The Tree
 
@@ -127,4 +127,4 @@ In the beginning, WikiBonsai was only about learning and education: "How can I t
 [utb-the-portal-story]: <https://www.youtube.com/watch?v=pb_yvBNLjNk>
 [wiki-penrose]: <https://en.wikipedia.org/wiki/Penrose_tiling>
 
-[wikbon-doc-story--walled-gardens]: <https://github.com/wikibonsai/wikibonsai/tree/main/docs/STORY.md#walled-gardens>
+[wibomd-doc-story--walled-gardens]: <https://github.com/wikibonsai/wikibonsai/tree/main/docs/STORY.md#walled-gardens>

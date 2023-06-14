@@ -6,12 +6,12 @@ This document describes, step-by-step, how to get up and running with a WikiBons
 
 So, to get started:
 
-1. Install the [wikbonsai VSCode extension][wikbon-repo-vscode-wikibonsai] or open up your PKM app of choice.
-2. Clone the starter [garden bed][wikbon-repo-garden-beds].
+1. Install the [wikbonsai VSCode extension][wibomd-repo-vscode-wikibonsai] or open up your PKM app of choice.
+2. Clone the starter [garden bed][wibomd-repo-garden-beds].
 
 Or...
 
-- If you just want to see the end result, you can check out the [the bird's eye view](#a-birds-eye-view) and the ["How To Read A Book" garden bed][wikbon-repo-garden-beds--how-to-read-a-book].
+- If you just want to see the end result, you can check out the [the bird's eye view](#a-birds-eye-view) and the ["How To Read A Book" garden bed][wibomd-repo-garden-beds--how-to-read-a-book].
 
 As a sidenote, it is common in the PKM space to see people with two vaults, or separate collections of notes. One a touch chaotic and meant for tracking widely across all of one's work, while another is more ordered and finely curated. WikiBonsai aims for the latter vault-type where order, orientation, and sense-making are the primary goal, but is not limited to only that use.
 
@@ -19,7 +19,7 @@ As a sidenote, it is common in the PKM space to see people with two vaults, or s
 
 The suggested WikiBonsai project structure is heavily influenced by [jekyll][jekyll]: Create a directory for each type of document you want to make (`doctype`; e.g. book, entry, essay, etc.) and place markdown files of that `doctype` into the target directory.
 
-If you take a look at the [minimal starter bed][wikbon-repo-bed-starter], you might have a project structure something like this:
+If you take a look at the [minimal starter bed][wibomd-repo-bed-starter], you might have a project structure something like this:
 
 ```bash
 .
@@ -32,7 +32,7 @@ If you take a look at the [minimal starter bed][wikbon-repo-bed-starter], you mi
     └── t.default.md
 ```
 
-`config.toml` defines some basic configuration for your vault, such as which markdown file is the root of your bonsai and what attribute engine to use ([`caml`][wikbon-repo-caml-mkdn] or [`yaml`][yaml]).
+`config.toml` defines some basic configuration for your vault, such as which markdown file is the root of your bonsai and what attribute engine to use ([`caml`][wibomd-repo-caml-mkdn] or [`yaml`][yaml]).
 
 `t.doc.toml` contains doctype information, such as which directory the documents live in or what emoji corresponds to that type.
 
@@ -259,7 +259,7 @@ Once you've added enough concepts, markdown files, and wikiattrs you can visuali
 
 ### In The Abstract
 
-If all has gone well, this process of note-making will feel like unrolling a map of the material you're reading, listening to, watching or experiencing. It will lay bare the concepts within and make available via [touchpoints][wikbon-doc-design--an-api-for-the-mind] which will make original sources easier to rediscover, make new connections to, and integrate with the rest of what you know. It should feel fairly intuitive.
+If all has gone well, this process of note-making will feel like unrolling a map of the material you're reading, listening to, watching or experiencing. It will lay bare the concepts within and make available via [touchpoints][wibomd-doc-design--an-api-for-the-mind] which will make original sources easier to rediscover, make new connections to, and integrate with the rest of what you know. It should feel fairly intuitive.
 
 ## A Bird's Eye View
 
@@ -272,7 +272,7 @@ This is a concrete example of a process that generally includes these steps:
 
 These steps do not need to be carried out in a single sitting or even in this particular order. It could take a week to get around to creating a document and half a year to start connecting it to other things you know.
 
-As a sidenote, WikiBonsai has kept in mind legacy information organization techniques, which can be [referred to][wikbon-doc-design--legacy-techniques-of-organizing-information] as well.
+As a sidenote, WikiBonsai has kept in mind legacy information organization techniques, which can be [referred to][wibomd-doc-design--legacy-techniques-of-organizing-information] as well.
 
 ## Appendix: In The Wild
 
@@ -319,11 +319,11 @@ The following are not precisely tree structures, but are exemplary examples of s
 [wild-ex-subreddits]: <https://www.reddit.com/r/findareddit/wiki/directory/#wiki_career_advice_.2F_job_searching>
 [wild-ex-the-brain]: <https://thebrain.mcgill.ca/flash/pop/pop_plan/plan_d.html>
 
-[wikbon-doc-design]: <https://github.com/wikibonsai/wikibonsai/tree/main/docs/DESIGN.md>
-[wikbon-doc-design--legacy-techniques-of-organizing-information]: <https://github.com/wikibonsai/wikibonsai/tree/main/docs/DESIGN.md#legacy-techniques-of-organizing-information>
+[wibomd-doc-design]: <https://github.com/wikibonsai/wikibonsai/tree/main/docs/DESIGN.md>
+[wibomd-doc-design--legacy-techniques-of-organizing-information]: <https://github.com/wikibonsai/wikibonsai/tree/main/docs/DESIGN.md#legacy-techniques-of-organizing-information>
 
-[wikbon-repo-garden-beds]: <https://github.com/wikibonsai/garden-beds>
-[wikbon-repo-caml-mkdn]: <https://github.com/wikibonsai/caml-mkdn>
-[wikbon-doc-design--an-api-for-the-mind]: <https://github.com/wikibonsai/wikibonsai/tree/main/docs/DESIGN.md#an-api-for-the-mind>
-[wikbon-repo-garden-beds--how-to-read-a-book]: <https://github.com/wikibonsai/garden-beds/tree/main/bk.how-to-read-a-book>
-[wikbon-repo-vscode-wikibonsai]: <https://github.com/wikibonsai/vscode-wikibonsai>
+[wibomd-repo-garden-beds]: <https://github.com/wikibonsai/garden-beds>
+[wibomd-repo-caml-mkdn]: <https://github.com/wikibonsai/caml-mkdn>
+[wibomd-doc-design--an-api-for-the-mind]: <https://github.com/wikibonsai/wikibonsai/tree/main/docs/DESIGN.md#an-api-for-the-mind>
+[wibomd-repo-garden-beds--how-to-read-a-book]: <https://github.com/wikibonsai/garden-beds/tree/main/bk.how-to-read-a-book>
+[wibomd-repo-vscode-wikibonsai]: <https://github.com/wikibonsai/vscode-wikibonsai>

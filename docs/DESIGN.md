@@ -16,7 +16,7 @@ Systems almost never do what you expect them to. Aligning their behaviors with e
 
 If the mind had an API, what would it look like?
 
-For the nontechnical, API (Application Programming Interface) is a programming service that handles requests by providing access to resources. If the mind had an API, it would provide access to resources that help us understand reality. Developing understanding of reality might be thought of as a [tiling problem][wikbon-doc-phil--studying-to-tile-the-world]: How do we design tiles to cover as much of some allotted space with the least number of tiles? Here, "allotted space" represents observable phenomena in the world and "tiles"[^mm] refers to concepts we know.
+For the nontechnical, API (Application Programming Interface) is a programming service that handles requests by providing access to resources. If the mind had an API, it would provide access to resources that help us understand reality. Developing understanding of reality might be thought of as a [tiling problem][wibomd-doc-phil--studying-to-tile-the-world]: How do we design tiles to cover as much of some allotted space with the least number of tiles? Here, "allotted space" represents observable phenomena in the world and "tiles"[^mm] refers to concepts we know.
 
 One way to access such a "tile" might be by giving it a name and retrieving it via a **word**, or better yet, a particular **sense of a word**. This mirrors our verbal "API" and WikiBonsai leverages this with `entry` doctypes, [similar to Wikipedia][wiki-disam]: For example, the word "window" can refer to either a window in a house or a window on the computer. So there might be two documents with one titled `window-(house).md` and another `window-(computer).md`.
 
@@ -28,7 +28,7 @@ The goal of the WikiBonsai system is to create a tangible mental tile problem. T
 
 The mechanic that allows these "tiles" to be stitched together is called a "`[[wikiref]]`"; though is mostly synonymous with "wikilink", "bidirectional link", "internal link", among others. A wikiref is a kind of [markdown][mkdn] link defined by text surrounded by double square brackets -- like `[[this]]`. This type of reference allows connections to be made between entities (often files) quickly and easily. It is a well-known concept in the [personal knowledge management][wiki-pkm] (pkm) space and is an integral tool in leveraging associations and making old entities re-discoverable by providing multiple links back to that entity.
 
-For example, while reading a book one might take notes on its concepts by breaking them down into individual words and phrases. Definitions, details, or thoughts might be added to those words. But how can these notes be useful in the future -- instead of sitting alone in a book or forgotten folder? `[[wikirefs]]` allow those words and ideas to be broken down and connected to other entities or files so that the contents of that book may be naturally revisited, when relevant, far into the future. (For a more detailed walkthrough of this process, see [here][wikbon-doc-use]) The mind has a strong associative component, so being able to draw random associations for later use is a powerful mechanic to integrate into a note-taking system.
+For example, while reading a book one might take notes on its concepts by breaking them down into individual words and phrases. Definitions, details, or thoughts might be added to those words. But how can these notes be useful in the future -- instead of sitting alone in a book or forgotten folder? `[[wikirefs]]` allow those words and ideas to be broken down and connected to other entities or files so that the contents of that book may be naturally revisited, when relevant, far into the future. (For a more detailed walkthrough of this process, see [here][wibomd-doc-use]) The mind has a strong associative component, so being able to draw random associations for later use is a powerful mechanic to integrate into a note-taking system.
 
 Thus, many tools provide `[[wikiref]]`-like functionality. But as others have pointed out, (over)use of such systems can lead to fractured writing[^rank-n-file-fract] and does not tend to help build toward unified, coherent sets of ideas[^rank-n-file-uni]. A collection of modular facts, insights, and observations accrues, but what has been accomplished other than making spagehtti notes?
 
@@ -40,7 +40,7 @@ So how do those "tiles" fit together? In WikiBonsai, there are two major structu
 
 The web relies on associativity. By freely and easily creating connections using references like `[[wikiref]]`, we can leverage the mind's ability to draw meaningful connections between disparate concepts, ideas, sources, or memories. This unlocks free associativity in a collection of files, increasing the likelihood of rediscovering or stumbling upon old material and stimulating creative serendipity. It also allows for retracing one's mental steps between concepts, making it easier to navigate than a hierarchical file system. The system supports several levels of gradation, with a formalized attribute of a concept like a `:synonym::[[wikiattr]]` or `:antonym::[[wikiattr]]` being "stronger" than a random connection like a `[[wikilink]]`. These "strong" associations connect our "tiles" and form a complex quilt of understanding[^under-weave] to cover the observable world.
 
-The other major structural component is a tree, which is a fundamental ordering structure[^maze]. The tree in WikiBonsai is a "semantic tree" or "knowledge bonsai" which outlines the [unification of one's knowledge][wikbon-doc-philosophy--the-tree]. It is a **tree of knowledge**: Each node in the tree is a particular sense of a word and the amount of generalization moves from more to less as you move from trunk to leaf. These trees are intuitive and crop up everywhere: When we make lists we are reifying branches on a priority tree, language is made comprehensible by grammar trees, and the text in the parenthesis of wikipedia-style (disambiguation) might be thought of as ancestor nodes that distinguish between different words (ex: wiki > computer > window (computer) vs. wiki > house > window (house)). Bread > crumb > trails that appear in website navigation can be thought of as a branch-path of a (semantic) tree. A tree provides a away to orient one's self within the system and a means of measuring progress toward the goal of maximizing understanding (or coverage) while minimizing the size of the bonsai[^refactor] (or number of tiles).
+The other major structural component is a tree, which is a fundamental ordering structure[^maze]. The tree in WikiBonsai is a "semantic tree" or "knowledge bonsai" which outlines the [unification of one's knowledge][wibomd-doc-philosophy--the-tree]. It is a **tree of knowledge**: Each node in the tree is a particular sense of a word and the amount of generalization moves from more to less as you move from trunk to leaf. These trees are intuitive and crop up everywhere: When we make lists we are reifying branches on a priority tree, language is made comprehensible by grammar trees, and the text in the parenthesis of wikipedia-style (disambiguation) might be thought of as ancestor nodes that distinguish between different words (ex: wiki > computer > window (computer) vs. wiki > house > window (house)). Bread > crumb > trails that appear in website navigation can be thought of as a branch-path of a (semantic) tree. A tree provides a away to orient one's self within the system and a means of measuring progress toward the goal of maximizing understanding (or coverage) while minimizing the size of the bonsai[^refactor] (or number of tiles).
 
 ### Preserving Relational Integrity
 
@@ -90,7 +90,7 @@ Besides being universal for knowledge workers, this project also aims to be univ
 
 To further facilitate standardized integration, and code re-use, this project is composed of multiple small-ish modular tools and plugins. This allows for easy integration into other and pre-existing projects. By modularizing each component of the system, different apps can plug'n'play with different aspects to see what works or simply "turn on" specific mechanics, like `[[wikirefs]]`, in their own environment.
 
-WikiBonsai as a system is rather opinionated, but each individual component tries to be only as opinionated as necessary and integrates [pre-existing mechanics][wikbon-doc-cite] as much as possible. For example, there are a loose set of norms that have emerged around "wikilinks", which have largely been adopted in the [`[[wikirefs]]` module][wikbon-repo-wikirefs]. This module tries not to impose more than the popularly accepted syntax structures, but has added minor improvements to address old painpoints.
+WikiBonsai as a system is rather opinionated, but each individual component tries to be only as opinionated as necessary and integrates [pre-existing mechanics][wibomd-doc-cite] as much as possible. For example, there are a loose set of norms that have emerged around "wikilinks", which have largely been adopted in the [`[[wikirefs]]` module][wibomd-repo-wikirefs]. This module tries not to impose more than the popularly accepted syntax structures, but has added minor improvements to address old painpoints.
 
 ### Paperback Redundancy
 
@@ -98,7 +98,7 @@ WikiBonsai has been designed in such a way that it would be feasible to convert 
 
 Thus, WikiBonsai is designed to provide mechanics to make transitioning to analog, or interoperating between digital and analog, possible:
 
-#### [Semantic Tree][wikbon-repo-semtree]
+#### [Semantic Tree][wibomd-repo-semtree]
 
 - The semantic tree is built from a set of files whose job is only to define the tree. This means a print-out describing the tree would only span the number of pages that describe the tree, rather than being strewn across every single file in the collection by metadata or filename.
 
@@ -108,14 +108,14 @@ Thus, WikiBonsai is designed to provide mechanics to make transitioning to analo
 
 #### Legacy Techniques of Organizing Information
 
-- _Dictionaries and Thesauri_: A [caml][wikbon-repo-caml-mkdn] or [yaml][yaml] style metadata attribute can be used to give a word or document a short sentence to paragraph length definition or description.
+- _Dictionaries and Thesauri_: A [caml][wibomd-repo-caml-mkdn] or [yaml][yaml] style metadata attribute can be used to give a word or document a short sentence to paragraph length definition or description.
 - _Encyclopedias and Wikipedia_: A file's content can be thought of as an "entry" from the encyclopedia or wikipedia.
 - _Table of Contents, Indexes_: The semantic tree might be thought of as a large "table of contents" for one's collection of notes (the "vault" or "digital garden") and the file system might be thought of as an alpha-ordered index of files, depending on how one organizes their directory structure.
 - _Dewey Decimal, Taxonomies, Faceted Indices_: The semantic tree is similar to the Dewey Decimal System in that it builds a conceptual hierarchy that makes navigation of vast amounts of information fast and intuitive. `[[Wikirefs]]`, specifically wikiattrs, provide a way to organize, search, and navigate notes based on facets.
 
 
 [^carmack]: Also, see [Carmack's advice][utb-carmack] on using a single programming language across an entire project.
-[^coord-sys]: A fixed coordinate system in addition to fixed coordinates also serves [important purposes][wikbon-doc-philosophy--finding-free-will].
+[^coord-sys]: A fixed coordinate system in addition to fixed coordinates also serves [important purposes][wibomd-doc-philosophy--finding-free-will].
 [^essay]: Regularly writing essays is also an integral part of learning how to build coherent and cohesive sets of ideas.
 [^maze]: Sidenote: In computer science, a common way to traverse a maze is the same way you traverse a tree (see ["recursion"][wiki-recurse]).
 [^mm]: Each "tile" might also be thought of as a "mental model".
@@ -149,12 +149,12 @@ Thus, WikiBonsai is designed to provide mechanics to make transitioning to analo
 [site-zettel]: <https://zettelkasten.de/>
 [utb-lex-karpathy]: <https://youtu.be/cdiD-9MMpb0?t=2909>
 
-[wikbon-doc-cite]: <https://github.com/wikibonsai/wikibonsai/tree/main/docs/CITE.md>
-[wikbon-doc-philosophy--the-tree]: <https://github.com/wikibonsai/wikibonsai/tree/main/docs/PHILOSOPHY.md#the-tree>
-[wikbon-doc-philosophy--finding-free-will]: <https://github.com/wikibonsai/wikibonsai/tree/main/docs/PHILOSOPHY.md#finding-free-will>
-[wikbon-doc-phil--studying-to-tile-the-world]: <https://github.com/wikibonsai/wikibonsai/tree/main/docs/PHILOSOPHY.md#studying-to-tile-the-world>
-[wikbon-doc-use]: <https://github.com/wikibonsai/wikibonsai/tree/main/docs/USE.md>
+[wibomd-doc-cite]: <https://github.com/wikibonsai/wikibonsai/tree/main/docs/CITE.md>
+[wibomd-doc-philosophy--the-tree]: <https://github.com/wikibonsai/wikibonsai/tree/main/docs/PHILOSOPHY.md#the-tree>
+[wibomd-doc-philosophy--finding-free-will]: <https://github.com/wikibonsai/wikibonsai/tree/main/docs/PHILOSOPHY.md#finding-free-will>
+[wibomd-doc-phil--studying-to-tile-the-world]: <https://github.com/wikibonsai/wikibonsai/tree/main/docs/PHILOSOPHY.md#studying-to-tile-the-world>
+[wibomd-doc-use]: <https://github.com/wikibonsai/wikibonsai/tree/main/docs/USE.md>
 
-[wikbon-repo-caml-mkdn]: <https://github.com/wikibonsai/caml-mkdn>
-[wikbon-repo-semtree]: <https://github.com/wikibonsai/semtree>
-[wikbon-repo-wikirefs]: <https://github.com/wikibonsai/wikirefs>
+[wibomd-repo-caml-mkdn]: <https://github.com/wikibonsai/caml-mkdn>
+[wibomd-repo-semtree]: <https://github.com/wikibonsai/semtree>
+[wibomd-repo-wikirefs]: <https://github.com/wikibonsai/wikirefs>

@@ -4,7 +4,7 @@ There is some terminology that will help in understanding the implicit parts of 
 
 Most of this document is primarily meant for those that wish to develop software tooling in conjunction with the WikiBonsai project or those who wish to develop a deeper understanding of how the internals inform its workflows.
 
-If you just want to take notes in markdown and don't want the nitty-gritty, head to [How To Use][wikbon-doc-use].
+If you just want to take notes in markdown and don't want the nitty-gritty, head to [How To Use][wibomd-doc-use].
 
 ## Entities
 
@@ -224,4 +224,4 @@ Colors that show up in syntax highlights or in the graph tend to remain true to 
 [wiki-semantic-web]: <https://en.wikipedia.org/wiki/Semantic_Web>
 [wiki-word-sense]: <https://en.wikipedia.org/wiki/Word_sense>
 
-[wikbon-doc-use]: <https://github.com/wikibonsai/wikibonsai/tree/main/docs/USE.md>
+[wibomd-doc-use]: <https://github.com/wikibonsai/wikibonsai/tree/main/docs/USE.md>
