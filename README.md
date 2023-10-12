@@ -6,9 +6,9 @@
 
 ###### [cite me!][wibomd-doc-cite-this]
 
-<div style="width:100%; display: flex; justify-content: center;">
-  <img src="./media/wikibonsai.svg" width="300" height="300"/>
-</div>
+<p align="center">
+  <img src="./media/wikibonsai.svg" width="35%" height="35%"/>
+</p>
 
 > ⚠️ 🌱 This project is newly sprouted! So please consider it a beta: Remember to backup all data and please use version control.
 
