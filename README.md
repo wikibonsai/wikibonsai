@@ -26,10 +26,10 @@ These are the workflows the WikiBonsai project enables for markdown-based collec
 
 1. Mechanics to build a unified "[semantic tree][wibomd-repo-semtree]" or "knowledge bonsai" across a collection of markdown files.
 2. Expanded syntax for [`[[wikirefs]]`][wibomd-repo-wikirefs] for quick associative linking (a.k.a. "wikilink", "bidirectional link", "internal link", etc.).
-3. Graph utilities to visualize the relationships formed by the syntaxes 1 + 2 and unify them into an interactive "[memory palace][memory-palace]".
+3. [Graph][wibomd-repo-treehouze] utilities to visualize the relationships formed by the syntaxes 1 + 2 and unify them into an interactive "[memory palace][memory-palace]".
 4. A lean, [yaml][yaml]-like [markup language for attributes][wibomd-repo-caml-mkdn] (with `[[wikiref]]` support).
 
-A "digital garden" may be considered a "WikiBonsai" if it supports [`[[wikirefs]]`][wibomd-repo-wikirefs] and [semantic trees][wibomd-repo-semtree].
+These workflows are what define the "WikiBonsai" style digital garden. [Semantic trees][wibomd-repo-semtree] in particular distinguish this variety from any ole "digital garden".
 
 ## Project Info
 
