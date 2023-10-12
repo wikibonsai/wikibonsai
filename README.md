@@ -57,24 +57,35 @@ The documentation in this repository describe the philosophies, mechanics, and t
 The following links point to sub-projects of the WikiBonsai project and are organized by stack depth. Projects toward the top are ready-to-use and meant for the end user, while projects toward the bottom are meant for developers to build with and integrate into other solutions:
 
 - For Use:
-  - [garden-beds][wibomd-repo-garden-beds]: A collection of starter WikiBonsai digital gardens.
-  - [germs][wibomd-repo-germs]: A collection of markdown files meant to be added to pre-existing WikiBonsai, or other style, digital gardens.
-  - [vscode-wikibonsai][wibomd-repo-vscode-wikibonsai]: A [VSCode][git-vscode] extension for tending a WikiBonsai digital garden.
-  - [tendr-cli][wibomd-repo-tendr-cli]: A CLI tool for tending a markdown-based WikiBonsai digital garden.
-  - [astro-wikibonsai][wibomd-repo-astro-wikibonsai]: An example setup to enable WikiBonsai workflows for an astro-based statically generated site (SSG).
-  - [eleventy-wikibonsai][wibomd-repo-eleventy-wikibonsai]: An example setup to enable WikiBonsai workflows for eleventy-based static site generation (SSG).
+  - Notes:
+    - [vscode-wikibonsai][wibomd-repo-vscode-wikibonsai]: A [VSCode][git-vscode] extension for tending a WikiBonsai digital garden.
+    - [tendr-cli][wibomd-repo-tendr-cli]: A CLI tool for tending a markdown-based WikiBonsai digital garden.
+  - SSG:
+    - [jekyll-wikibonsai][wibomd-repo-jekyll-wikibonsai]: A jekyll template that can be imported as a gem or cloned as a template project.
+    - [astro-wikibonsai][wibomd-repo-astro-wikibonsai]: An example setup to enable WikiBonsai workflows for an astro-based statically generated site (SSG).
+    - [eleventy-wikibonsai][wibomd-repo-eleventy-wikibonsai]: An example setup to enable WikiBonsai workflows for eleventy-based static site generation (SSG).
+  - Starters:
+    - [garden-beds][wibomd-repo-garden-beds]: A collection of starter WikiBonsai digital gardens.
+    - [germs][wibomd-repo-germs]: A collection of markdown files meant to be added to pre-existing WikiBonsai, or other style, digital gardens.
 - For Dev
-  - [treehouze][wibomd-repo-treehouze]: Generalized graph utilities with minor specialized features for visualizing WikiBonsai-enabled markdown-based PKMs.
-  - [caudex][wibomd-repo-caudex]: An index to cache and store WikiBonsai relationships.
-  - [markdown-it-wikirefs][wibomd-repo-markdown-it-wikirefs]: A [markdown-it][git-markdown-it] plugin to enable `[[wikirefs]]`.
-  - [markdown-it-caml][wibomd-repo-markdown-it-caml]: A [markdown-it][git-markdown-it] plugin to enable  `:colon::attributes`.
-  - [remark-wikirefs][wibomd-repo-remark-wikirefs]: A [remark][git-remark] plugin to enable `[[wikirefs]]`.
-  - [remark-caml][wibomd-repo-remark-caml]: A [remark][git-remark] plugin to enable `:colon::attributes`.
-  - [semtree][wibomd-repo-semtree]: Base utilities for "semantic tree" or "knowledge bonsai" building in markdown.
-  - [wikirefs][wibomd-repo-wikirefs]: Base utilities for `[[wikirefs]]`.
-  - [wikirefs-spec][wibomd-repo-wikirefs-spec]: Test suite for `[[wikirefs]]` specification.
-  - [caml][wibomd-repo-caml-mkdn]: Base utilities for Colon Attribute Markup Language (`:colon::attributes`).
-  - [caml-spec][wibomd-repo-caml-spec]: Test suite for Colon Attribute Markup Language (`:colon::attributes`) specification.
+  - Base:
+    - [caml][wibomd-repo-caml-mkdn]: Base utilities for Colon Attribute Markup Language (`:colon::attributes`).
+    - [caudex][wibomd-repo-caudex]: An index to cache and store WikiBonsai relationships.
+    - [semtree][wibomd-repo-semtree]: Base utilities for "semantic tree" or "knowledge bonsai" building in markdown.
+    - [treehouze][wibomd-repo-treehouze]: Generalized graph utilities with minor specialized features for visualizing WikiBonsai-enabled markdown-based PKMs.
+    - [wikirefs][wibomd-repo-wikirefs]: Base utilities for `[[wikirefs]]`.
+  - Spec:
+    - [caml-spec][wibomd-repo-caml-spec]: Test suite for Colon Attribute Markup Language (`:colon::attributes`) specification.
+    - [wikirefs-spec][wibomd-repo-wikirefs-spec]: Test suite for `[[wikirefs]]` specification.
+  - Markdown Parsers:
+    - [markdown-it-caml][wibomd-repo-markdown-it-caml]: A [markdown-it][git-markdown-it] plugin to enable  `:colon::attributes`.
+    - [markdown-it-wikirefs][wibomd-repo-markdown-it-wikirefs]: A [markdown-it][git-markdown-it] plugin to enable `[[wikirefs]]`.
+    - [remark-caml][wibomd-repo-remark-caml]: A [remark][git-remark] plugin to enable `:colon::attributes`.
+    - [remark-wikirefs][wibomd-repo-remark-wikirefs]: A [remark][git-remark] plugin to enable `[[wikirefs]]`.
+  - Jekyll:
+    - [jekyll-graph][wibomd-repo-jekyll-graph]: A jekyll plugin to generate graphs of blog content.
+    - [jekyll-semtree][wibomd-repo-jekyll-semtree]: A jekyll plugin to generate a semantic tree from index collections.
+    - [jekyl-wikirefs][wibomd-repo-jekyll-wikirefs]: A jekyll plugin to enable `[[wikirefs]]`.
 
 ## ⚠️ Usage Note
 
@@ -144,6 +155,10 @@ As with pretty much all human endeavors, this project does not represent any kin
 [wibomd-repo-eleventy-wikibonsai]: <https://github.com/wikibonsai/eleventy-wikibonsai>
 [wibomd-repo-garden-beds]: <https://github.com/wikibonsai/garden-beds>
 [wibomd-repo-germs]: <https://github.com/wikibonsai/germs>
+[wibomd-repo-jekyll-graph]: <https://github.com/wikibonsai/jekyll-graph>
+[wibomd-repo-jekyll-semtree]: <https://github.com/wikibonsai/jekyll-semtree>
+[wibomd-repo-jekyll-wikibonsai]: <https://github.com/wikibonsai/jekyll-wikibonsai>
+[wibomd-repo-jekyll-wikirefs]: <https://github.com/wikibonsai/jekyll-wikirefs>
 [wibomd-repo-markdown-it-caml]: <https://github.com/wikibonsai/markdown-it-caml>
 [wibomd-repo-markdown-it-wikirefs]: <https://github.com/wikibonsai/markdown-it-wikirefs>
 [wibomd-repo-remark-caml]: <https://github.com/wikibonsai/remark-caml>
