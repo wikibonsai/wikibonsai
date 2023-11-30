@@ -57,6 +57,9 @@ The documentation in this repository describe the philosophies, mechanics, and t
 The following links point to sub-projects of the WikiBonsai project and are organized by stack depth. Projects toward the top are ready-to-use and meant for the end user, while projects toward the bottom are meant for developers to build with and integrate into other solutions:
 
 - For Use:
+  - AI:
+    - [semtree-germ][wibomd-repo-semtree-germ]: An AI-powered "[Semantic Tree Germinator][demo-semtree-germ]" to generate starter semantic trees to transplant into one's own digital garden.
+    - [prompt][wibomd-repo-promp]: Prompts for AI-powered digital gardening.
   - Notes:
     - [vscode-wikibonsai][wibomd-repo-vscode-wikibonsai]: A [VSCode][git-vscode] extension for tending a WikiBonsai digital garden.
     - [tendr-cli][wibomd-repo-tendr-cli]: A CLI tool for tending a markdown-based WikiBonsai digital garden.
@@ -121,6 +124,7 @@ As with pretty much all human endeavors, this project does not represent any kin
 
 [art-unix-phil]: <https://ia902701.us.archive.org/12/items/bstj57-6-1899/bstj57-6-1899_text.pdf>
 [britannica]: <https://britannica.com/>
+[demo-semtree-germ]: <https://semantic-tree.netlify.app>
 [reddit-musk]: <https://www.reddit.com/r/IAmA/comments/2rgsan/comment/cnfput4/>
 [git-markdown-it]: <https://github.com/markdown-it/markdown-it>
 [git-remark]: <https://github.com/remarkjs/remark>
@@ -161,9 +165,11 @@ As with pretty much all human endeavors, this project does not represent any kin
 [wibomd-repo-jekyll-wikirefs]: <https://github.com/wikibonsai/jekyll-wikirefs>
 [wibomd-repo-markdown-it-caml]: <https://github.com/wikibonsai/markdown-it-caml>
 [wibomd-repo-markdown-it-wikirefs]: <https://github.com/wikibonsai/markdown-it-wikirefs>
+[wibomd-repo-promp]: <https://github.com/wikibonsai/prompt>
 [wibomd-repo-remark-caml]: <https://github.com/wikibonsai/remark-caml>
 [wibomd-repo-remark-wikirefs]: <https://github.com/wikibonsai/remark-wikirefs>
 [wibomd-repo-semtree]: <https://github.com/wikibonsai/semtree>
+[wibomd-repo-semtree-germ]: <https://github.com/wikibonsai/semtree-germ>
 [wibomd-repo-tendr-cli]: <https://github.com/wikibonsai/tendr-cli>
 [wibomd-repo-treehouze]: <https://github.com/wikibonsai/treehouze>
 [wibomd-repo-vscode-wikibonsai]: <https://github.com/wikibonsai/vscode-wikibonsai>
