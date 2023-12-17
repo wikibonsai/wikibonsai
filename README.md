@@ -10,7 +10,7 @@
   <img src="./media/wikibonsai.svg" width="35%" height="35%"/>
 </p>
 
-> ⚠️ 🌱 This project is newly sprouted! So please consider it a beta: Remember to backup all data and please use version control.
+> ⚠️ Please remember to backup all data and use version control.
 
 The WikiBonsai project[^ai] transforms a collection of markdown files into a text-based, easy-to-navigate [jungle gym for thought][wibomd-doc-philosophy--a-jungle-gym-for-thought][^mind] with an [API for the mind][wibomd-doc-design--an-api-for-the-mind][^mixed-metaphors]. This is accomplished by enabling personal knowledge management (PKM) workflows that rely on `[[wiki]]` syntaxes, "semantic trees" or "knowledge bonsais", and data visualizations that are viewable on screens or in augmented/virtual reality.
 
