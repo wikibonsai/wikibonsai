@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/wikibonsai/vscode-wikibonsai"
+    "url": "https://github.com/wikibonsai/wikibonsai"
   },
   "files": [
     "dist/**/*"
