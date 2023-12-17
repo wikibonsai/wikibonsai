@@ -1,6 +1,6 @@
 # Terminology
 
-There is some terminology that will help in understanding the implicit parts of WikiBonsai and the project's innerworkings, such as internal variable name choice.
+There is some terminology that will help in understanding technical decisions like variable name choice and should make clear seemingly implicit decisions with regard to WikiBonsai's innerworkings.
 
 Most of this document is primarily meant for those that wish to develop software tooling in conjunction with the WikiBonsai project or those who wish to develop a deeper understanding of how the internals inform its workflows.
 
@@ -48,7 +48,7 @@ For example, there are different `kinds` of wikirefs: "wikiattrs", "wikilinks", 
 
 `:attribute::[[fname-a]]`
 
-All of this text constitutes as a "wikiref". Since it has a type defined by the colons (`:attrtype::`), a reference defined by the square brackets (`[[fname-a]]`), and ends in a newline it is a "wikiattr" **`kind`** of wikiref. Whereas the text between the colons (`:attrtype::`) is the `type` of the wikiref. So this wikiref's `kind` is "wikiattr" and `type` is "attrtype".
+All of this text constitutes as a "wikiref". Since it has a type defined by the colons (`:attrtype::`), a reference defined by the square brackets (`[[fname-a]]`), and ends in a newline, it is a "wikiattr" **`kind`** of wikiref. Whereas the text between the colons (`:attrtype::`) is the `type` of the wikiref. So this wikiref's `kind` is "wikiattr" and `type` is "attrtype".
 
 ### Type
 
@@ -79,7 +79,7 @@ graph TD;
 
 #### Doc
 
-`Doc` is the generic kind which essentially tells the system "refer to user-defined doctypes". This basically acts as a root node for the doctype hierarchy as defined by the user.
+`Doc` is the generic kind which essentially tells the system "refer to user-defined doctypes". This basically acts as a root node for the doctype hierarchy as defined by the user. `doctypes` are largely interchangeable with `collections` in static site generators.
 
 #### Media
 

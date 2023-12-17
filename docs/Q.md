@@ -4,7 +4,7 @@ WikiBonsai has been deliberately [designed][wibomd-doc-design] with specific [ph
 
 ### "Standardization Bedrock"
 
-What standards are needed to make notes universally accessible?
+What standards are needed to make notes universally accessible and transferrable?
 
 👉 [discuss][wibomd-disc-1]
 
@@ -16,7 +16,7 @@ What features does a system need in order to simultaneously serve, extend, and e
 
 ### Pick-Up Play
 
-How can education be transformed into effective, productive play?
+How can education be transformed into effective, pragmatic, productive play?
 
 👉 [discuss][wibomd-disc-3]
 

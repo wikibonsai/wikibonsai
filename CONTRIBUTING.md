@@ -77,6 +77,12 @@ $ bundle exec rspec spec
 $ bundle exec rake build
 ```
 
+### Install local gem for debugging:
+
+```
+gem 'gem-name'; path: /path/to/gem/
+```
+
 ### Run jekyll project:
 
 ```

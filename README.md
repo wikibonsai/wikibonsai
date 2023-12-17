@@ -12,11 +12,11 @@
 
 > ⚠️ 🌱 This project is newly sprouted! So please consider it a beta: Remember to backup all data and please use version control.
 
-The WikiBonsai project[^ai] transforms a collection of markdown files into a text-based, easy-to-navigate [jungle gym for thought][wibomd-doc-philosophy--a-jungle-gym-for-thought][^mind] with an [API for the mind][wibomd-doc-design--an-api-for-the-mind][^mixed-metaphors]. This is accomplished by enabling personal knowledge management (PKM) workflows that rely on `[[wiki]]` syntaxes, "[semantic trees][reddit-musk]" ("knowledge bonsais"), and data visualizations that are viewable on screens or in augmented/virtual reality.
+The WikiBonsai project[^ai] transforms a collection of markdown files into a text-based, easy-to-navigate [jungle gym for thought][wibomd-doc-philosophy--a-jungle-gym-for-thought][^mind] with an [API for the mind][wibomd-doc-design--an-api-for-the-mind][^mixed-metaphors]. This is accomplished by enabling personal knowledge management (PKM) workflows that rely on `[[wiki]]` syntaxes, "semantic trees" or "knowledge bonsais", and data visualizations that are viewable on screens or in augmented/virtual reality.
 
 This project is about strategically implementing functionality that will benefit the most users and developers across the digital ecosystem. Thus, it abides by the [Unix Philosophy][art-unix-phil]: Everything is modularized and implemented in such a way as to maximize re-use whether it be for the browser, desktop, mobile, or headset. It's about furthering the state of PKM as a whole by building atop "[standardization bedrock][wibomd-doc-design--drilling-down-to-standardization-bedrock]" instead of just creating a single application.
 
-Further, these workflows may also facilitate the mapping of [semantic space][wibomd-doc-design--semantic-space] which could prove an invaluable resource in building a better understanding of how neural nets work and furthering the development of effective, explainable AI.
+Further, these workflows may also facilitate the mapping of [semantic space][wibomd-doc-design--semantic-space] which could prove an invaluable resource in building a better understanding of how neural nets work and furthering the development of interpretable, explainable AI.
 
 Only time will tell how far this path may [go][wibomd-doc-philosophy--finding-free-will].
 
@@ -24,12 +24,12 @@ Only time will tell how far this path may [go][wibomd-doc-philosophy--finding-fr
 
 These are the workflows the WikiBonsai project enables for markdown-based collections of notes:
 
-1. Mechanics to build a unified "[semantic tree][wibomd-repo-semtree]" or "knowledge bonsai" across a collection of markdown files.
-2. Expanded syntax for [`[[wikirefs]]`][wibomd-repo-wikirefs] for quick associative linking (a.k.a. "wikilink", "bidirectional link", "internal link", etc.).
-3. [Graph][wibomd-repo-treehouze] utilities to visualize the relationships formed by the syntaxes 1 + 2 and unify them into an interactive "[memory palace][memory-palace]".
+1. [Mechanics][wibomd-repo-semtree] to build a unified "[semantic tree][reddit-musk]" or "knowledge bonsai" across a collection of markdown files.
+2. Expanded [`[[wikirefs]]`][wibomd-repo-wikirefs] syntax for quick associative linking (a.k.a. "wikilink", "bidirectional link", "[internal link][mediawiki-internal-link]", etc.).
+3. [Graph][wibomd-repo-treehouze] utilities to visualize the relationships formed by syntaxes 1 + 2 and unify them into an interactive "[memory palace][memory-palace]".
 4. A lean, [yaml][yaml]-like [markup language for attributes][wibomd-repo-caml-mkdn] (with `[[wikiref]]` support).
 
-These workflows are what define the "WikiBonsai" style digital garden. [Semantic trees][wibomd-repo-semtree] in particular distinguish this variety from any ole "digital garden".
+These workflows are what distinguish the "WikiBonsai" from other styles of digital garden -- particularly the [semantic tree][reddit-musk].
 
 ## Project Info
 
@@ -37,12 +37,6 @@ These workflows are what define the "WikiBonsai" style digital garden. [Semantic
 
 The documentation in this repository describe the philosophies, mechanics, and terminologies that are adopted throughout all of the WikiBonsai projects:
 
-- For Input:
-  - [Questions][wibomd-doc-questions]
-- For Lore:
-  - [Guiding Philosophy][wibomd-doc-philosophy]
-  - [Origin Story][wibomd-doc-story]
-  - [Citations and Sources][wibomd-doc-cite]
 - For Use:
   - [How To Use][wibomd-doc-use]
   - [Privacy and Security][wibomd-doc-secure]
@@ -51,10 +45,16 @@ The documentation in this repository describe the philosophies, mechanics, and t
   - [Terminology][wibomd-doc-terms]
   - [Code of Conduct][wibomd-doc-code-of-conduct]
   - [Contributing][wibomd-doc-contributing]
+- For Lore:
+  - [Guiding Philosophy][wibomd-doc-philosophy]
+  - [Origin Story][wibomd-doc-story]
+  - [Citations and Sources][wibomd-doc-cite]
+- For Input:
+  - [Questions][wibomd-doc-questions]
 
 ### Repos
 
-The following links point to sub-projects of the WikiBonsai project and are organized by stack depth. Projects toward the top are ready-to-use and meant for the end user, while projects toward the bottom are meant for developers to build with and integrate into other solutions:
+The following links point to repositories of the WikiBonsai project and are organized by stack depth. Projects toward the top are ready-to-use and meant for the end user, while projects toward the bottom are meant for developers to build with and integrate into other solutions:
 
 - For Use:
   - AI:
@@ -71,15 +71,6 @@ The following links point to sub-projects of the WikiBonsai project and are orga
     - [garden-beds][wibomd-repo-garden-beds]: A collection of starter WikiBonsai digital gardens.
     - [germs][wibomd-repo-germs]: A collection of markdown files meant to be added to pre-existing WikiBonsai, or other style, digital gardens.
 - For Dev
-  - Base:
-    - [caml][wibomd-repo-caml-mkdn]: Base utilities for Colon Attribute Markup Language (`:colon::attributes`).
-    - [caudex][wibomd-repo-caudex]: An index to cache and store WikiBonsai relationships.
-    - [semtree][wibomd-repo-semtree]: Base utilities for "semantic tree" or "knowledge bonsai" building in markdown.
-    - [treehouze][wibomd-repo-treehouze]: Generalized graph utilities with minor specialized features for visualizing WikiBonsai-enabled markdown-based PKMs.
-    - [wikirefs][wibomd-repo-wikirefs]: Base utilities for `[[wikirefs]]`.
-  - Spec:
-    - [caml-spec][wibomd-repo-caml-spec]: Test suite for Colon Attribute Markup Language (`:colon::attributes`) specification.
-    - [wikirefs-spec][wibomd-repo-wikirefs-spec]: Test suite for `[[wikirefs]]` specification.
   - Markdown Parsers:
     - [markdown-it-caml][wibomd-repo-markdown-it-caml]: A [markdown-it][git-markdown-it] plugin to enable  `:colon::attributes`.
     - [markdown-it-wikirefs][wibomd-repo-markdown-it-wikirefs]: A [markdown-it][git-markdown-it] plugin to enable `[[wikirefs]]`.
@@ -89,6 +80,15 @@ The following links point to sub-projects of the WikiBonsai project and are orga
     - [jekyll-graph][wibomd-repo-jekyll-graph]: A jekyll plugin to generate graphs of blog content.
     - [jekyll-semtree][wibomd-repo-jekyll-semtree]: A jekyll plugin to generate a semantic tree from index collections.
     - [jekyl-wikirefs][wibomd-repo-jekyll-wikirefs]: A jekyll plugin to enable `[[wikirefs]]`.
+  - Base:
+    - [caml][wibomd-repo-caml-mkdn]: Base utilities for Colon Attribute Markup Language (`:colon::attributes`).
+    - [caudex][wibomd-repo-caudex]: An index to cache and store WikiBonsai relationships.
+    - [semtree][wibomd-repo-semtree]: Base utilities for "semantic tree" or "knowledge bonsai" building in markdown.
+    - [treehouze][wibomd-repo-treehouze]: Generalized graph utilities with minor specialized features for visualizing WikiBonsai-enabled markdown-based PKMs.
+    - [wikirefs][wibomd-repo-wikirefs]: Base utilities for `[[wikirefs]]`.
+  - Spec:
+    - [caml-spec][wibomd-repo-caml-spec]: Test suite for Colon Attribute Markup Language (`:colon::attributes`) specification.
+    - [wikirefs-spec][wibomd-repo-wikirefs-spec]: Test suite for `[[wikirefs]]` specification.
 
 ## ⚠️ Usage Note
 
@@ -129,6 +129,7 @@ As with pretty much all human endeavors, this project does not represent any kin
 [git-markdown-it]: <https://github.com/markdown-it/markdown-it>
 [git-remark]: <https://github.com/remarkjs/remark>
 [git-vscode]: <https://github.com/microsoft/vscode>
+[mediawiki-internal-link]: <https://www.mediawiki.org/wiki/Help:Links#Internal_links>
 [memory-palace]: <https://artofmemory.com/blog/how-to-build-a-memory-palace/>
 [utb-essay]: <https://www.youtube.com/watch?v=XHIhtWPpDVI>
 [utb-mind-bike]: <https://www.youtube.com/watch?v=KmuP8gsgWb8>
@@ -142,7 +143,7 @@ As with pretty much all human endeavors, this project does not represent any kin
 [wibomd-doc-design]: <https://github.com/wikibonsai/wikibonsai/tree/main/docs/DESIGN.md>
 [wibomd-doc-design--an-api-for-the-mind]: <https://github.com/wikibonsai/wikibonsai/tree/main/docs/DESIGN.md#an-api-for-the-mind>
 [wibomd-doc-design--drilling-down-to-standardization-bedrock]: <https://github.com/wikibonsai/wikibonsai/tree/main/docs/DESIGN.md#drilling-down-to-standardization-bedrock>
-[wibomd-doc-design--semantic-space]: <https://github.com/wikibonsai/wikibonsai/tree/main/docs/DESIGN.md#semantic-space>
+[wibomd-doc-design--semantic-space]: <https://github.com/wikibonsai/wikibonsai/tree/main/docs/DESIGN.md#semantic-space8>
 [wibomd-doc-philosophy]: <https://github.com/wikibonsai/wikibonsai/tree/main/docs/PHILOSOPHY.md>
 [wibomd-doc-philosophy--a-jungle-gym-for-thought]: <https://github.com/wikibonsai/wikibonsai/tree/main/docs/PHILOSOPHY.md#a-jungle-gym-for-thought>
 [wibomd-doc-philosophy--finding-free-will]: <https://github.com/wikibonsai/wikibonsai/tree/main/docs/PHILOSOPHY.md#finding-free-will>
@@ -177,6 +178,6 @@ As with pretty much all human endeavors, this project does not represent any kin
 [wibomd-repo-wikirefs-spec]: <https://github.com/wikibonsai/wikirefs/tree/main/spec>
 
 
-<div style="display: flex; justify-content: center;">
+<p align="center">
   <span>🇺🇸 Made in the USA 🦅 🐊</span>
-</div>
+</p>
