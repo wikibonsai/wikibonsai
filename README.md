@@ -24,10 +24,10 @@ Only time will tell how far this path may [go][wibomd-doc-philosophy--finding-fr
 
 These are the workflows the WikiBonsai project enables for markdown-based collections of notes:
 
-1. [Mechanics][wibomd-repo-semtree] to build a unified "[semantic tree][reddit-musk]" or "knowledge bonsai" across a collection of markdown files.
-2. Expanded [`[[wikirefs]]`][wibomd-repo-wikirefs] syntax for quick associative linking (a.k.a. "wikilink", "bidirectional link", "[internal link][mediawiki-internal-link]", etc.).
+1. Expanded [`[[wikirefs]]`][wibomd-repo-wikirefs] syntax for quick associative linking (a.k.a. "wikilink", "bidirectional link", "[internal link][mediawiki-internal-link]", etc.).
+2. [Mechanics][wibomd-repo-semtree] to build a unified "[semantic tree][reddit-musk]" or "knowledge bonsai" across a collection of markdown files.
 3. [Graph][wibomd-repo-treehouze] utilities to visualize the relationships formed by syntaxes 1 + 2 and unify them into an interactive "[memory palace][memory-palace]".
-4. A lean, [yaml][yaml]-like [markup language for attributes][wibomd-repo-caml-mkdn] (with `[[wikiref]]` support).
+4. A lean [markup language for attributes][wibomd-repo-caml-mkdn], similar to [yaml][yaml] (with built-in `[[wikiref]]` support).
 
 These workflows are what distinguish the "WikiBonsai" from other styles of digital garden -- particularly the [semantic tree][reddit-musk].
 
