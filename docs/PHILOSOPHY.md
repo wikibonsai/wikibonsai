@@ -8,7 +8,7 @@ With the explosion of information that came with the information age, many were 
 
 ## Learning Loops
 
-One of the quirky bits of human nature is that once we learn something, it [becomes invisible to us][utb-gorilla-exp], rendering articulation of that understanding difficult or impossible. Rather than "consulting an expert", it is actually the student that may hold the key to capturing knowledge. The note-taking of a student and the communication with a teacher is a continuous conversational loop which may be harnessed: To capture knowledge as it is explicated and preserve it for posterity.
+One of the quirky bits of human nature is that once we learn something, it [becomes invisible to us][utb-gorilla-exp], rendering articulation of that understanding difficult or impossible. Rather than "consulting an expert", it is actually the student that may hold the key to capturing knowledge. The note-taking of a student and the communication with a teacher is a continuous conversational loop which may be harnessed: To capture knowledge as it is explicated by the student, verified against the understanding of the teacher, and then preserved for posterity.
 
 ## Studying To Tile The World
 
@@ -80,11 +80,11 @@ As social creatures, we are very easily influenced and easily influence others. 
 
 The following is one possible technical definition of "censorship":
 
-> "Given an information space, with a coordinate system mutually agreed upon by all participating agents, where each unique piece of information maps to a unique coordinate, censorship would include:
+> Given an information space, with a coordinate system mutually agreed upon by all participating agents, where each unique coordinate maps to a unique piece of information, censorship would include:
 > 
-> - The nonconsensual distortion of the coordinate system.
+> - The nonconsensual distortion or deletion of the coordinate system.
 > - The total blockage or restricted movement to or between any points in that space.
-> - The disallowance of departing the given information space."
+> - The disallowance of departing the given information space.
 
 This project aims to provide tools for individuals to build such information spaces and evangelize this definition of censorship, which is more precise than is typical and helps uncover concrete courses of action to address censorship.
 

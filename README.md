@@ -38,7 +38,7 @@ These workflows are what distinguish the "WikiBonsai" from other styles of digit
 The documentation in this repository describe the philosophies, mechanics, and terminologies that are adopted throughout all of the WikiBonsai projects:
 
 - For Use:
-  - [How To Use][wibomd-doc-use]
+  - [Getting Started][wibomd-doc-use]
   - [Privacy and Security][wibomd-doc-secure]
 - For Dev:
   - [Design Principles][wibomd-doc-design]
