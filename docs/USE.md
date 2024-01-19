@@ -281,6 +281,7 @@ The semantic tree is a very useful orienting structure once many concepts have b
 - [Britannica][wild-ex-britannica]
 - [Craigslist][wild-ex-craig]
 - [Dewey Decimal System (on LibraryThing)][wild-ex-librarything]
+- [The Quote Garden][wild-ex-quote-garden]
 - [Lesswrong Tag Tree][wild-ex-lesswrong]
 - [Mathworld][wild-ex-mathworld]
 - [Mozilla Documentation][wild-ex-mozdoc]
@@ -314,6 +315,7 @@ The following are not precisely tree structures, but are exemplary examples of s
 [wild-ex-mathworld]: <https://mathworld.wolfram.com/>
 [wild-ex-mcmaster]: <https://mcmaster.com/>
 [wild-ex-mozdoc]: <https://developer.mozilla.org/>
+[wild-ex-quote-garden]: <https://www.quotegarden.com>
 [wild-ex-roadmap]: <https://roadmap.sh/>
 [wild-ex-wiki-outline]: <https://en.wikipedia.org/wiki/Wikipedia:Contents/Outlines>
 [wild-ex-subreddits]: <https://www.reddit.com/r/findareddit/wiki/directory/#wiki_career_advice_.2F_job_searching>
