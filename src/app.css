@@ -1,0 +1,401 @@
+/* src: https://github.com/wikibonsai/jekyll-wikibonsai/blob/ddc978d53c2eb40f018060207a0760f6e2f42cb4/_data/themes.yml */
+
+/* base */
+
+:root {
+  /* dimensions */
+
+  --toolbar-top-height: 40px; /* width should be 100vw minus the width of the side toolbar */
+  --toolbar-side-width: 40px; /* height should be 100vh */
+
+  /* depth (z-indices) */
+
+  /* todo */
+
+  /* editor */
+  /* split highlights */
+  /* modals */
+
+  /* colors */
+
+  --hover-color: #22c55e;
+  --btn-color: #22c55e;
+  --btn-color--hover: #16a34a;
+
+  /* light */
+  --text-color: #5c5962;
+  --accent-text-color: #918f96;
+  --background-color: #e4f3ea;
+  --box-background: #fff;
+  --accent-color-light: #D1ECDC;
+  --accent-color-dark: #b6d1c1;
+  --textbox-color: #f7f6eb;
+  --link-color: #01946a;
+  --branch-light: #8C6239;
+  --branch-dark: #36290e;
+  --leaf: #31AF31;
+  --dirt: #f7f6eb;
+}
+
+/* default themes */
+
+html[data-theme='light'] {
+  --text-color: #5c5962;
+  --accent-text-color: #918f96;
+  --background-color: #e4f3ea;
+  --box-background: #fff;
+  --accent-color-light: #D1ECDC;
+  --accent-color-dark: #b6d1c1;
+  --textbox-color: #f7f6eb;
+  --link-color: #01946a;
+  --branch-light: #8C6239;
+  --branch-dark: #36290e;
+  --leaf: #31AF31;
+  --dirt: #f7f6eb;
+}
+
+html[data-theme='dark'] {
+  --text-color: #e1e8e3;
+  --accent-text-color: #959f99;
+  --background-color: #27262b;
+  --accent-color-light: #44434d;
+  --accent-color-dark: #313036;
+  --box-background: #44434d;
+  --textbox-color: #2f3038;
+  --link-color: #00CC92;
+  --branch-light: #2d565e;
+  --branch-dark: #1d1d1f;
+  --leaf: #31AF31;
+  --dirt: #2f3038;
+}
+
+/* garden themes */
+
+html[data-theme='day-garden'] {
+  --text-color: #5c5962;
+  --accent-text-color: #918f96;
+  --background-color: #e4f3ea;
+  --box-background: #fff;
+  --accent-color-light: #D1ECDC;
+  --accent-color-dark: #b6d1c1;
+  --textbox-color: #f7f6eb;
+  --link-color: #01946a;
+  --branch-light: #8C6239;
+  --branch-dark: #36290e;
+  --leaf: #31AF31;
+  --dirt: #f7f6eb;
+}
+
+html[data-theme='night-sky'] {
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+a {
+  color: var(--link-color) !important;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+code {
+  background-color: var(--accent-color-light);
+}
+
+select {
+  flex-grow: 1;
+}
+
+/* uniform element patterns */
+
+/*******/
+/* btn */
+/*******/
+
+.btn {
+  background: var(--btn-color);
+  color: white;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+}
+
+.btn:hover {
+  background: var(--btn-color--hover);
+}
+
+/* utility buttons (for toolbars etc.) */
+
+.util-btn {
+  min-width: 2.5rem;
+  border-color: var(--accent-color-dark);
+  border-radius: 0.25rem;
+  border-width: 1px;
+  padding: 0.5rem;
+  margin: 0.25rem;
+}
+
+.util-btn:hover {
+  cursor: pointer;
+  border-color: var(--accent-color-light);
+}
+
+/* image buttons */
+
+.img-btn {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img-btn:hover {
+  transform: scale(1.15);
+  /* box-shadow: 0 4px 8px var(--hover-color); */
+}
+
+/* box */
+
+.box-border {
+  border-color: var(--accent-color-light);
+  border-width: 2px;
+}
+
+/* modals */
+
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 500;
+  transition: opacity 0.25s ease;
+}
+
+.modal-active {
+  overflow-x: hidden;
+  overflow-y: visible !important;
+}
+
+.modal-close {
+  cursor: pointer;
+  z-index: 500;
+  padding-top: 0.2rem;
+}
+
+.modal-container {
+  background-color: var(--background-color);
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 0.25rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  z-index: 500;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  max-height: 100vh;
+  /* small */
+  width: 100%;
+  max-width: none;
+}
+
+@media (min-width: 768px) {
+  .modal-container {
+    width: auto;
+    max-width: 24rem;
+  }
+}
+
+.modal-content {
+  text-align: left;
+  padding: 1rem;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 0.5rem;
+}
+
+.modal-overlay {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   background-color: #1f2937;
+   opacity: 0.5;
+}
+
+.modal-title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+
+/* hide scrollbar */
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* hide actual scrollbar */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* multiplex splitpanes */
+
+/* from: https://orefalo.github.io/svelte-splitpanes/examples/styling/splitters */
+
+/* editor theme */
+
+.splitpanes.editor-theme .splitpanes__pane {
+  background-color: var(--dirt);
+}
+.splitpanes.editor-theme .splitpanes__splitter {
+  background-color: var(--background-color);
+  box-sizing: border-box;
+  position: relative;
+  flex-shrink: 0;
+}
+.splitpanes.editor-theme .splitpanes__splitter:before, .splitpanes.editor-theme .splitpanes__splitter:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s;
+}
+.splitpanes.editor-theme .splitpanes__splitter:hover:before, .splitpanes.editor-theme .splitpanes__splitter:hover:after {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+.splitpanes.editor-theme .splitpanes__splitter:first-child {
+  cursor: auto;
+}
+
+.editor-theme.splitpanes .splitpanes .splitpanes__splitter {
+  z-index: 1;
+}
+.editor-theme.splitpanes--vertical > .splitpanes__splitter,
+.editor-theme .splitpanes--vertical > .splitpanes__splitter {
+  width: 7px;
+  border-left: 1px solid var(--accent-color-light);
+  cursor: col-resize;
+}
+.editor-theme.splitpanes--vertical > .splitpanes__splitter:before, .editor-theme.splitpanes--vertical > .splitpanes__splitter:after,
+.editor-theme .splitpanes--vertical > .splitpanes__splitter:before,
+.editor-theme .splitpanes--vertical > .splitpanes__splitter:after {
+  transform: translateY(-50%);
+  width: 1px;
+  height: 30px;
+}
+.editor-theme.splitpanes--vertical > .splitpanes__splitter:before,
+.editor-theme .splitpanes--vertical > .splitpanes__splitter:before {
+  margin-left: -2px;
+}
+.editor-theme.splitpanes--vertical > .splitpanes__splitter:after,
+.editor-theme .splitpanes--vertical > .splitpanes__splitter:after {
+  margin-left: 1px;
+}
+.editor-theme.splitpanes--horizontal > .splitpanes__splitter,
+.editor-theme .splitpanes--horizontal > .splitpanes__splitter {
+  height: 7px;
+  border-top: 1px solid var(--accent-color-light);
+  cursor: row-resize;
+}
+.editor-theme.splitpanes--horizontal > .splitpanes__splitter:before, .editor-theme.splitpanes--horizontal > .splitpanes__splitter:after,
+.editor-theme .splitpanes--horizontal > .splitpanes__splitter:before,
+.editor-theme .splitpanes--horizontal > .splitpanes__splitter:after {
+  transform: translateX(-50%);
+  width: 30px;
+  height: 1px;
+}
+.editor-theme.splitpanes--horizontal > .splitpanes__splitter:before,
+.editor-theme .splitpanes--horizontal > .splitpanes__splitter:before {
+  margin-top: -2px;
+}
+.editor-theme.splitpanes--horizontal > .splitpanes__splitter:after,
+.editor-theme .splitpanes--horizontal > .splitpanes__splitter:after {
+  margin-top: 1px;
+}
+
+/* sidebar */
+
+.splitpanes.sidebar-theme .splitpanes__pane {
+  background-color: var(--background-color);
+}
+.splitpanes.sidebar-theme .splitpanes__splitter {
+  background-color: var(--background-color);
+  box-sizing: border-box;
+  position: relative;
+  flex-shrink: 0;
+}
+.splitpanes.sidebar-theme .splitpanes__splitter:before, .splitpanes.sidebar-theme .splitpanes__splitter:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s;
+}
+.splitpanes.sidebar-theme .splitpanes__splitter:hover:before, .splitpanes.sidebar-theme .splitpanes__splitter:hover:after {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+.splitpanes.sidebar-theme .splitpanes__splitter:first-child {
+  cursor: auto;
+}
+
+.sidebar-theme.splitpanes .splitpanes .splitpanes__splitter {
+  z-index: 1;
+}
+.sidebar-theme.splitpanes--vertical > .splitpanes__splitter,
+.sidebar-theme .splitpanes--vertical > .splitpanes__splitter {
+  width: 7px;
+  border-left: 1px solid var(--accent-color-light);
+  cursor: col-resize;
+}
+.sidebar-theme.splitpanes--vertical > .splitpanes__splitter:before, .sidebar-theme.splitpanes--vertical > .splitpanes__splitter:after,
+.sidebar-theme .splitpanes--vertical > .splitpanes__splitter:before,
+.sidebar-theme .splitpanes--vertical > .splitpanes__splitter:after {
+  transform: translateY(-50%);
+  width: 1px;
+  height: 30px;
+}
+.sidebar-theme.splitpanes--vertical > .splitpanes__splitter:before,
+.sidebar-theme .splitpanes--vertical > .splitpanes__splitter:before {
+  margin-left: -2px;
+}
+.sidebar-theme.splitpanes--vertical > .splitpanes__splitter:after,
+.sidebar-theme .splitpanes--vertical > .splitpanes__splitter:after {
+  margin-left: 1px;
+}
+.sidebar-theme.splitpanes--horizontal > .splitpanes__splitter,
+.sidebar-theme .splitpanes--horizontal > .splitpanes__splitter {
+  height: 7px;
+  border-top: 1px solid var(--accent-color-light);
+  cursor: row-resize;
+}
+.sidebar-theme.splitpanes--horizontal > .splitpanes__splitter:before, .sidebar-theme.splitpanes--horizontal > .splitpanes__splitter:after,
+.sidebar-theme .splitpanes--horizontal > .splitpanes__splitter:before,
+.sidebar-theme .splitpanes--horizontal > .splitpanes__splitter:after {
+  transform: translateX(-50%);
+  width: 30px;
+  height: 1px;
+}
+.sidebar-theme.splitpanes--horizontal > .splitpanes__splitter:before,
+.sidebar-theme .splitpanes--horizontal > .splitpanes__splitter:before {
+  margin-top: -2px;
+}
+.sidebar-theme.splitpanes--horizontal > .splitpanes__splitter:after,
+.sidebar-theme .splitpanes--horizontal > .splitpanes__splitter:after {
+  margin-top: 1px;
+}

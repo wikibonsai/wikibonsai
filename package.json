@@ -2,6 +2,7 @@
   "name": "wikibonsai",
   "displayName": "WikiBonsai",
   "version": "0.0.1",
+  "type": "module",
   "description": "A jungle gym for thought with an API for the mind.",
   "license": "GPL-3.0",
   "author": {
@@ -20,15 +21,43 @@
   },
   "main": "out/index.js",
   "scripts": {
-    "build": "tsc -p . --outDir dist && chmod +x dist/index.js"
+    "clean": "del-cli .svelte-kit .netlify build",
+    "build": "vite build",
+    "build-cli": "tsc -p . --outDir dist && chmod +x dist/index.js",
+    "dev": "vite dev",
+    "preview": "vite preview",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+    "lint": "prettier --check . && eslint .",
+    "format": "prettier --write ."
   },
   "engines": {
     "node": ">= 12.0.0"
   },
   "dependencies": {},
   "devDependencies": {
+    "@sveltejs/adapter-auto": "^3.2.1",
+    "@sveltejs/kit": "^2.5.10",
+    "@sveltejs/vite-plugin-svelte": "^3.1.0",
+    "@types/eslint": "^8.56.10",
     "@types/node": "^12.6.6",
+    "@typescript-eslint/eslint-plugin": "^7.11.0",
+    "@typescript-eslint/parser": "^7.11.0",
+    "del-cli": "^5.1.0",
+    "eslint": "^9.3.0",
+    "markmap-common": "^0.17.0",
+    "markmap-lib": "^0.17.0",
+    "markmap-view": "^0.17.0",
+    "prettier": "^3.2.5",
+    "prettier-plugin-svelte": "^3.2.3",
+    "svelte": "^4.2.17",
+    "svelte-check": "^3.7.1",
+    "svelte-preprocess": "^5.1.4",
     "ts-node": "^8.3.0",
-    "typescript": "~3"
+    "tslib": "^2.6.2",
+    "typescript": "^5.4.5",
+    "unplugin-icons": "^0.19.0",
+    "uuid": "^9.0.1",
+    "vite": "^5.2.12"
   }
 }

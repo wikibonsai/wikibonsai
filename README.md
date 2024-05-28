@@ -7,7 +7,7 @@
 ###### [cite me!][wibomd-doc-cite-this]
 
 <p align="center">
-  <img src="./media/wikibonsai.svg" width="35%" height="35%"/>
+  <img src="./static/wikibonsai.svg" width="35%" height="35%"/>
 </p>
 
 > ⚠️ Please remember to backup all data and use version control.
