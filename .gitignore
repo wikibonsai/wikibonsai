@@ -1,18 +1,27 @@
-# Dependency directories
-node_modules/
-
-# Distribution
+# macos
+.DS_Store
+# env
+.env
+.env.*
+!.env.example
+# npm
+node_modules
+.npm
+# distribution
 dist/
 releases/
-
-# Test output
+/build
+# svelte
+/.svelte-kit
+# vite
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+# netlify
+/.netlify
+/package
+# test output
 .nyc_output/
-
-# Optional npm cache directory
-.npm
-
 # vim
 *.swp
-
 # vscode
 .vscode/
