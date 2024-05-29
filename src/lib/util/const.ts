@@ -14,13 +14,22 @@ export const URL_DOCS_CITE       : string = 'https://github.com/wikibonsai/wikib
 export const URL_DOCS_DESIGN     : string = 'https://github.com/wikibonsai/wikibonsai/tree/main/docs/DESIGN.md';
 export const URL_DOCS_PHILOSOPHY : string = 'https://github.com/wikibonsai/wikibonsai/tree/main/docs/PHILOSOPHY.md';
 export const URL_DOCS_USE        : string = 'https://github.com/wikibonsai/wikibonsai/tree/main/docs/USE.md';
+export const URL_DOCS_STD_BED    : string = 'https://github.com/wikibonsai/wikibonsai/tree/main/docs/DESIGN.md#drilling-down-to-standardization-bedrock';
+////
 // repos
+// app
 export const URL_REPO_WIKIBONSAI : string = 'https://github.com/wikibonsai/wikibonsai';
 export const URL_REPO_VSCODE     : string = 'https://github.com/wikibonsai/vscode-wikibonsai';
 export const URL_REPO_TENDR      : string = 'https://github.com/wikibonsai/tendr-cli';
+// ssg
 export const URL_REPO_ASTRO      : string = 'https://github.com/wikibonsai/astro-wikibonsai';
 export const URL_REPO_ELEVENTY   : string = 'https://github.com/wikibonsai/eleventy-wikibonsai';
 export const URL_REPO_JEKYLL     : string = 'https://github.com/wikibonsai/jekyll-wikibonsai';
+// base
+export const URL_REPO_CAML       : string = 'https://github.com/wikibonsai/caml-mkdn';
+export const URL_REPO_SEMTREE    : string = 'https://github.com/wikibonsai/semtree';
+export const URL_REPO_TREEHOUZE  : string = 'https://github.com/wikibonsai/treehouze';
+export const URL_REPO_WIKIREFS   : string = 'https://github.com/wikibonsai/wikirefs';
 // social
 export const URL_SOCIAL_GITHUB   : string = 'https://github.com/wikibonsai/';
 export const URL_SOCIAL_X        : string = 'https://x.com/wibomd/';

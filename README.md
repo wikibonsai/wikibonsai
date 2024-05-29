@@ -14,7 +14,7 @@
 
 The WikiBonsai project[^ai] transforms a collection of markdown files into a text-based, easy-to-navigate [jungle gym for thought][wibomd-doc-philosophy--a-jungle-gym-for-thought][^mind] with an [API for the mind][wibomd-doc-design--an-api-for-the-mind][^mixed-metaphors]. This is accomplished by enabling personal knowledge management (PKM) workflows that rely on `[[wiki]]` syntaxes, "semantic trees" or "knowledge bonsais", and data visualizations that are viewable on screens or in augmented/virtual reality.
 
-This project is about strategically implementing functionality that will benefit the most users and developers across the digital ecosystem. Thus, it abides by the [Unix Philosophy][art-unix-phil]: Everything is modularized and implemented in such a way as to maximize re-use whether it be for the browser, desktop, mobile, or headset. It's about furthering the state of PKM as a whole by building atop "[standardization bedrock][wibomd-doc-design--drilling-down-to-standardization-bedrock]" instead of just creating a single application.
+This project is about strategically implementing and open-sourcing functionality that will benefit the most users and developers across the digital ecosystem. Thus, it abides by the [Unix Philosophy][art-unix-phil]: Everything is modularized and implemented in such a way as to maximize re-use whether it be for the browser, desktop, mobile, or headset. It's about furthering the state of PKM as a whole by building atop "[standardization bedrock][wibomd-doc-design--drilling-down-to-standardization-bedrock]" instead of just creating a single application.
 
 Further, these workflows may also facilitate the mapping of [semantic space][wibomd-doc-design--semantic-space] which could prove an invaluable resource in building a better understanding of how neural nets work and furthering the development of interpretable, explainable AI.
 
@@ -25,9 +25,9 @@ Only time will tell how far this path may [go][wibomd-doc-philosophy--finding-fr
 These are the workflows the WikiBonsai project enables for markdown-based collections of notes:
 
 1. Expanded [`[[wikirefs]]`][wibomd-repo-wikirefs] syntax for quick associative linking (a.k.a. "wikilink", "bidirectional link", "[internal link][mediawiki-internal-link]", etc.).
-2. [Mechanics][wibomd-repo-semtree] to build a unified "[semantic tree][reddit-musk]" or "knowledge bonsai" across a collection of markdown files.
-3. [Graph][wibomd-repo-treehouze] utilities to visualize the relationships formed by syntaxes 1 + 2 and unify them into an interactive "[memory palace][memory-palace]".
-4. A lean [markup language for attributes][wibomd-repo-caml-mkdn], similar to [yaml][yaml] (with built-in `[[wikiref]]` support).
+2. [Mechanics][wibomd-repo-semtree] to cultivate and train a unified "[semantic tree][reddit-musk]" or "knowledge bonsai" across a collection of markdown files.
+3. [Graph][wibomd-repo-treehouze] utilities to experience and interact with a unified visual-spatial "[memory palace][memory-palace]" that emerges from the relationships formed across markdown notes (syntaxes 1 + 1).
+4. A clean, lean, [yaml][yaml]-like [markup language for structured attributes][wibomd-repo-caml-mkdn] (with built-in `[[wikiref]]` support).
 
 These workflows are what distinguish the "WikiBonsai" from other styles of digital garden -- particularly the [semantic tree][reddit-musk].
 

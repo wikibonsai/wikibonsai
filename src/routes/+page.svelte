@@ -2,6 +2,7 @@
   import type { PageData } from './$types';
   import {
     ROUTE_TREE,
+    URL_DOCS_STD_BED,
     // URL_GERMINATOR,
     URL_REPO_WIKIBONSAI,
     URL_SOCIAL_GITHUB,
@@ -57,7 +58,7 @@
   <section class="description">
     <h1 class="description-title">Workflows</h1>
     <div class="description-body description-body-col">
-      The WikiBonsai project strives to make specific plaintext workflows more openly accessible:
+      The WikiBonsai project transforms a collection of markdown files into a text-based, easy-to-navigate, jungle gym for thought with an API for the mind. This is accomplished by enabling specific personal knowledge management (PKM) workflows:
       <WorkflowsShowCase></WorkflowsShowCase>
     </div>
   </section>
@@ -86,7 +87,7 @@
   <section class="description">
     <h1 class="description-title">✂️ Tools for Tending</h1>
     <div class="description-body description-body-col">
-      Tend your markdown digital garden from...
+      With WikiBonsai workflows, a collection of notes or a wiki is transformed into a unified, growing collection, where taking notes becomes synonymous with gardening and the results surely shall bear fruit. Tending your markdown digital garden is possible from...
       <AppTabSelect></AppTabSelect>
     </div>
   </section>
@@ -94,7 +95,7 @@
   <section class="description">
     <h1 class="description-title">💐 Tools for Showcasing</h1>
     <div class="description-body description-body-col">
-      Showcase what you've cultivated with your favorite static site generator.
+      By simply turning on WikiBonsai workflows, you can extend a blog, publish a wiki, or simply showcase what you've cultivated with your favorite static site generator.
       <div class="ssg">
         <a href={URL_SSG_ASTRO}>
           <img class="ssg-logo img-btn" src="/img/social/Astro.svg" alt="astro-wikibonsai"/>
@@ -112,12 +113,11 @@
   <section class="description">
     <h1 class="description-title">✨ Tools for Tinkering</h1>
     <div class="description-body description-body-row">
-      <img class="oss-logo" src="/img/social/oss.svg" alt="oss"/>
+      <a class="oss-logo" href={URL_SOCIAL_GITHUB}>
+        <img class="img-btn" src="/img/social/oss.svg" alt="oss"/>
+      </a>
       <div class="oss-description">
-        <span class="oss-description-txt">
-           Many of the the WikiBonsai projects are open source to encourage standardization and long-term sustainability.
-        </span>
-        <button class="btn" on:click={goTo(URL_SOCIAL_GITHUB)}>GitHub</button>
+        This project is about strategically implementing and open-sourcing functionality that will benefit the most users and developers across the digital ecosystem. Thus, it abides by the Unix Philosophy: Everything is modularized and implemented in such a way as to maximize re-use whether it be for the browser, desktop, mobile, or headset. It's about furthering the state of PKM as a whole by building atop <a href={URL_DOCS_STD_BED}>"standardization bedrock"</a> instead of just creating a single application.
       </div>
     </div>
   </section>
@@ -127,9 +127,9 @@
     <span class="description-body description-body-col">
       <TendNTinkerCards content={
         {
-          'Bonsais'        : [ROUTE_TREE      , 'Browse some example knowledge bonsais.'],
-          // #todo: germinator
-          // 'The Germinator' : [URL_GERMINATOR        , 'Query an LLM to generate conceptual analyses.'],
+          'GitHub'         : [URL_SOCIAL_GITHUB , 'Tinker with projects and code.'],
+          'Bonsais'        : [ROUTE_TREE        , 'Browse some example knowledge bonsais.'],
+          // 'The Germinator' : [URL_GERMINATOR    , 'Query an LLM to generate conceptual analyses.'],
           'Markdown'       : [URL_VSCODE_PLUGIN , 'Tend your markdown notes in VSCode.'],
           // 'CLI'            : [URL_TENDR_CLI     , 'Tend your markdown notes in the CLI.'],
         }
@@ -271,9 +271,7 @@
     align-items: center;
     font-size: 1rem;
     padding: 2rem;
-  }
-
-  .oss-description-txt {
+    /* text */
     font-size: 1.25rem;
     padding: 1rem;
     text-align: center;
@@ -281,7 +279,7 @@
 
   .oss-logo {
     /* small */
-    width: 50%;
+    width: 25%;
     margin: 1rem;
   }
 
@@ -323,7 +321,7 @@
     }
 
     .oss-logo {
-      width: 25%;
+      width: 100%;
       margin: 4rem;
     }
 

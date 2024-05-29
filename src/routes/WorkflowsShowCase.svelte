@@ -1,9 +1,16 @@
 <script lang='ts'>
+  import {
+    URL_REPO_CAML,
+    URL_REPO_SEMTREE,
+    URL_REPO_TREEHOUZE,
+    URL_REPO_WIKIREFS,
+  } from '../lib/util/const';
   let hovered: boolean = false;
 </script>
 
 <div class="workflow-container" role="list">
   <div class="workflow"
+       on:click="{() => window.location.href = URL_REPO_WIKIREFS}"
        on:mouseover="{() => hovered = 1}"
        on:mouseout="{() => hovered = 0}"
        on:focus="{() => hovered = 2}"
@@ -11,9 +18,10 @@
        role="listitem"
        tabindex="-1">
     <h2 class="workflow-title">Concept Webs</h2>
-    <p class="workflow-description">Extend markdown with <code>[[wikirefs]]</code> and <code>:semantic::attributes</code></p>
+    <p class="workflow-description">Extend markdown with <code>[[wikirefs]]</code> for quick associative linking</p>
   </div>
   <div class="workflow"
+       on:click="{() => window.location.href = URL_REPO_SEMTREE}"
        on:mouseover="{() => hovered = 2}"
        on:mouseout="{() => hovered = 0}"
        on:focus="{() => hovered = 2}"
@@ -21,9 +29,21 @@
        role="listitem"
        tabindex="-1">
     <h2 class="workflow-title">Semantic Trees</h2>
-    <p class="workflow-description">Cultivate and train a knowledge bonsai in markdown</p>
+    <p class="workflow-description">Cultivate and train a unified knowledge bonsai across a collection of markdown files</p>
   </div>
   <div class="workflow"
+       on:click="{() => window.location.href = URL_REPO_CAML}"
+       on:mouseover="{() => hovered = 2}"
+       on:mouseout="{() => hovered = 0}"
+       on:focus="{() => hovered = 2}"
+       on:blur="{() => hovered = 0}"
+       role="listitem"
+       tabindex="-1">
+    <h2 class="workflow-title">Attribute Metadata</h2>
+    <p class="workflow-description">Defines <code>:semantic::attributes</code> for clean, lean, yaml-like structured data</p>
+  </div>
+  <div class="workflow"
+       on:click="{() => window.location.href = URL_REPO_TREEHOUZE}"
        on:mouseover="{() => hovered = 3}"
        on:mouseout="{() => hovered = 0}"
        on:focus="{() => hovered = 2}"
@@ -31,7 +51,7 @@
        role="listitem"
        tabindex="-1">
     <h2 class="workflow-title">Memory Palaces</h2>
-    <p class="workflow-description">Explore the visual graphs that emerge from your markdown notes</p>
+    <p class="workflow-description">Experience and interact with a unified visual-spatial representation that emerges from the relationships formed across markdown notes</p>
   </div>
   <!-- #todo: germinator -->
   <!-- <div class="workflow"
@@ -48,6 +68,7 @@
 
 <style>
   .workflow-container {
+    cursor: pointer;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
