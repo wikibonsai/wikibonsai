@@ -1,6 +1,7 @@
 <script lang='ts'>
   import type { PageData } from './$types';
   import {
+    ROUTE_CONSULT,
     ROUTE_TREE,
     URL_DOCS_STD_BED,
     // URL_GERMINATOR,
@@ -47,7 +48,7 @@
       </p> -->
     </div>
     <div class="btn-container">
-      <button class="btn" on:click={goTo(URL_REPO_WIKIBONSAI)}>About</button>
+      <!-- <button class="btn" on:click={goTo(URL_REPO_WIKIBONSAI)}>About</button> -->
       <button class="btn" on:click={goTo(ROUTE_CONSULT)}>Consult</button>
       <!-- <button class="btn" on:click={goTo(ROUTE_TREE)}>Knowledge Bonsai</button> -->
       <!-- <DropDown title={'Knowledge Bonsais'} items={data.trees}></DropDown> -->
@@ -132,6 +133,7 @@
           // 'The Germinator' : [URL_GERMINATOR    , 'Query an LLM to generate conceptual analyses.'],
           'Markdown'       : [URL_VSCODE_PLUGIN , 'Tend your markdown notes in VSCode.'],
           // 'CLI'            : [URL_TENDR_CLI     , 'Tend your markdown notes in the CLI.'],
+          'Consult'        : [ROUTE_CONSULT     , 'Get help with workflows or tech setup.'],
         }
       }></TendNTinkerCards>
     </span>
@@ -188,6 +190,8 @@
   }
 
   /* description sections */
+
+  /* todo: create description component */
 
   .description {
     text-align: center;

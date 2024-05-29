@@ -3,6 +3,7 @@
 ////
 // local routes
 export const ROUTE_ROOT          : string = '/';
+export const ROUTE_CONSULT       : string = '/consult';
 export const ROUTE_TREE          : string = '/tree';
 ////
 // external urls

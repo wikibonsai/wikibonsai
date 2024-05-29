@@ -1,6 +1,7 @@
 <script lang='ts'>
   import { onMount } from 'svelte';
   import {
+    ROUTE_CONSULT,
     ROUTE_TREE,
     // URL_GERMINATOR,
     URL_SOCIAL_GITHUB,
@@ -59,6 +60,7 @@
         <!-- #todo: germinator -->
         <!-- <a href={URL_GERMINATOR} class="nav-link">Germinator</a> -->
         <a href={URL_VSCODE_PLUGIN} class="nav-link">Markdown</a>
+        <a href={ROUTE_CONSULT} class="nav-link">Consult</a>
       </div>
       <!-- #todo: germinator -->
       <!-- <button class="btn btn-pad">sign up</button> -->
