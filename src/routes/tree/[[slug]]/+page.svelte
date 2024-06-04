@@ -1,7 +1,7 @@
 <script lang='ts'>
   import type { PageData } from './$types'
   import { page } from '$app/stores';
-  import { ROUTE_ROOT, ROUTE_TREE } from '$lib/util/const';
+  import { ROUTE_ROOT, ROUTE_TREE, URL_GERMINATOR } from '$lib/util/const';
   import { goTo } from '$lib/util/func';
   import { resultMkmp } from '$lib/util/store';
   import HamburgerMenu from '$lib/components/component/HamburgerMenu.svelte';
@@ -21,10 +21,9 @@
         ←
       </button>
     </div>
-    <!-- #todo: germinator -->
-    <!-- <span class="grow-your-own">
+    <span class="grow-your-own">
       Grow your own with <a href={URL_GERMINATOR}>The Germinator!</a>
-    </span> -->
+    </span>
     <Theme pin={true}></Theme>
   </div>
   <MarkMap markdown={data.tree.markdown}

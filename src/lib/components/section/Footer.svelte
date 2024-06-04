@@ -1,6 +1,7 @@
 <script lang='ts'>
   import {
     // URL_REPO_WIKIBONSAI,
+    // URL_REPO_GERMINATOR,
     // URL_REPO_VSCODE,
     // URL_REPO_TENDR,
     // URL_REPO_ASTRO,
@@ -10,36 +11,23 @@
     URL_DOCS_DESIGN,
     URL_DOCS_PHILOSOPHY,
     URL_DOCS_USE,
-    URL_SOCIAL_GITHUB,
-    URL_SOCIAL_X,
   } from '$lib/util/const';
 
-  import { theme } from '$lib/util/store';
   import Logo from '$lib/components/element/Logo.svelte';
-
-  $: logoGitHub = `/img/social/github-mark-${$theme}.svg`;
-  $: logoX = `/img/social/x-${$theme}.png`;
+  import SocialBar from '$lib/components/component/SocialBar.svelte';
 </script>
 
 <footer class="footer">
   <div class="footer-content">
     <div class="footer-column">
       <Logo size={'small'} wTxt={true}></Logo>
-      <div class="connect-container">
-        <div class="social-links">
-          <a href={URL_SOCIAL_GITHUB} class="social-link img-btn" aria-label="GitHub">
-            <img src={logoGitHub} alt="GitHub" style="height:20px;width:20px;">
-          </a>
-          <a href={URL_SOCIAL_X} class="social-link img-btn" aria-label="X">
-            <img src={logoX} alt="X" style="height:20px;width:20px;">
-          </a>
-        </div>
-      </div>
+      <SocialBar />
     </div>
     <div class="footer-column links">
       <!-- <div class="footer-column">
         <span class="footer-title">Projects</span>
         <a href={URL_REPO_WIKIBONSAI}>WikiBonsai</a>
+        <a href={URL_REPO_GERMINATOR}>Germinator</a>
         <a href={URL_REPO_VSCODE}>vscode-wikibonsai</a>
         <a href={URL_REPO_TENDR}>tendr-cli</a>
         <a href={URL_REPO_ASTRO}>astro-wikibonsai</a>
@@ -64,13 +52,6 @@
 </footer>
 
 <style>
-  .connect-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-  }
-
   .copyright {
     color: var(--accent-text-color);
     width: 100%;
@@ -121,25 +102,6 @@
     color: var(--accent-text-color);
     font-weight: 600;
     margin-bottom: 0.5rem;
-  }
-
-  .social-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0.5rem 0;
-  }
-
-  .social-link img {
-    height: 20px;
-    width: 20px;
-  }
-
-  .social-links {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    margin-bottom: 1rem;
   }
 
   @media (min-width: 768px) {

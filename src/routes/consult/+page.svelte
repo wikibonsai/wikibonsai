@@ -5,14 +5,14 @@
   import Header from '$lib/components/section/Header.svelte';
 </script>
 
-<Header></Header>
+<Header />
 <main class="main-content">
   <section class="description">
     <h1 class="description-title">📋 Consultation</h1>
     <span class="description-body"><strong>Are you an organization...</strong></span>
     <span class="description-body"><strong>...with a need to preserve institutional knowledge?</strong></span>
     <span class="description-body"><strong>...struggling to onboard new hires quickly due to slow knowledge-share?</strong></span>
-    <span class="description-body"><strong>...tired of spending time guiding customers through a wide array of products and services?</strong></span>
+    <span class="description-body"><strong>...that wants to increase sales by just showcasing products and services more effectively?</strong></span>
     <span class="description-body">
       By capturing, curating, consolidating, and cataloging knowledge, we can harness the know-how we're exposed to in a systematic way that can grow in usefulness over time, while preventing erosion of meaning.
     </span>
@@ -25,7 +25,7 @@
     <button class="btn" on:click={goTo(URL_SOCIAL_X)}>DM on X</button>
   </section>
 </main>
-<Footer></Footer>
+<Footer />
 
 <style>
   /* todo: create description component */

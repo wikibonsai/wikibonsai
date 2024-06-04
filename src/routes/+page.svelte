@@ -1,10 +1,11 @@
 <script lang='ts'>
   import type { PageData } from './$types';
   import {
+    DEMO_MKDN,
     ROUTE_CONSULT,
     ROUTE_TREE,
     URL_DOCS_STD_BED,
-    // URL_GERMINATOR,
+    URL_GERMINATOR,
     URL_REPO_WIKIBONSAI,
     URL_SOCIAL_GITHUB,
     URL_SSG_ASTRO,
@@ -20,16 +21,20 @@
   // sections
   import AppTabSelect from './AppTabSelect.svelte';
   import BonsaiJungleGymSVG from './BonsaiJungleGymSVG.svelte';
+  import DescriptionSection from './DescriptionSection.svelte';
   import TendNTinkerCards from './TendNTinkerCards.svelte';
   import WorkflowsShowCase from './WorkflowsShowCase.svelte';
 
   export let data: PageData;
 
-  // #todo: germinator
-  // let temp: SVGSVGElement | null ;
+  let temp: SVGSVGElement | null ;
+  const logoImgSrcAstro: string = '/img/logo/Astro.svg';
+  const logoImgSrcJekyll: string = '/img/logo/jekyll.png';
+  const logoImgSrcEleventy: string = '/img/logo/eleventy-logo.svg';
+  const ossImgSrc: string = '/img/logo/oss.svg';
 </script>
 
-<Header></Header>
+<Header />
 <main class="main-content">
   <section class="intro">
     <div class="title-container">
@@ -54,92 +59,79 @@
       <!-- <DropDown title={'Knowledge Bonsais'} items={data.trees}></DropDown> -->
     </div>
   </section>
-  <BonsaiJungleGymSVG></BonsaiJungleGymSVG>
+  <BonsaiJungleGymSVG />
   <!-- workflows section -->
-  <section class="description">
-    <h1 class="description-title">Workflows</h1>
-    <div class="description-body description-body-col">
-      The WikiBonsai project transforms a collection of markdown files into a text-based, easy-to-navigate, jungle gym for thought with an API for the mind. This is accomplished by enabling specific personal knowledge management (PKM) workflows:
-      <WorkflowsShowCase></WorkflowsShowCase>
-    </div>
-  </section>
-  <!-- #todo: germinator -->
+  <DescriptionSection
+    title={'Workflows'}
+    description={'The WikiBonsai project transforms a collection of markdown files into a text-based, easy-to-navigate, jungle gym for thought with an API for the mind. This is accomplished by enabling specific personal knowledge management (PKM) workflows:'}>
+      <WorkflowsShowCase />
+  </DescriptionSection>
   <!-- ai section -->
-  <!-- <section class="description">
-    <h1 class="description-title">🌱 Tools for Germinating</h1>
-    <div class="description-body description-body-col">
-      Tease apart complex concepts with the help of AI analysis.
+  <DescriptionSection
+    title={'🌱 Tools for Germinating'}
+    description={'Grow your knowledge base with the help of AI-generated seedlings. These starters can help kick off the process of conceptual analysis whether you\'re new to that topic or an old-hand looking for a reference.'}>
       <div class="germ-viz">
         <span class="germinator">🤖</span>
         <MarkMap markdown={DEMO_MKDN}
-                 markmap={temp}
-                 move={false}
-                 height={25}
-                 width={45}>
-        </MarkMap>
+                markmap={temp}
+                move={false}
+                height={25}
+                width={45} />
       </div>
       <div class="come-with-me">
         <span>Come with me if you want to</span>
         <button class="btn" on:click={goTo(URL_GERMINATOR)}>grow</button>
       </div>
-    </div>
-  </section> -->
+  </DescriptionSection>
   <!-- app-group section -->
-  <section class="description">
-    <h1 class="description-title">✂️ Tools for Tending</h1>
-    <div class="description-body description-body-col">
-      With WikiBonsai workflows, a collection of notes or a wiki is transformed into a unified, growing collection, where taking notes becomes synonymous with gardening and the results surely shall bear fruit. Tending your markdown digital garden is possible from...
-      <AppTabSelect></AppTabSelect>
-    </div>
-  </section>
+  <DescriptionSection
+    title={'✂️ Tools for Tending'}
+    description={'With WikiBonsai workflows, a collection of notes or a wiki is transformed into a unified, growing collection and taking notes becomes synonymous with gardening -- whose results will surely bear fruit. Tending your markdown digital garden is possible from...'}>
+      <AppTabSelect />
+  </DescriptionSection>
   <!-- ssg section -->
-  <section class="description">
-    <h1 class="description-title">💐 Tools for Showcasing</h1>
-    <div class="description-body description-body-col">
-      By simply turning on WikiBonsai workflows, you can extend a blog, publish a wiki, or simply showcase what you've cultivated with your favorite static site generator.
+  <DescriptionSection
+    title={'💐 Tools for Showcasing'}
+    description={'By simply turning on WikiBonsai workflows, you can extend a blog, publish a wiki, or simply showcase what you\'ve cultivated with your favorite static site generator.'}>
       <div class="ssg">
         <a href={URL_SSG_ASTRO}>
-          <img class="ssg-logo img-btn" src="/img/social/Astro.svg" alt="astro-wikibonsai"/>
+          <img class="ssg-logo img-btn" src={logoImgSrcAstro} alt="astro-wikibonsai"/>
         </a>
         <a href={URL_SSG_ELEVENTY}>
-          <img class="ssg-logo img-btn" src="/img/social/eleventy-logo.svg" alt="eleventy-wikibonsai"/>
+          <img class="ssg-logo img-btn" src={logoImgSrcEleventy} alt="eleventy-wikibonsai"/>
         </a>
         <a href={URL_SSG_JEKYLL}>
-          <img class="ssg-logo img-btn" src="/img/social/jekyll.png"alt="jekyll-wikibonsai"/>
+          <img class="ssg-logo img-btn" src={logoImgSrcJekyll} alt="jekyll-wikibonsai"/>
         </a>
       </div>
-    </div>
-  </section>
+  </DescriptionSection>
   <!-- open source section -->
-  <section class="description">
-    <h1 class="description-title">✨ Tools for Tinkering</h1>
-    <div class="description-body description-body-row">
+  <DescriptionSection
+    title={'✨ Tools for Tinkering'}
+    orientation={'row'}>
       <a class="oss-logo" href={URL_SOCIAL_GITHUB}>
-        <img class="img-btn" src="/img/social/oss.svg" alt="oss"/>
+        <img class="img-btn" src={ossImgSrc} alt="oss"/>
       </a>
       <div class="oss-description">
         This project is about strategically implementing and open-sourcing functionality that will benefit the most users and developers across the digital ecosystem. Thus, it abides by the Unix Philosophy: Everything is modularized and implemented in such a way as to maximize re-use whether it be for the browser, desktop, mobile, or headset. It's about furthering the state of PKM as a whole by building atop <a href={URL_DOCS_STD_BED}>"standardization bedrock"</a> instead of just creating a single application.
       </div>
-    </div>
-  </section>
+  </DescriptionSection>
   <!-- call to action -->
-  <section class="description">
-    <h1 class="description-title">So Go Tend'n'Tinker...</h1>
-    <span class="description-body description-body-col">
-      <TendNTinkerCards content={
-        {
-          'GitHub'         : [URL_SOCIAL_GITHUB , 'Tinker with projects and code.'],
-          'Bonsais'        : [ROUTE_TREE        , 'Browse some example knowledge bonsais.'],
-          // 'The Germinator' : [URL_GERMINATOR    , 'Query an LLM to generate conceptual analyses.'],
-          'Markdown'       : [URL_VSCODE_PLUGIN , 'Tend your markdown notes in VSCode.'],
-          // 'CLI'            : [URL_TENDR_CLI     , 'Tend your markdown notes in the CLI.'],
-          'Consult'        : [ROUTE_CONSULT     , 'Get help with workflows or tech setup.'],
-        }
-      }></TendNTinkerCards>
-    </span>
-  </section>
+  <DescriptionSection
+    title={'So Go Tend\'n\'Tinker...'}>
+    <TendNTinkerCards content={
+      {
+        'GitHub'         : [URL_SOCIAL_GITHUB , 'Tinker with projects and code.'],
+        'Bonsais'        : [ROUTE_TREE        , 'Browse some example knowledge bonsais.'],
+        'The Germinator' : [URL_GERMINATOR    , 'Query an LLM to generate conceptual analyses.'],
+        'Markdown'       : [URL_VSCODE_PLUGIN , 'Tend your markdown notes in VSCode.'],
+        // 'CLI'            : [URL_TENDR_CLI     , 'Tend your markdown notes in the CLI.'],
+        'Consult'        : [ROUTE_CONSULT     , 'Get help with workflows or tech setup.'],
+      }
+    } />
+  </DescriptionSection>
 </main>
-<Footer></Footer>
+<Footer />
 
 <style>
   /* todo: logo img + text styles are duplicated in header/footer */

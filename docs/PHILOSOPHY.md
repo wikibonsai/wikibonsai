@@ -85,6 +85,7 @@ The following is one possible technical definition of "censorship":
 > - The nonconsensual distortion or deletion of the coordinate system.
 > - The total blockage or restricted movement to or between any points in that space.
 > - The disallowance of departing the given information space.
+> - The disallowance of improving the information's concordance with observed reality.
 
 This project aims to provide tools for individuals to build such information spaces and evangelize this definition of censorship, which is more precise than is typical and helps uncover concrete courses of action to address censorship.
 

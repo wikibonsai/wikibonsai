@@ -8,6 +8,7 @@ export const ROUTE_TREE          : string = '/tree';
 ////
 // external urls
 // apps
+export const URL_GERMINATOR      : string = 'https://germ-inator.netlify.app';
 export const URL_TENDR_CLI       : string = 'https://www.npmjs.com/package/tendr-cli';
 export const URL_VSCODE_PLUGIN   : string = 'https://marketplace.visualstudio.com/items?itemName=manunamz.vscode-wikibonsai';
 // docs
@@ -20,6 +21,7 @@ export const URL_DOCS_STD_BED    : string = 'https://github.com/wikibonsai/wikib
 // repos
 // app
 export const URL_REPO_WIKIBONSAI : string = 'https://github.com/wikibonsai/wikibonsai';
+export const URL_REPO_GERMINATOR : string = 'https://github.com/wikibonsai/germinator';
 export const URL_REPO_VSCODE     : string = 'https://github.com/wikibonsai/vscode-wikibonsai';
 export const URL_REPO_TENDR      : string = 'https://github.com/wikibonsai/tendr-cli';
 // ssg
@@ -61,5 +63,7 @@ export const DEMO_MKDN           : string = `
       - tree
       - web
   - ai
-    - concept analysis
+    - concept
+      - analysis
+      - synthesis
 `;

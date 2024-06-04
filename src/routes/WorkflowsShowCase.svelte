@@ -53,17 +53,6 @@
     <h2 class="workflow-title">Memory Palaces</h2>
     <p class="workflow-description">Experience and interact with a unified visual-spatial representation that emerges from the relationships formed across markdown notes</p>
   </div>
-  <!-- #todo: germinator -->
-  <!-- <div class="workflow"
-       on:mouseover="{() => hovered = 4}"
-       on:mouseout="{() => hovered = 0}"
-       on:focus="{() => hovered = 2}"
-       on:blur="{() => hovered = 0}"
-       role="listitem"
-       tabindex="-1">
-    <h2 class="workflow-title">AI-Enabled</h2>
-    <p class="workflow-description">Assisted concept analysis with LLMs</p>
-  </div> -->
 </div>
 
 <style>
@@ -83,7 +72,7 @@
     justify-content: center;
     align-items: center;
     /* workflow */
-    height: 150px;
+    height: 200px;
     background-color: var(--background-color);
     border: 1px solid var(--accent-color-dark);
     border-radius: 8px;

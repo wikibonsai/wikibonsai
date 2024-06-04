@@ -1,7 +1,11 @@
 <script lang='ts'>
   import { URL_TENDR_CLI, URL_VSCODE_PLUGIN } from '$lib/util/const';
+  import WindowAppIcon from '$lib/components/icons/WindowAppIcon.svelte';
+  import WindowCliIcon from '$lib/components/icons/WindowCLIIcon.svelte';
 
   let selected: string = 'ide';
+  const demoSrcCli: string = '/img/demo-tendr-cli.gif';
+  const demoSrcApp: string = '/img/demo-vscode-wikibonsai.png';
 
   function select(tab: string): void {
     selected = tab;
@@ -9,33 +13,29 @@
 </script>
 
 <div class="tab-container">
-  <div class="tab-row">
+  <button class="tab" class:selected={selected === 'cli'} on:click={() => select('cli')}>
     <a href={URL_TENDR_CLI}>
-      <img class="img-btn" src="/img/icons/icons8-cli-64.png" alt="cli">
+      <WindowCliIcon class="img-btn" />
     </a>
-    <button class="tab" class:selected={selected === 'cli'} on:click={() => select('cli')}>
-      ...the CLI.
-    </button>
-  </div>
-  <div class="tab-row">
+    ...the CLI
+  </button>
+  <button class="tab" class:selected={selected === 'ide'} on:click={() => select('ide')}>
     <a href={URL_VSCODE_PLUGIN}>
-      <img class="img-btn" src="/img/icons/icons8-ide-64.png" alt="vscode">
+      <WindowAppIcon class="img-btn" />
     </a>
-    <button class="tab" class:selected={selected === 'ide'} on:click={() => select('ide')}>
-      ...an IDE.
-    </button>
-  </div>
+    ...an IDE
+  </button>
 </div>
 {#if selected === 'cli'}
   <div class="app-content">
     <a href={URL_TENDR_CLI}>
-      <img class="app-demo img-btn img-cli" src="/img/demo-tendr-cli.gif" alt="tendr-cli"/>
+      <img class="app-demo img-btn img-cli" src={demoSrcCli} alt="tendr-cli"/>
     </a>
   </div>
 {:else if selected === 'ide'}
   <div class="app-content">
     <a href={URL_VSCODE_PLUGIN}>
-      <img class="app-demo img-btn img-vscode" src="/img/demo-vscode-wikibonsai.png" alt="vscode-wikibonsai"/>
+      <img class="app-demo img-btn img-vscode" src={demoSrcApp} alt="vscode-wikibonsai"/>
     </a>
   </div>
 {/if}
@@ -62,19 +62,17 @@
 
   .tab-container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     padding-top: 2rem;
     padding-bottom: 1rem;
-  }
-
-  .tab-row {
-    display: flex;
-    justify-content: space-around;
+    /* small */
+    flex-direction: column;
   }
 
   .tab {
-    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: var(--background-color);
     border: 1px solid var(--accent-color-dark);
     border-radius: 8px;
@@ -82,6 +80,8 @@
     margin: 0.5rem;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* small */
+    /* width: 70%; */
   }
 
   .tab:hover {
@@ -108,6 +108,14 @@
   @media (min-width: 768px) {
     .img-cli {
       width: 40%;
+    }
+
+    .tab {
+      width: 30%;
+    }
+
+    .tab-container {
+      flex-direction: row;
     }
   }
 </style>

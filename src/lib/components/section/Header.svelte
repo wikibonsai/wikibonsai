@@ -3,7 +3,7 @@
   import {
     ROUTE_CONSULT,
     ROUTE_TREE,
-    // URL_GERMINATOR,
+    URL_GERMINATOR,
     URL_SOCIAL_GITHUB,
     URL_VSCODE_PLUGIN,
   } from '$lib/util/const';
@@ -53,21 +53,18 @@
     <nav class={isMenuOpen ? 'nav open' : 'nav'}>
       <div class="nav-items">
         {#if screensize === 'small'}
-          <Theme></Theme>
+          <Theme />
         {/if}
         <a href={URL_SOCIAL_GITHUB} class="nav-link">GitHub</a>
         <a href={ROUTE_TREE} class="nav-link">Bonsais</a>
-        <!-- #todo: germinator -->
-        <!-- <a href={URL_GERMINATOR} class="nav-link">Germinator</a> -->
+        <a href={URL_GERMINATOR} class="nav-link">Germinator</a>
         <a href={URL_VSCODE_PLUGIN} class="nav-link">Markdown</a>
         <a href={ROUTE_CONSULT} class="nav-link">Consult</a>
       </div>
-      <!-- #todo: germinator -->
-      <!-- <button class="btn btn-pad">sign up</button> -->
     </nav>
   </div>
   {#if screensize === 'large'}
-    <Theme></Theme>
+    <Theme />
   {/if}
 </header>
 
