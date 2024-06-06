@@ -4,7 +4,8 @@
     URL_REPO_SEMTREE,
     URL_REPO_TREEHOUZE,
     URL_REPO_WIKIREFS,
-  } from '../lib/util/const';
+  } from '$lib/util/const';
+
   let hovered: boolean = false;
 </script>
 

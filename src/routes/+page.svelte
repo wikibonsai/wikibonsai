@@ -19,11 +19,11 @@
   import Header from '$lib/components/section/Header.svelte';
   import MarkMap from '$lib/components/component/MarkMap.svelte';
   // sections
-  import AppTabSelect from './AppTabSelect.svelte';
-  import BonsaiJungleGymSVG from './BonsaiJungleGymSVG.svelte';
-  import DescriptionSection from './DescriptionSection.svelte';
-  import TendNTinkerCards from './TendNTinkerCards.svelte';
-  import WorkflowsShowCase from './WorkflowsShowCase.svelte';
+  import AppTabSelect from '$lib/components/section/AppTabSelect.svelte';
+  import BonsaiJungleGymSVG from '$lib/components/section/BonsaiJungleGymSVG.svelte';
+  import DescriptionSection from '$lib/components/section/DescriptionSection.svelte';
+  import TendNTinkerCards from '$lib/components/section/TendNTinkerCards.svelte';
+  import WorkflowsShowCase from '$lib/components/section/WorkflowsShowCase.svelte';
 
   export let data: PageData;
 
