@@ -4,6 +4,7 @@ Below are a collection of resources that influenced and inspired this project.
 
 ## Books
 
+- [How To Create A Mind][bk-how-to-mind]
 - [How To Read A Book][bk-how-to-read]
 - [Make It Stick][bk-make-stick]
 - [Systemantics][bk-systemantics]
@@ -24,6 +25,7 @@ Below are a collection of resources that influenced and inspired this project.
 
 - [Andy's Notes][site-andys-notes]
 - [Digital Gardeners][site-digital-gardeners]
+- [EfratFurst][site-efratfurst]
 - [zettelkasten.de][site-zettel]
 
 ## Tech
@@ -49,6 +51,7 @@ Below are a collection of resources that influenced and inspired this project.
 [app-remnote]: <https://www.remnote.com/>
 [app-roam]: <https://roamresearch.com/>
 
+[bk-how-to-mind]: <https://www.goodreads.com/book/show/13589153-how-to-create-a-mind>
 [bk-how-to-read]: <https://www.goodreads.com/book/show/567610.How_to_Read_a_Book>
 [bk-lang-create]: <https://www.goodreads.com/en/book/show/40192316>
 [bk-make-stick]: <https://www.goodreads.com/book/show/18770267-make-it-stick?from_search=true&from_srp=true&qid=iNTKEG1DV3&rank=1>
@@ -72,4 +75,5 @@ Below are a collection of resources that influenced and inspired this project.
 
 [site-andys-notes]: <https://notes.andymatuschak.org/About_these_notes>
 [site-digital-gardeners]: <https://github.com/MaggieAppleton/digital-gardeners>
+[site-efratfurst]: <https://sites.google.com/view/efratfurst/teaching-with-learning-in-mind>
 [site-zettel]: <https://zettelkasten.de/>
