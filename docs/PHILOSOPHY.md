@@ -78,7 +78,13 @@ As social creatures, we are very easily influenced and easily influence others. 
 
 ### Freedom From Censorship (Of The Environment)
 
-The following is one possible technical definition of "censorship":
+The following is a [precise definition of "censorship"][twt-censorship]:
+
+> "the restriction of the _public expression_ of or _public access_ to information by _authority_ when the information is thought to have the capacity to undermine the authority by making it **accountable** to the public."
+> 
+> ~ Censored by Molly Roberts
+
+The following is a definition of "censorship" with respect to information space:
 
 > Given an information space, with a coordinate system mutually agreed upon by all participating agents, where each unique coordinate maps to a unique piece of information, censorship would include:
 > 
@@ -135,6 +141,7 @@ So when any child asks, "Why are we learning this?" perhaps we should tell them:
 [pst-git-branch]: <https://nvie.com/posts/a-successful-git-branching-model/>
 [site-digital-gardeners]: <https://github.com/MaggieAppleton/digital-gardeners>
 [sydney-bing]: <https://stratechery.com/2023/from-bing-to-sydney-search-as-distraction-sentient-ai/>
+[twt-censorship]: <https://x.com/wibomd/status/1789366907952345513>
 [utb-gorilla-exp]: <https://www.youtube.com/watch?v=vJG698U2Mvo>
 [utb-internet-search]: <https://www.youtube.com/watch?v=T3wiGSXbeQE>
 [utb-know-return]: <https://www.youtube.com/watch?v=8R-vkbxX8r4&t=2007s>
