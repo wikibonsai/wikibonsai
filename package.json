@@ -21,8 +21,10 @@
   },
   "main": "out/index.js",
   "scripts": {
-    "clean": "del-cli .svelte-kit .netlify build",
     "build": "vite build",
+    "clean": "del-cli .svelte-kit .netlify build",
+    "rebuild": "yarn clean && yarn build",
+    "postbuild": "npx svelte-sitemap --domain https://wikibonsai.io",
     "build-cli": "tsc -p . --outDir dist && chmod +x dist/index.js",
     "dev": "vite dev",
     "preview": "vite preview",
@@ -36,7 +38,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@sveltejs/adapter-auto": "^3.2.1",
+    "@sveltejs/adapter-static": "^3.0.2",
     "@sveltejs/kit": "^2.5.10",
     "@sveltejs/vite-plugin-svelte": "^3.1.0",
     "@types/eslint": "^8.56.10",
@@ -53,6 +55,7 @@
     "svelte": "^4.2.17",
     "svelte-check": "^3.7.1",
     "svelte-preprocess": "^5.1.4",
+    "svelte-sitemap": "^2.6.0",
     "ts-node": "^8.3.0",
     "tslib": "^2.6.2",
     "typescript": "^5.4.5",
