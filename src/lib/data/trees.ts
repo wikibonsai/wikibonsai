@@ -17,11 +17,14 @@ export const trees: Tree[] = Object.entries(import.meta.glob('/trees/**/*.md', {
                                      const slug: string =  (fname === '_index') ? '' : filepath.split('/').slice(-1)[0].replace('.md', '');
                                      const route: string = (fname === '_index') ? '/tree' : '/tree/' + slug;
                                      const markdown: string = fs.readFileSync(`./trees/${fname}.md`, 'utf-8');
+                                     let concepts: string[] = markdown.match(/\[\[([^[\]]+?)\]\]/g) || [];
+                                     concepts = concepts.map(concept => concept.slice(2, -2));
                                      return {
                                        fname,
                                        title,
                                        markdown,
                                        slug,
                                        route,
+                                       concepts,
                                      };
                                    });
