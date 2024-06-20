@@ -58,7 +58,8 @@ The following links point to repositories of the WikiBonsai project and are orga
 
 - For Use:
   - AI:
-    - [semtree-germ][wibomd-repo-semtree-germ]: An AI-powered "[Semantic Tree Germinator][demo-semtree-germ]" to generate starter semantic trees to transplant into one's own digital garden.
+    - [germinator][wibomd-repo-germinator]: An AI-powered [semantic seedling germinator][demo-germinator] that generates starter semantic mappings of concepts which are easily transplantable into one's own digital garden.
+      - [semtree-germ][wibomd-repo-semtree-germ]: An earlier version of the germinator that focused on [semantic trees][demo-semtree-germ].
     - [prompt][wibomd-repo-promp]: Prompts for AI-powered digital gardening.
   - Notes:
     - [vscode-wikibonsai][wibomd-repo-vscode-wikibonsai]: A [VSCode][git-vscode] extension for tending a WikiBonsai digital garden.
@@ -124,6 +125,7 @@ As with pretty much all human endeavors, this project does not represent any kin
 
 [art-unix-phil]: <https://ia902701.us.archive.org/12/items/bstj57-6-1899/bstj57-6-1899_text.pdf>
 [britannica]: <https://britannica.com/>
+[demo-germinator]: <https://germ-inator.netlify.app>
 [demo-semtree-germ]: <https://semantic-tree.netlify.app>
 [reddit-musk]: <https://www.reddit.com/r/IAmA/comments/2rgsan/comment/cnfput4/>
 [git-markdown-it]: <https://github.com/markdown-it/markdown-it>
@@ -159,6 +161,7 @@ As with pretty much all human endeavors, this project does not represent any kin
 [wibomd-repo-caudex]: <https://github.com/wikibonsai/caudex>
 [wibomd-repo-eleventy-wikibonsai]: <https://github.com/wikibonsai/eleventy-wikibonsai>
 [wibomd-repo-garden-beds]: <https://github.com/wikibonsai/garden-beds>
+[wibomd-repo-germinator]: <https://github.com/wikibonsai/germinator>
 [wibomd-repo-germs]: <https://github.com/wikibonsai/germs>
 [wibomd-repo-jekyll-graph]: <https://github.com/wikibonsai/jekyll-graph>
 [wibomd-repo-jekyll-semtree]: <https://github.com/wikibonsai/jekyll-semtree>
