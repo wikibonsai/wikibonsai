@@ -2,10 +2,19 @@
   export let title: string;
   export let description: string = '';
   export let orientation: 'col' | 'row' = 'col';
+
+  function slugify(text: string): string {
+    // remove diacritics (accents) from the text
+    const normalizedText = text.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+    // replace non-word characters with hyphens
+    const slug = normalizedText.replace(/\W+/g, '-').toLowerCase();
+    // remove leading and trailing hyphens
+    return slug.replace(/^-+|-+$/g, '');
+  }
 </script>
 
 <section class="description">
-  <h1 class="description-title">{title}</h1>
+  <h1 id={slugify(title)} class="description-title">{title}</h1>
   <div class="description-body"
        class:description-body-col={orientation === 'col'}
        class:description-body-row={orientation === 'row'}>
