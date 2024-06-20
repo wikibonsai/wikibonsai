@@ -70,7 +70,6 @@ The following links point to repositories of the WikiBonsai project and are orga
     - [eleventy-wikibonsai][wibomd-repo-eleventy-wikibonsai]: An example setup to enable WikiBonsai workflows for eleventy-based static site generation (SSG).
   - Starters:
     - [garden-beds][wibomd-repo-garden-beds]: A collection of starter WikiBonsai digital gardens.
-    - [germs][wibomd-repo-germs]: A collection of markdown files meant to be added to pre-existing WikiBonsai, or other style, digital gardens.
 - For Dev
   - Markdown Parsers:
     - [markdown-it-caml][wibomd-repo-markdown-it-caml]: A [markdown-it][git-markdown-it] plugin to enable  `:colon::attributes`.
@@ -162,7 +161,6 @@ As with pretty much all human endeavors, this project does not represent any kin
 [wibomd-repo-eleventy-wikibonsai]: <https://github.com/wikibonsai/eleventy-wikibonsai>
 [wibomd-repo-garden-beds]: <https://github.com/wikibonsai/garden-beds>
 [wibomd-repo-germinator]: <https://github.com/wikibonsai/germinator>
-[wibomd-repo-germs]: <https://github.com/wikibonsai/germs>
 [wibomd-repo-jekyll-graph]: <https://github.com/wikibonsai/jekyll-graph>
 [wibomd-repo-jekyll-semtree]: <https://github.com/wikibonsai/jekyll-semtree>
 [wibomd-repo-jekyll-wikibonsai]: <https://github.com/wikibonsai/jekyll-wikibonsai>
