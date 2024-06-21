@@ -8,8 +8,8 @@ export const ROUTE_TREE          : string = '/tree';
 ////
 // external urls
 // apps
-export const URL_GERMINATOR      : string = 'https://germ-inator.netlify.app';
-export const URL_TENDR_CLI       : string = 'https://www.npmjs.com/package/tendr-cli';
+export const URL_GERMINATOR      : string = 'https://germ-inator.netlify.app/';
+export const URL_TENDR_CLI       : string = 'https://www.npmjs.com/package/tendr-cli/';
 export const URL_VSCODE_PLUGIN   : string = 'https://marketplace.visualstudio.com/items?itemName=manunamz.vscode-wikibonsai';
 // docs
 export const URL_DOCS_CITE       : string = 'https://github.com/wikibonsai/wikibonsai/tree/main/docs/CITE.md';

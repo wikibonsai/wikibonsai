@@ -1,23 +1,24 @@
 <script lang="ts">
+  import { URL_GERMINATOR } from '$lib/util/const';
+
   let isVisible: boolean = false;
   let url: string = '';
   let title: string = '';
 
   function handleLinkClick(event: MouseEvent) {
     const link: HTMLAnchorElement | null = (event.target as HTMLElement).closest('a');
-    if (link) {
-      const currentOrigin: string = window.location.origin;
-      const linkOrigin: string = new URL(link.href).origin;
-      console.log(linkOrigin !== currentOrigin, currentOrigin, linkOrigin);
-      // if external link, open in iframe
-      if ((link instanceof HTMLAnchorElement)
-        && (linkOrigin !== currentOrigin)
-      ) {
-        event.preventDefault();
-        url = link.href;
-        title = link.text;
-        isVisible = true;
-      }
+    if (!link) return;
+    const currentOrigin: string = window.location.origin;
+    const linkOrigin: string = new URL(link.href).origin;
+    // if external link, open in iframe
+    if ((link instanceof HTMLAnchorElement)
+      && (linkOrigin !== currentOrigin)
+      && (link.href !== URL_GERMINATOR)
+    ) {
+      event.preventDefault();
+      url = link.href;
+      title = link.text;
+      isVisible = true;
     }
   }
 
