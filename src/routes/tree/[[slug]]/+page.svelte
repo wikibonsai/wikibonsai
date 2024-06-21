@@ -7,8 +7,10 @@
   import HamburgerMenu from '$lib/components/component/HamburgerMenu.svelte';
   import MarkMap from '$lib/components/component/MarkMap.svelte';
   import Theme from '$lib/components/element/Theme.svelte';
+  import Window from './Window.svelte';
 
   export let data: PageData;
+  let windowComponent: any ;
 </script>
 
 <div class="main">
@@ -28,13 +30,19 @@
   </div>
   <MarkMap markdown={data.tree.markdown}
          bind:markmap={$resultMkmp}
+         on:externalLinkClicked={(event) => {
+          windowComponent.show = true;
+          windowComponent.url = event.detail.url;
+        }}
          height={100}
-         width={100}>
-  </MarkMap>
+         width={100} />
+  <Window bind:this={windowComponent}
+          on:close={() => (windowComponent.show = false)} />
 </div>
 
 <style>
   .back-btn {
+    color: var(--text-color);
     padding: 0.5rem;
     font-size: 2rem;
   }
