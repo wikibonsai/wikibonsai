@@ -3,6 +3,7 @@
 /* base */
 
 :root {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   /* dimensions */
 
   --toolbar-top-height: 40px; /* width should be 100vw minus the width of the side toolbar */
@@ -31,6 +32,8 @@
   --accent-color-dark: #b6d1c1;
   --textbox-color: #f7f6eb;
   --link-color: #01946a;
+  --internal-link-color: #01946a;
+  --external-link-color: #264caf;
   --branch-light: #8C6239;
   --branch-dark: #36290e;
   --leaf: #31AF31;
@@ -48,6 +51,8 @@ html[data-theme='light'] {
   --accent-color-dark: #b6d1c1;
   --textbox-color: #f7f6eb;
   --link-color: #01946a;
+  --internal-link-color: #01946a;
+  --external-link-color: #264caf; /* #0097e6 */
   --branch-light: #8C6239;
   --branch-dark: #36290e;
   --leaf: #31AF31;
@@ -63,30 +68,12 @@ html[data-theme='dark'] {
   --box-background: #44434d;
   --textbox-color: #2f3038;
   --link-color: #00CC92;
+  --internal-link-color: #00CC92;
+  --external-link-color: #0097e6;
   --branch-light: #2d565e;
   --branch-dark: #1d1d1f;
   --leaf: #31AF31;
   --dirt: #2f3038;
-}
-
-/* garden themes */
-
-html[data-theme='day-garden'] {
-  --text-color: #5c5962;
-  --accent-text-color: #918f96;
-  --background-color: #e4f3ea;
-  --box-background: #fff;
-  --accent-color-light: #D1ECDC;
-  --accent-color-dark: #b6d1c1;
-  --textbox-color: #f7f6eb;
-  --link-color: #01946a;
-  --branch-light: #8C6239;
-  --branch-dark: #36290e;
-  --leaf: #31AF31;
-  --dirt: #f7f6eb;
-}
-
-html[data-theme='night-sky'] {
 }
 
 body {
@@ -94,9 +81,26 @@ body {
   color: var(--text-color);
 }
 
+/* default */
 a {
-  color: var(--link-color) !important;
+  color: var(--link-color);
+  text-decoration: none;
 }
+
+/* make internal/external distinction in markmap links */
+
+/* internal link */
+.markmap a[href^="/"] {
+  color: var(--internal-link-color) !important;
+  text-decoration: none;
+}
+
+/* external links */
+.markmap a[href^="http"] {
+  color: var(--external-link-color) !important;
+  text-decoration: none;
+}
+
 
 a:hover {
   cursor: pointer;
@@ -128,6 +132,15 @@ select {
   background: var(--btn-color--hover);
 }
 
+.btn-close {
+  fill: var(--text-color);
+}
+
+.btn-img-size {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
 /* utility buttons (for toolbars etc.) */
 
 .util-btn {
@@ -152,7 +165,6 @@ select {
 
 .img-btn:hover {
   transform: scale(1.15);
-  /* box-shadow: 0 4px 8px var(--hover-color); */
 }
 
 /* box */

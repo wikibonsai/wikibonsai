@@ -12,7 +12,7 @@
         class="util-btn"
         title="About"
         on:click={toggleAbtMdl}>
-  <InfoIcon class="w-6 h-6"></InfoIcon>
+  <InfoIcon id="infoIcon" alt="About" class="btn-img-size" />
 </button>
 
-<AbtModal bind:isOpen={isAbtMdlOpen}></AbtModal>
+<AbtModal bind:isOpen={isAbtMdlOpen} />

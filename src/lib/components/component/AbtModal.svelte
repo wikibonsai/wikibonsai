@@ -28,54 +28,41 @@
 
 <svelte:window on:keydown={handleKeydown} />
 
-<div class="modal"
-     class:opacity-0={!isOpen}
-     class:pointer-events-none={!isOpen}
-     class:modal-active={isOpen}>
-  <!-- Modal content -->
+<div class="modal" class:modal-open={isOpen}>
   <div class="modal-overlay"></div>
-  
-  <div class="modal-container">
-    <!-- Add margin if you want to see some of the overlay behind the modal-->
-    <div class="modal-content">
-      <!-- close / title -->
-      <button class="modal-close" on:click={closeModal}>
-        <svg class="title-color fill-current" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
-          <path d="M16.292 2.292l-1.584-1.584-6.708 6.708-6.708-6.708-1.584 1.584 6.708 6.708-6.708 6.708 1.584 1.584 6.708-6.708 6.708 6.708 1.584-1.584-6.708-6.708z"></path>
-        </svg>
+  <div class="modal-content">
+    <button class="modal-close" on:click={closeModal}>
+      <svg class="btn-close" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+        <path d="M16.292 2.292l-1.584-1.584-6.708 6.708-6.708-6.708-1.584 1.584 6.708 6.708-6.708 6.708 1.584 1.584 6.708-6.708 6.708 6.708 1.584-1.584-6.708-6.708z"></path>
+      </svg>
+    </button>
+    <p class="modal-title">About</p>
+    <div class="modal-body">
+      <a href={URL_REF_WAITBUTWHY} class="block">
+        <img src={semtreeImg} class="modal-image" height="50%" width="50%" alt="waitbutwhy's neuralink semantic tree">
+      </a>
+      <blockquote class="modal-quote">
+        <p>
+          It is important to view knowledge as a sort of semantic tree. Make sure you understand the fundamental principles, i.e., the trunk and big branches before you get into the leaves/details or there is nothing for them to hang on to.
+        </p>
+        <cite>
+          ~ <a href={URL_REF_R_MUSK_TREE}>Elon Musk</a>
+        </cite>
+      </blockquote>
+      <p class="modal-text">
+        Text output is formatted in markdown, which can be particularly useful for markdown-based PKMs like <a href={URL_VSCODE_PLUGIN}>vscode-wikibonsai</a>.
+      </p>
+      <p class="modal-text">
+        A <a href={URL_REPO_WIKIBONSAI}>WikiBonsai</a> project;
+        above image from <a href={URL_REF_WAITBUTWHY}>waitbutwhy</a>;
+        mindmap courtesy of <a href={URL_REF_MARKMAP}>markmap</a>; 
+        icons from <a href={URL_REF_ICONS8}>icons8</a>.
+      </p>
+    </div>
+    <div class="modal-footer">
+      <button class="modal-button" on:click={toggleModal}>
+        Ok
       </button>
-      <p class="title">About</p>
-      <!--Body-->
-      <div class="container mx-auto p-4">
-        <a href={URL_REF_WAITBUTWHY} class="block">
-          <img src={semtreeImg} class="mx-auto" height="50%" width="50%" alt="waitbutwhy's neuralink semantic tree">
-        </a>
-        <blockquote class="text-lg mb-4">
-          <p>
-            It is important to view knowledge as a sort of semantic tree. Make sure you understand the fundamental principles, i.e., the trunk and big branches before you get into the leaves/details or there is nothing for them to hang on to.
-          </p>
-          <p>
-            ~ <a href={URL_REF_R_MUSK_TREE}>Elon Musk</a>
-          </p>
-        </blockquote>
-        <p class="text-xs mt-2">
-          Text output is formatted in markdown, which can be particularly useful for markdown-based PKMs like <a href={URL_VSCODE_PLUGIN}>vscode-wikibonsai</a>.
-        </p>
-        <p class="text-xs mt-2">
-          A <a href={URL_REPO_WIKIBONSAI}>WikiBonsai</a> project;
-          above image from <a href={URL_REF_WAITBUTWHY}>waitbutwhy</a>;
-          mindmap courtesy of <a href={URL_REF_MARKMAP}>markmap</a>; 
-          icons from <a href={URL_REF_ICONS8}>icons8</a>.
-        </p>
-      </div>
-      <!--Footer-->
-      <div class="modal-footer">
-        <button id="okButton"
-                class="px-4 bg-green-500 p-3 rounded-lg text-white hover:bg-green-600"
-                on:click={toggleModal}>
-          Ok
-        </button>
-      </div>
     </div>
   </div>
 </div>
@@ -90,28 +77,106 @@
     - https://codepen.io/JoeHastings/pen/MOdRVm
   */
 
-  blockquote {
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+
+  .modal-open {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .modal-content {
+    background-color: var(--background-color);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+    overflow-y: auto;
+  }
+
+  .modal-close {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .modal-title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  .modal-body {
+    margin-bottom: 1rem;
+  }
+
+  .modal-image {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .modal-quote {
     border-left: 0.25em solid var(--accent-color-light);
+    padding-left: 3rem;
+    margin: 1rem 1.5rem;
+    position: relative;
   }
 
-  blockquote p {
-    padding-left: 1.5em;
-    margin: 0.75em;
-  }
-
-  blockquote:before {
+  .modal-quote::before {
     color: var(--accent-color-light);
     font-family: 'Special Elite', cursive;
     font-size: 50px;
-    content: '“';
+    content: '"';
     position: absolute;
-    padding: 10px;
+    top: -1rem;
+    left: 0.5rem;
   }
 
-  .title {
+  .modal-quote p {
+    margin: 0.75em 0;
+  }
+
+  .modal-quote cite {
+    font-style: italic;
+  }
+
+  .modal-text {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+  }
+
+  .modal-footer {
     text-align: center;
-    align-self: center;
-    font-size: 1.5rem;
-    font-weight: 700;
+  }
+
+  .modal-button {
+    background-color: var(--hover-color);
+    color: var(--text-color);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .modal-button:hover {
+    background-color: var(--hover-color);
   }
 </style>

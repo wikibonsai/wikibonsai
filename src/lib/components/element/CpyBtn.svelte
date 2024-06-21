@@ -81,5 +81,5 @@
         class="util-btn"
         title="Copy"
         on:click={copy}>
-  <img id="copyIcon" alt="Copy" class="w-6 h-6" src={copyIcon}>
+  <img id="copyIcon" alt="Copy" class="btn-img-size" src={copyIcon}>
 </button>
