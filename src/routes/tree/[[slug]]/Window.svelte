@@ -31,7 +31,7 @@
 
 {#if isVisible}
   <div class="popover" on:click|stopPropagation>
-    <div class="window-header">
+    <div class="window-header invext">
       <!-- close / title -->
       <button class="modal-close" on:click={closePopover}>
         <svg class="btn-close" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
@@ -56,7 +56,7 @@
 
   .popover {
     position: fixed;
-    z-index: 9999;
+    z-index: 1000;
     background-color: var(--accent-color-light);
     border-radius: 10px;
     padding: 10px;

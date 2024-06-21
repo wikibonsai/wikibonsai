@@ -95,6 +95,7 @@
 
 <svg id="markmap"
      bind:this={markmap}
+     class="invext"
      style={`height: ${height}vh; width: ${width}vw; color: var(--text-color);`}
      xmlns="http://www.w3.org/2000/svg"
      xmlns:xlink="http://www.w3.org/1999/xlink">

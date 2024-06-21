@@ -23,9 +23,6 @@
         ←
       </button>
     </div>
-    <span class="grow-your-own">
-      Grow your own with <a href={URL_GERMINATOR}>The Germinator!</a>
-    </span>
     <Theme pin={true}></Theme>
   </div>
   <MarkMap markdown={data.tree.markdown}
@@ -38,6 +35,9 @@
          width={100} />
   <Window bind:this={windowComponent}
           on:close={() => (windowComponent.show = false)} />
+  <span class="grow-your-own">
+    Grow your own with <a href={URL_GERMINATOR}>The Germinator!</a>
+  </span>
 </div>
 
 <style>
@@ -56,6 +56,10 @@
   }
 
   .grow-your-own {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 9000;
     color: var(--accent-text-color);
     font-size: 0.75rem;
     align-self: center;
@@ -81,6 +85,7 @@
   }
 
   @media(min-width: 768px) {
+
     .ctrl-panel {
       max-width: 20vw;
     }

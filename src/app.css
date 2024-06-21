@@ -87,16 +87,17 @@ a {
   text-decoration: none;
 }
 
-/* make internal/external distinction in markmap links */
+/* make internal/external distinction in specified links */
+/* 'invext' -> 'internal vs. external' */
 
 /* internal link */
-.markmap a[href^="/"] {
+.invext a[href^="/"] {
   color: var(--internal-link-color) !important;
   text-decoration: none;
 }
 
 /* external links */
-.markmap a[href^="http"] {
+.invext a[href^="http"] {
   color: var(--external-link-color) !important;
   text-decoration: none;
 }
