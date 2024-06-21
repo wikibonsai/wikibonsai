@@ -1,18 +1,19 @@
-- index
+- knowledge bonsai
   - [[concepts]]
     - [[[mathematics]]](/tree/math)
-    - [[science]]
-      - [[[biology]]](/tree/biology)
-      - [[[chemistry]]](/tree/chemistry)
-      - [[[physics]]](/tree/physics)
-    - [[[computer-science]]](/tree/computer-science)
-      - [[[machine-learning]]](/tree/machine-learning)
+    - [[[science]]](https://en.wikipedia.org/wiki/Science)
+      - [[[natural-science]]](https://en.wikipedia.org/wiki/Natural_science)
+        - [[[biology]]](/tree/biology)
+        - [[[chemistry]]](/tree/chemistry)
+        - [[[physics]]](/tree/physics)
+      - [[[computer-science]]](/tree/computer-science)
+        - [[[machine-learning]]](/tree/machine-learning)
+      - [[[applied-science]]](https://en.wikipedia.org/wiki/Applied_science)
+        - [[[technology]]](https://en.wikipedia.org/wiki/Technology)
+        - [[[engineering]]](/tree/engineering)
     - [[[history]]](/tree/history)
-  - [[technology]]
-    - [[applied-science]]
-      - [[[engineering]]](/tree/engineering)
   - [[resources]]
-    - [[books]]
+    - [[[books]]](https://en.wikipedia.org/wiki/Book)
       - [[[how-to-read-a-book]]](/tree/how-to-read-a-book)
-    - [[websites]]
+    - [[[websites]]](https://en.wikipedia.org/wiki/Website)
       - [[[lesswrong]]](/tree/lesswrong)
