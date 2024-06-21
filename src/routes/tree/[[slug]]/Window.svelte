@@ -75,6 +75,14 @@
     padding-right: 5px;
   }
 
+  .title::after {
+    color: var(--external-link-color);
+    font-size: 0.5rem;
+    content: ' ↗';
+    vertical-align: super;
+    margin-left: 0.2rem;
+  }
+
   .window-header {
     display: flex;
     align-items: center;
