@@ -83,7 +83,7 @@
         <button class="btn" on:click={goTo(URL_GERMINATOR)}>grow</button>
       </div>
   </DescriptionSection>
-  <!-- app-group section -->
+  <!-- app section -->
   <DescriptionSection
     title={'✂️ Tools for Tending'}
     description={'With WikiBonsai workflows, a collection of notes or a wiki is transformed into a unified, growing collection and taking notes becomes synonymous with gardening -- whose results will surely bear fruit. Tending your markdown digital garden is possible from...'}>
@@ -110,7 +110,7 @@
     title={'✨ Tools for Tinkering'}
     orientation={'row'}>
       <a class="oss-logo" href={URL_SOCIAL_GITHUB}>
-        <img class="img-btn" src={ossImgSrc} alt="oss"/>
+        <img class="img-btn" src={ossImgSrc} alt="oss" />
       </a>
       <div class="oss-description">
         This project is about strategically implementing and open-sourcing functionality that will benefit the most users and developers across the digital ecosystem. Thus, it abides by the Unix Philosophy: Everything is modularized and implemented in such a way as to maximize re-use whether it be for the browser, desktop, mobile, or headset. It's about furthering the state of PKM as a whole by building atop <a href={URL_DOCS_STD_BED}>"standardization bedrock"</a> instead of just creating a single application.
@@ -337,6 +337,7 @@
   }
 
   @media (min-width: 1200px) {
+
     .main-content {
       padding: 2rem;
     }

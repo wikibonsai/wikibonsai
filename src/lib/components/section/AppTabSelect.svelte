@@ -60,20 +60,12 @@
     width: 100%;
   }
 
-  .tab-container {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 2rem;
-    padding-bottom: 1rem;
-    /* small */
-    flex-direction: column;
-  }
-
   .tab {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: var(--background-color);
+    color: var(--text-color);
     border: 1px solid var(--accent-color-dark);
     border-radius: 8px;
     padding: 0.5rem 1rem;
@@ -85,15 +77,24 @@
   }
 
   .tab:hover {
-    color: var(--hover-color);
     transform: scale(1.05);
     box-shadow: 0 4px 8px var(--hover-color);
     background-color: var(--accent-color-light);
+    color: var(--hover-color);
+  }
+
+  .tab-container {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    /* small */
+    flex-direction: column;
   }
 
   .selected {
-    color: var(--hover-color);
     background-color: var(--accent-color-light);
+    color: var(--hover-color);
   }
 
   .tab:focus {
