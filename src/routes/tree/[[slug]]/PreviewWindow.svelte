@@ -1,6 +1,8 @@
 <script lang="ts">
   import { URL_GERMINATOR } from '$lib/util/const';
+  import Loader from '$lib/components/element/Loader.svelte';
 
+  let isLoading: boolean = true;
   let isVisible: boolean = false;
   let url: string = '';
   let title: string = '';
@@ -19,7 +21,12 @@
       url = link.href;
       title = link.text;
       isVisible = true;
+      isLoading = true;
     }
+  }
+
+  function handleLoad() {
+    isLoading = false;
   }
 
   function closePopover() {
@@ -39,10 +46,15 @@
           <path d="M16.292 2.292l-1.584-1.584-6.708 6.708-6.708-6.708-1.584 1.584 6.708 6.708-6.708 6.708 1.584 1.584 6.708-6.708 6.708 6.708 1.584-1.584-6.708-6.708z"></path>
         </svg>
       </button>
+      {#if isLoading}
+        <span class="preview-window-loader">
+          <Loader />
+        </span>
+      {/if}
       <span class="title"><a href={url}>{title}</a></span>
     </div>
     <!-- content -->
-    <iframe src={url} title="Website Popover" />
+    <iframe id="iframe-content" on:load={handleLoad} src={url} title="Website Popover" />
   </div>
 {/if}
 
@@ -66,7 +78,14 @@
     bottom: 10px;
     left: 10px;
     width: 95%;
-    height: 50vh;
+    height: 85%;
+  }
+
+  .preview-window-loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .title {
