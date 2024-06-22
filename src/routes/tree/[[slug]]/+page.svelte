@@ -7,7 +7,7 @@
   import HamburgerMenu from '$lib/components/component/HamburgerMenu.svelte';
   import MarkMap from '$lib/components/component/MarkMap.svelte';
   import Theme from '$lib/components/element/Theme.svelte';
-  import Window from './Window.svelte';
+  import PreviewWindow from './PreviewWindow.svelte';
 
   export let data: PageData;
   let windowComponent: any ;
@@ -33,7 +33,7 @@
         }}
          height={100}
          width={100} />
-  <Window bind:this={windowComponent}
+  <PreviewWindow bind:this={windowComponent}
           on:close={() => (windowComponent.show = false)} />
   <span class="grow-your-own">
     Grow your own with <a href={URL_GERMINATOR}>The Germinator!</a>
