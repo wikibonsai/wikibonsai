@@ -90,7 +90,7 @@
   .menu {
     position: fixed;
     top: 0;
-    z-index: 100;
+    z-index: var(--hamburger-menu-z);
     left: -250px;
     width: 250px;
     height: 100%;
@@ -109,7 +109,7 @@
   }
 
   .menu-toggle {
-    z-index: 200;
+    z-index: var(--hamburger-menu-toggle-z);
     padding: 1rem;
   }
 
@@ -117,8 +117,6 @@
     display: flex;
     justify-content: space-around;
     padding-top: 2rem;
-    /* flex-direction: column; */
-    /* gap: 1rem; */
   }
 
   /* (background) overlay stuff */
@@ -130,8 +128,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Adjust color and opacity as needed */
-    z-index: 99; /* Below the menu */
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: var(--hamburger-menu-z);
     transition: opacity 0.3s ease;
   }
 

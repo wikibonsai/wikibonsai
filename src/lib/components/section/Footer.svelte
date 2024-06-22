@@ -65,7 +65,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    z-index: 2;
+    z-index: var(--footer-z);
     padding: 1rem 0;
   }
 

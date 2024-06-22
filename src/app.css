@@ -11,7 +11,17 @@
 
   /* depth (z-indices) */
 
-  /* todo */
+  --germinator-ad-z: 100;
+  --modal-close-z: 57;
+  --modal-z: 55;
+  --modal-container-z: 55;
+  --hamburger-menu-toggle-z: 51;
+  --hamburger-menu-z: 50;
+  --markmap-z: 200;
+  --tree-toolbar-z: 10;
+  --preview-window-z: 3;
+  --header-z: 2;
+  --footer-z: 2;
 
   /* editor */
   /* split highlights */
@@ -186,7 +196,7 @@ select {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 500;
+  z-index: var(--modal-z);
   transition: opacity 0.25s ease;
 }
 
@@ -197,7 +207,7 @@ select {
 
 .modal-close {
   cursor: pointer;
-  z-index: 500;
+  z-index: var(--modal-close-z);
   padding-top: 0.2rem;
 }
 
@@ -207,7 +217,7 @@ select {
   margin-right: auto;
   border-radius: 0.25rem;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  z-index: 500;
+  z-index: var(--modal-container-z);
   overflow-y: auto;
   display: flex;
   flex-direction: column;

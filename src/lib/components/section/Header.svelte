@@ -82,7 +82,7 @@
     top: 0;
     height: 10vh;
     display: flex;
-    z-index: 2;
+    z-index: var(--header-z);
     padding: 1rem;
     /* small */
     justify-content: space-between;

@@ -14,7 +14,7 @@
 </script>
 
 <div class="main">
-  <div class="overlay">
+  <div class="tree-toolbar">
     <div class="ctrl-panel">
       <HamburgerMenu tree={data.tree}></HamburgerMenu>
       <button on:click={goTo(($page.url.pathname === ROUTE_TREE) ? ROUTE_ROOT : ROUTE_TREE)}
@@ -59,7 +59,7 @@
     position: absolute;
     bottom: 0;
     right: 0;
-    z-index: 9000;
+    z-index: var(--germinator-ad-z);
     color: var(--accent-text-color);
     font-size: 0.75rem;
     align-self: center;
@@ -72,7 +72,7 @@
     font-family: sans-serif;
   }
 
-  .overlay {
+  .tree-toolbar {
     position: absolute;
     display: flex;
     align-items: center;
@@ -80,7 +80,7 @@
     top: 0;
     left: 0;
     right: 0;
-    z-index: 10;
+    z-index: var(--tree-toolbar-z);
     padding: 1rem;
   }
 
