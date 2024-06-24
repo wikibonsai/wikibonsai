@@ -23,10 +23,39 @@ Below are a collection of resources that influenced and inspired this project.
 
 ## Sites
 
-- [Andy's Notes][site-andys-notes]
 - [Digital Gardeners][site-digital-gardeners]
+
+### Blogs
+
 - [EfratFurst][site-efratfurst]
 - [zettelkasten.de][site-zettel]
+
+### Digital Gardens
+
+- [Andy's Notes][site-andys-notes]
+- [Boris Smus][site-borus-smus]
+
+### Site-Navs
+
+- [Britannica][site-britannica]
+- [Craigslist][site-craig]
+- [Dewey Decimal System (on LibraryThing)][site-librarything]
+- [The Quote Garden][site-quote-garden]
+- [Lesswrong Tag Tree][site-lesswrong]
+- [Mathworld][site-mathworld]
+- [Mozilla Documentation][site-mozdoc]
+- [Mcmaster][site-mcmaster]
+- [Subreddit Directory][site-subreddits]
+- [The Brain][site-the-brain]
+- [Wikipedia Outlines][site-wiki-outlines]
+- [Wolfram MathWorld][site-wolfram-math]
+
+### Info Maps
+
+- [Hyper Math][site-hyper-math]
+- [Hyper Physics][site-hyper-physics]
+- [Invention Cards][site-invention-cards]
+- [roadmap.sh][site-roadmap]
 
 ## Tech
 
@@ -35,6 +64,7 @@ Below are a collection of resources that influenced and inspired this project.
 - [Anki][git-anki]
 - [foam][git-vscode-foam]
 - [Gollum][git-gollum]
+- [Hypha Worker Co-operative Digital Garden][git-hyphacoop] ([demo][site-hyphacoop])
 - [Jekyll][git-jekyll]
 - [memo][git-vscode-memo]
 - [TiddlyWiki][git-tiddlywiki]
@@ -60,6 +90,7 @@ Below are a collection of resources that influenced and inspired this project.
 
 [git-anki]: <https://github.com/ankitects/anki>
 [git-gollum]: <https://github.com/gollum/gollum>
+[git-hyphacoop]: <https://github.com/hyphacoop/digitalgarden>
 [git-jekyll]: <https://github.com/jekyll/jekyll>
 [git-tiddlywiki]: <https://github.com/TiddlyWiki/TiddlyWiki>
 [git-vscode-memo]: <https://github.com/svsool/memo>
@@ -74,6 +105,24 @@ Below are a collection of resources that influenced and inspired this project.
 [pst-rank-n-file]: <https://reallifemag.com/rank-and-file/>
 
 [site-andys-notes]: <https://notes.andymatuschak.org/About_these_notes>
+[site-borus-smus]: <https://smus.com>
+[site-britannica]: <https://britannica.com/>
+[site-craig]: <https://craigslist.org/>
 [site-digital-gardeners]: <https://github.com/MaggieAppleton/digital-gardeners>
 [site-efratfurst]: <https://sites.google.com/view/efratfurst/teaching-with-learning-in-mind>
+[site-hyper-math]: <http://hyperphysics.phy-astr.gsu.edu/hbase/hmat.html#hmath>
+[site-hyper-physics]: <http://hyperphysics.phy-astr.gsu.edu/hbase/hframe.html>
+[site-hyphacoop]: <https://digitalgarden.hypha.coop>
+[site-invention-cards]: <https://invention.cards/>
+[site-lesswrong]: <https://www.lesswrong.com/tags/all/>
+[site-librarything]: <https://www.librarything.com/mds/>
+[site-mathworld]: <https://mathworld.wolfram.com/>
+[site-mcmaster]: <https://mcmaster.com/>
+[site-mozdoc]: <https://developer.mozilla.org/>
+[site-quote-garden]: <https://www.quotegarden.com>
+[site-roadmap]: <https://roadmap.sh/>
+[site-wiki-outlines]: <https://en.wikipedia.org/wiki/Wikipedia:Contents/Outlines>
+[site-wolfram-math]: <https://mathworld.wolfram.com/>
+[site-subreddits]: <https://www.reddit.com/r/findareddit/wiki/directory/#wiki_career_advice_.2F_job_searching>
+[site-the-brain]: <https://thebrain.mcgill.ca/flash/pop/pop_plan/plan_d.html>
 [site-zettel]: <https://zettelkasten.de/>

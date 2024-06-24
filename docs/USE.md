@@ -276,25 +276,7 @@ As a sidenote, WikiBonsai has kept in mind legacy information organization techn
 
 ## Appendix: In The Wild
 
-The semantic tree is a very useful orienting structure once many concepts have been integrated into it. To see some larger examples for guidance, see the following trees in the wild:
-
-- [Britannica][wild-ex-britannica]
-- [Craigslist][wild-ex-craig]
-- [Dewey Decimal System (on LibraryThing)][wild-ex-librarything]
-- [The Quote Garden][wild-ex-quote-garden]
-- [Lesswrong Tag Tree][wild-ex-lesswrong]
-- [Mathworld][wild-ex-mathworld]
-- [Mozilla Documentation][wild-ex-mozdoc]
-- [Mcmaster][wild-ex-mcmaster]
-- [Subreddit Directory][wild-ex-subreddits]
-- [The Brain][wild-ex-the-brain]
-- [Wikipedia Outlines][wild-ex-wiki-outline]
-
-The following are not precisely tree structures, but are exemplary examples of spatially structured information:
-
-- [roadmap.sh][wild-ex-roadmap]
-- [Hyper Math][wild-ex-hyper-math]
-- [Hyper Physics][wild-ex-hyper-physics]
+The semantic tree is a very useful orienting structure once many concepts have been integrated into it. To see some larger examples for guidance, see the cited [site-navs][wibomd-doc-cite--sites].
 
 
 [^iyow]: There are folks that say you should write everything "in your own words" and while this is an extraordinarily useful exercise, finding a good definition you want to integrate into your own knowledge is also good practice. That is what good ideas are for after all.
@@ -306,26 +288,12 @@ The following are not precisely tree structures, but are exemplary examples of s
 [wiki-disam]: <https://en.wikipedia.org/wiki/Wikipedia:Disambiguation>
 [yaml]: <https://yaml.org/>
 
-[wild-ex-britannica]: <https://britannica.com/>
-[wild-ex-craig]: <https://craigslist.org/>
-[wild-ex-hyper-math]: <http://hyperphysics.phy-astr.gsu.edu/hbase/hmat.html#hmath>
-[wild-ex-hyper-physics]: <http://hyperphysics.phy-astr.gsu.edu/hbase/hframe.html>
-[wild-ex-lesswrong]: <https://www.lesswrong.com/tags/all/>
-[wild-ex-librarything]: <https://www.librarything.com/mds/>
-[wild-ex-mathworld]: <https://mathworld.wolfram.com/>
-[wild-ex-mcmaster]: <https://mcmaster.com/>
-[wild-ex-mozdoc]: <https://developer.mozilla.org/>
-[wild-ex-quote-garden]: <https://www.quotegarden.com>
-[wild-ex-roadmap]: <https://roadmap.sh/>
-[wild-ex-wiki-outline]: <https://en.wikipedia.org/wiki/Wikipedia:Contents/Outlines>
-[wild-ex-subreddits]: <https://www.reddit.com/r/findareddit/wiki/directory/#wiki_career_advice_.2F_job_searching>
-[wild-ex-the-brain]: <https://thebrain.mcgill.ca/flash/pop/pop_plan/plan_d.html>
-
 [wibomd-doc-design]: <https://github.com/wikibonsai/wikibonsai/tree/main/docs/DESIGN.md>
+[wibomd-doc-design--an-api-for-the-mind]: <https://github.com/wikibonsai/wikibonsai/tree/main/docs/DESIGN.md#an-api-for-the-mind>
 [wibomd-doc-design--legacy-techniques-of-organizing-information]: <https://github.com/wikibonsai/wikibonsai/tree/main/docs/DESIGN.md#legacy-techniques-of-organizing-information>
+[wibomd-doc-cite--sites]: <https://github.com/wikibonsai/wikibonsai/tree/main/docs/CITE.md#site-navs>
 
 [wibomd-repo-garden-beds]: <https://github.com/wikibonsai/garden-beds>
 [wibomd-repo-caml-mkdn]: <https://github.com/wikibonsai/caml-mkdn>
-[wibomd-doc-design--an-api-for-the-mind]: <https://github.com/wikibonsai/wikibonsai/tree/main/docs/DESIGN.md#an-api-for-the-mind>
 [wibomd-repo-garden-beds--how-to-read-a-book]: <https://github.com/wikibonsai/garden-beds/tree/main/bk.how-to-read-a-book>
 [wibomd-repo-vscode-wikibonsai]: <https://github.com/wikibonsai/vscode-wikibonsai>
