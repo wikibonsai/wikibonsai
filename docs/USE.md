@@ -293,6 +293,7 @@ The semantic tree is a very useful orienting structure once many concepts have b
 [wibomd-doc-design--legacy-techniques-of-organizing-information]: <https://github.com/wikibonsai/wikibonsai/tree/main/docs/DESIGN.md#legacy-techniques-of-organizing-information>
 [wibomd-doc-cite--sites]: <https://github.com/wikibonsai/wikibonsai/tree/main/docs/CITE.md#site-navs>
 
+[wibomd-repo-bed-starter]: <https://github.com/wikibonsai/garden-beds/tree/main/minima>
 [wibomd-repo-garden-beds]: <https://github.com/wikibonsai/garden-beds>
 [wibomd-repo-caml-mkdn]: <https://github.com/wikibonsai/caml-mkdn>
 [wibomd-repo-garden-beds--how-to-read-a-book]: <https://github.com/wikibonsai/garden-beds/tree/main/bk.how-to-read-a-book>
