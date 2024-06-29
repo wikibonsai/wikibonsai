@@ -52,7 +52,7 @@ The main "leaves" are entry documents, which act like wikipedia entries. Each en
 
 As for the process of actually filling in notes, let's walk through part of "[How To Read A Book][bk-how-to-read]":
 
-Create a file for the book and call it `bk.how-to-read-a-book.md` (the `bk-` prefix means that it is a `book` doctype). Add a heading for the first chapter. Then add some of the vocab words from that chapter:
+Create a file for the book and call it `bk.how-to-read-a-book.md` (the `bk.` prefix means that it is a `book` doctype). Add a heading for the first chapter. Then add some of the vocab words from that chapter:
 
 ```markdown
 // bk.how-to-read-a-book.md
