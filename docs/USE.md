@@ -7,7 +7,7 @@ This document describes, step-by-step, how to get up and running with a WikiBons
 So, to get started:
 
 1. Install the [wikbonsai VSCode extension][wibomd-repo-vscode-wikibonsai] or open up your PKM app of choice.
-2. Clone the starter [garden bed][wibomd-repo-garden-beds].
+2. Clone a starter [garden bed][wibomd-repo-garden-beds].
 
 Or...
 
