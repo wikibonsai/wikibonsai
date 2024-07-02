@@ -42,7 +42,6 @@ Below are a collection of resources that influenced and inspired this project.
 - [Dewey Decimal System (on LibraryThing)][site-librarything]
 - [The Quote Garden][site-quote-garden]
 - [Lesswrong Tag Tree][site-lesswrong]
-- [Mathworld][site-mathworld]
 - [Mozilla Documentation][site-mozdoc]
 - [Mcmaster][site-mcmaster]
 - [Subreddit Directory][site-subreddits]
@@ -116,13 +115,12 @@ Below are a collection of resources that influenced and inspired this project.
 [site-invention-cards]: <https://invention.cards/>
 [site-lesswrong]: <https://www.lesswrong.com/tags/all/>
 [site-librarything]: <https://www.librarything.com/mds/>
-[site-mathworld]: <https://mathworld.wolfram.com/>
 [site-mcmaster]: <https://mcmaster.com/>
 [site-mozdoc]: <https://developer.mozilla.org/>
 [site-quote-garden]: <https://www.quotegarden.com>
 [site-roadmap]: <https://roadmap.sh/>
 [site-wiki-outlines]: <https://en.wikipedia.org/wiki/Wikipedia:Contents/Outlines>
 [site-wolfram-math]: <https://mathworld.wolfram.com/>
-[site-subreddits]: <https://www.reddit.com/r/findareddit/wiki/directory/#wiki_career_advice_.2F_job_searching>
+[site-subreddits]: <https://www.reddit.com/r/findareddit/wiki/directory/>
 [site-the-brain]: <https://thebrain.mcgill.ca/flash/pop/pop_plan/plan_d.html>
 [site-zettel]: <https://zettelkasten.de/>
