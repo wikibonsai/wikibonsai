@@ -7,7 +7,7 @@ This document describes, step-by-step, how to get up and running with a WikiBons
 So, to get started:
 
 1. Install the [wikbonsai VSCode extension][wibomd-repo-vscode-wikibonsai] or open up your PKM app of choice.
-2. Clone the starter [garden bed][wibomd-repo-garden-beds].
+2. Clone a starter [garden bed][wibomd-repo-garden-beds].
 
 Or...
 
@@ -52,7 +52,7 @@ The main "leaves" are entry documents, which act like wikipedia entries. Each en
 
 As for the process of actually filling in notes, let's walk through part of "[How To Read A Book][bk-how-to-read]":
 
-Create a file for the book and call it `bk.how-to-read-a-book.md` (the `bk-` prefix means that it is a `book` doctype). Add a heading for the first chapter. Then add some of the vocab words from that chapter:
+Create a file for the book and call it `bk.how-to-read-a-book.md` (the `bk.` prefix means that it is a `book` doctype). Add a heading for the first chapter. Then add some of the vocab words from that chapter:
 
 ```markdown
 // bk.how-to-read-a-book.md
@@ -293,6 +293,7 @@ The semantic tree is a very useful orienting structure once many concepts have b
 [wibomd-doc-design--legacy-techniques-of-organizing-information]: <https://github.com/wikibonsai/wikibonsai/tree/main/docs/DESIGN.md#legacy-techniques-of-organizing-information>
 [wibomd-doc-cite--sites]: <https://github.com/wikibonsai/wikibonsai/tree/main/docs/CITE.md#site-navs>
 
+[wibomd-repo-bed-starter]: <https://github.com/wikibonsai/garden-beds/tree/main/minima>
 [wibomd-repo-garden-beds]: <https://github.com/wikibonsai/garden-beds>
 [wibomd-repo-caml-mkdn]: <https://github.com/wikibonsai/caml-mkdn>
 [wibomd-repo-garden-beds--how-to-read-a-book]: <https://github.com/wikibonsai/garden-beds/tree/main/bk.how-to-read-a-book>
