@@ -28,7 +28,9 @@ Altogether, we make a decentralized network of sense-making. Altogether, our lin
 
 These are the paths that led to the soul of this project: To learn in a manner we were meant to. To map the territory that we explore. And to tend one's own garden of the mind, while venturing through the jungle of digital collective consciousness.
 
-![](../static/natures-jungle-gym.jpeg)
+<p align="center">
+  <img src="../static/natures-jungle-gym.jpeg" width=50%/>
+</p>
 
 > "...by their fruits you will know them."
 > 
