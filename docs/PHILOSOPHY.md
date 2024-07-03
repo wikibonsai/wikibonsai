@@ -56,13 +56,13 @@ Words are powerful tools, but they lose their usefulness when they become mutual
 
 The hope is that the tree structure may provide a way to calculate corresponding meaning between different trees based on a word's branch path; from root to leaf. This way, there is redundancy for human knowledge since truth is not stemming from a single source and is instead calculated from a distributed forest of knowledge trees. This also provides flexibility, allowing everyone to have their own [divergences from the mainstream][pst-git-branch] where appropriate.
 
-Perhaps one day, there could be a larger communal tree, a sort of "[hometree][hometree]", could be computationally derived from the distributed forest of personal bonsais. People could congregate to compare and contrast their different branch patterns or leaves, mitigate the risk of building an ever taller Tower of Babel.
+Perhaps one day, there could be a larger communal tree, a sort of "[hometree][hometree]", could be computationally derived from the distributed forest of personal bonsais. People could congregate to compare and contrast their different branch patterns or leaves, and mitigate the risk of building an ever taller Tower of Babel.
 
 Until such a day, it is **strongly** recommended that external references such as Wikipedia, Britannica, or your choice of common cultural reference point, is regularly visited when constructing the semantic tree. After all, **meanings of words are meant to be mutually intelligible and shared with others, otherwise they are meaningless.**
 
 ## Abundant Meaning
 
-Meanings of words are fluid. They can change and evolve over time and this process of evolution may be rooted in the connections described above: As relationships between words grow or wither like roots of a tree, the makeup of meaning shifts and may even transform completely, like soil beneath our feet. Meaningfulness flourishes when there are deep, long-term connections, while meaninglessness sets in when those same connections are broken, or too fluid to prevent the erosion of meaning.
+Meanings of words are fluid[^internet]. They can change and evolve over time and this process of evolution may be rooted in the connections described above: As relationships between words grow or wither like roots or branches of a tree, the makeup of meaning shifts and may even transform completely like soil beneath our feet. Meaningfulness flourishes when there are deep, long-term connections, while meaninglessness sets in when those same connections are broken or are too fluid to prevent the erosion of meaning.
 
 And, for what it's worth, meaning in life may not be all that much different.
 
@@ -97,17 +97,17 @@ This project aims to provide tools for individuals to build such information spa
 
 ### Independence of Orientation (Of The Individual In The Environment)
 
-Wikipedia, while it has its issues, has been [lauded as an overall success][econ-wiki] in the face of recommendation algorithms[^soc-dil]. The reason for this is deceptively simple: Pages do not change from user to user and the location of a page does not typically change[^]. **Mutually agreed upon coordinate systems** in information space and **fixed coordinates** for the information is fundamental for the ability to orient onesself and to find anything. (The [Dewey Decimal System][dewey-decimal] is another successful example of an informational coordinate system that uses fixed coordinates) Only once these principles are applied can one roam freely...
+Wikipedia, while it has its issues, has been [lauded as an overall success][econ-wiki] in the face of recommendation algorithms[^soc-dil]. The reason for this is deceptively simple: Pages do not change from user to user and the location of a page does not typically change. **Mutually agreed upon coordinate systems** in information space and **fixed coordinates** for the information is fundamental for the ability to orient onesself and to find anything. (The [Dewey Decimal System][dewey-decimal] is another successful example of an informational coordinate system that uses fixed coordinates) Only once these principles are applied can one roam freely...
 
 ### Right To Roam[^roam] (Of The Individual Through The Environment)
 
-Recommendation algorithms and internet search today is [like a librarian][utb-internet-search] at the entrance of a vast digital library. It helpfully asks, "What can I find for you?" and dutifully retrieves _personalized_ results. But in this system, we are never allowed in the library: We don't have a reliable means of verifying what is or is not in our digital library. What's worse, is that the removal of right to roam information space could mean the death of creativity, because a fundamental ingredient to creativity is serendipity: The **accidental** discovery of something or some connection. But **accidental discoveries cannot happen if you can only ever find precisely what you were looking for.**
+Recommendation algorithms and internet search today is [like a librarian][utb-internet-search] at the entrance of a vast digital library. It helpfully asks, "What can I find for you?" and dutifully retrieves _personalized_ results. But in this system, we are never allowed inside: We don't have a reliable means of verifying what is or is not in our digital library. What's worse, is that the removal of right to roam information space could mean the death of creativity, because a fundamental ingredient to creativity is serendipity: The **accidental** discovery of something or some connection. But **accidental discoveries cannot happen if you can only ever find precisely what you were looking for.**
 
 When we made the transition from analog to digital we lost the freedom to roam the stacks and, in so doing, lost some of the wonder of the library[^wonder-except].
 
 ## ...In The Face of AI
 
-We are about to make another innovative leap [from internet search to AI chatbots][econ-ai-search], thereby reifying our [little digital librarians][utb-internet-search]. It is this project's hope that these newer means of search act as additions, [rather than substitutions][sydney-bing], to coherent and navigable information spaces. May we hope beyond hope that this dramatic disruption in technology can provide an opportunity to rediscover some of the fundamentals that we've been losing.
+We are about to make another innovative leap [from internet search to AI chatbots][econ-ai-search], thereby reifying our [little digital librarians][utb-internet-search]. It is this project's hope that these newer means of search act as additions, [rather than substitutions][sydney-bing], to coherent and navigable information spaces. May we hope beyond hope that this dramatic disruption in technology can provide an opportunity to rediscover some of the fundamentals that have been eroding away beneath our feet.
 
 ## Child-Like, But Wise
 
@@ -123,9 +123,7 @@ In the beginning, WikiBonsai was only about learning and education: "How can I t
 So when any child asks, "Why are we learning this?" perhaps we should tell them: Because **we are only as free as the space that we have explored and made sense of.**[^portal]
 
 
-[^graph]: "Webs" are more precisely called "graphs" in computer science and data structures.
 [^internet]: As a sidenote, the internet seems to be overrun with too much fluidity -- think newsfeeds, "streams", etc.
-[^neura]: But there are no guarantees with regard to how Neuralink will change things...
 [^portal]: Play until you find your [portal][utb-the-portal-story].
 [^roam]: Shoutout to [Roam Research][app-roam]!
 [^soc-dil]: "Think about Wikipedia: A page you see is the same for you as for other people. What if they gave each person a customized definition to serve their personal interests? That's [social media] feed[s]." ~ [The Social Dilemma @00:50][doc-social-dilemma]
