@@ -29,7 +29,7 @@ These are the workflows the WikiBonsai project enables for markdown-based collec
 3. [Graph][wibomd-repo-treehouze] utilities to experience and interact with a unified visual-spatial "[memory palace][memory-palace]" that emerges from the relationships formed across markdown notes (syntaxes 1 + 2).
 4. A clean, lean, [yaml][yaml]-like [markup language for structured attributes][wibomd-repo-caml-mkdn] (with built-in `[[wikiref]]` support).
 
-These workflows are what distinguish the "WikiBonsai" from other styles of digital garden -- particularly the [semantic tree][reddit-musk].
+These workflows are what distinguish "WikiBonsai" from other styles of digital garden -- particularly the [semantic tree][reddit-musk].
 
 ## Project Info
 
@@ -58,18 +58,18 @@ The following links point to repositories of the WikiBonsai project and are orga
 
 - For Use:
   - AI:
-    - [germinator][wibomd-repo-germinator]: An AI-powered [semantic seedling germinator][demo-germinator] that generates starter semantic mappings of concepts which are easily transplantable into one's own digital garden.
+    - [germinator][wibomd-repo-germinator]: An AI-powered semantic seedling [germinator][demo-germinator] that generates starter semantic mappings of concepts which are easily transplantable into one's own digital garden.
       - [semtree-germ][wibomd-repo-semtree-germ]: An earlier version of the germinator that focused on [semantic trees][demo-semtree-germ].
     - [prompt][wibomd-repo-promp]: Prompts for AI-powered digital gardening.
   - Notes:
     - [vscode-wikibonsai][wibomd-repo-vscode-wikibonsai]: A [VSCode][git-vscode] extension for tending a WikiBonsai digital garden.
     - [tendr-cli][wibomd-repo-tendr-cli]: A CLI tool for tending a markdown-based WikiBonsai digital garden.
   - SSG:
-    - [jekyll-wikibonsai][wibomd-repo-jekyll-wikibonsai]: A jekyll template that can be imported as a gem or cloned as a template project.
-    - [astro-wikibonsai][wibomd-repo-astro-wikibonsai]: An example setup to enable WikiBonsai workflows for an astro-based statically generated site (SSG).
-    - [eleventy-wikibonsai][wibomd-repo-eleventy-wikibonsai]: An example setup to enable WikiBonsai workflows for eleventy-based static site generation (SSG).
+    - [jekyll-wikibonsai][wibomd-repo-jekyll-wikibonsai]: A [jekyll][ssg-jekyll] template that can be imported as a gem or cloned as a template project.
+    - [astro-wikibonsai][wibomd-repo-astro-wikibonsai]: An example setup to enable WikiBonsai workflows for an [astro][ssg-astro]-based statically generated site (SSG).
+    - [eleventy-wikibonsai][wibomd-repo-eleventy-wikibonsai]: An example setup to enable WikiBonsai workflows for [eleventy][ssg-eleventy]-based static site generation (SSG).
   - Starters:
-    - [garden-beds][wibomd-repo-garden-beds]: A collection of starter WikiBonsai digital gardens.
+    - [garden-beds][wibomd-repo-garden-beds]: A collection of starter WikiBonsai digital gardens -- includes starter markdown files and config files.
 - For Dev
   - Markdown Parsers:
     - [markdown-it-caml][wibomd-repo-markdown-it-caml]: A [markdown-it][git-markdown-it] plugin to enable  `:colon::attributes`.
@@ -85,14 +85,14 @@ The following links point to repositories of the WikiBonsai project and are orga
     - [caudex][wibomd-repo-caudex]: An index to cache and store WikiBonsai relationships.
     - [semtree][wibomd-repo-semtree]: Base utilities for "semantic tree" or "knowledge bonsai" building in markdown.
     - [treehouze][wibomd-repo-treehouze]: Generalized graph utilities with minor specialized features for visualizing WikiBonsai-enabled markdown-based PKMs.
-    - [wikirefs][wibomd-repo-wikirefs]: Base utilities for `[[wikirefs]]`.
+    - [wikirefs][wibomd-repo-wikirefs]: Base utilities for internal links (`[[wikirefs]]`).
   - Spec:
-    - [caml-spec][wibomd-repo-caml-spec]: Test suite for Colon Attribute Markup Language (`:colon::attributes`) specification.
-    - [wikirefs-spec][wibomd-repo-wikirefs-spec]: Test suite for `[[wikirefs]]` specification.
+    - [caml-spec][wibomd-repo-caml-spec]: Test suite for Colon Attribute Markup Language, CAML, (`:colon::attributes`) specification.
+    - [wikirefs-spec][wibomd-repo-wikirefs-spec]: Test suite for wikirefs (`[[wikirefs]]`) specification.
 
 ## ⚠️ Usage Note
 
-The systems you interact with have an effect on the way you think. This system is meant to provide a ["jungle gym for the thought,"][wibomd-doc-philosophy--a-jungle-gym-for-thought] but it can't do everything and might even have negative consequences if used improperly. Here are some supplemental suggestions for adopting a framework such as this, especially for educational purposes:
+The systems you interact with have an effect on the way you think. This system is meant to provide a ["jungle gym for the thought,"][wibomd-doc-philosophy--a-jungle-gym-for-thought] but it can't do everything and might even have negative consequences if used improperly. Here are some supplemental suggestions for adopting a PKM-framework such as this, especially for educational purposes:
 
 ### Write Full Essays
 
@@ -113,7 +113,7 @@ The digital world cannot replace practical, hands-in-the-mud experience. No matt
 
 ## Forward
 
-As with pretty much all human endeavors, this project does not represent any kind of "final word" or "best solution" but a "clearing of brush" or "cutting away the chaffe"...Of making the road ahead a touch less bumpy and a bit more wonder-full for those that follow.
+Here's to making the road ahead a touch less bumpy and a bit more wonder-full for those that follow.
 
 [**just keep tending...🪴**][wibomd-doc-use]
 
@@ -132,6 +132,9 @@ As with pretty much all human endeavors, this project does not represent any kin
 [git-vscode]: <https://github.com/microsoft/vscode>
 [mediawiki-internal-link]: <https://www.mediawiki.org/wiki/Help:Links#Internal_links>
 [memory-palace]: <https://artofmemory.com/blog/how-to-build-a-memory-palace/>
+[ssg-astro]: <https://github.com/withastro/astro>
+[ssg-jekyll]: <https://github.com/jekyll/jekyll>
+[ssg-eleventy]: <https://github.com/11ty/eleventy/>
 [utb-essay]: <https://www.youtube.com/watch?v=XHIhtWPpDVI>
 [utb-mind-bike]: <https://www.youtube.com/watch?v=KmuP8gsgWb8>
 [wikipedia]: <https://www.wikipedia.org>
