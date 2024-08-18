@@ -66,6 +66,7 @@ Below are a collection of resources that influenced and inspired this project.
 - [Hypha Worker Co-operative Digital Garden][git-hyphacoop] ([demo][site-hyphacoop])
 - [Jekyll][git-jekyll]
 - [memo][git-vscode-memo]
+- [SilverBullet][git-silverbullet]
 - [TiddlyWiki][git-tiddlywiki]
 - [wiki.js][git-wiki]
 
@@ -91,6 +92,7 @@ Below are a collection of resources that influenced and inspired this project.
 [git-gollum]: <https://github.com/gollum/gollum>
 [git-hyphacoop]: <https://github.com/hyphacoop/digitalgarden>
 [git-jekyll]: <https://github.com/jekyll/jekyll>
+[git-silverbullet]: <https://github.com/silverbulletmd/silverbullet>
 [git-tiddlywiki]: <https://github.com/TiddlyWiki/TiddlyWiki>
 [git-vscode-memo]: <https://github.com/svsool/memo>
 [git-vscode-foam]: <https://github.com/foambubble/foam>
