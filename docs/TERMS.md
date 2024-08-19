@@ -114,10 +114,10 @@ graph TD;
 
   id4[fam]           --> id11[parent];
   id4[fam]           --> id12[child];
-  id5[part]          --> id13[rogue];
+  id5[part]          --> id13[dangler];
 
-  id13[rogue]  --tree--> id14[orphan];
-  id13[rogue]   --web--> id15[floater];
+  id13[dangler] --tree--> id14[orphan];
+  id13[dangler]  --web--> id15[isolate];
 
   style id9 stroke-dasharray: 5 5;
   style id10 stroke-dasharray: 5 5;
@@ -171,17 +171,17 @@ It represents the instance where content is embedded in the linked location. It 
 
 `Part` stands for "partial relationship", where the connection composed of an entity, a relationship, and another entity is somehow broken. (The [`zombie`](#zombie) [`dockind`](#dockinds) might also be considered a partial relationship)
 
-#### Rogue
+#### dangler
 
-A `rogue` encapsulates both the [`orphan`](#orphan) and the [`floater`](#floater) -- so an [`entity`](#entities) that lacks relationships in either the [`web`](#web) or the [`tree`](#tree).
+A `dangler` encapsulates both the [`orphan`](#orphan) and the [`isolate`](#isolate) -- so an [`entity`](#entities) that lacks relationships in either the [`web`](#web) or the [`tree`](#tree).
 
 #### Orphan
 
 An `orphan` is an [`entity`](#entities) that lacks any [relationship](#relkinds) in the [`tree`](#tree).
 
-#### Floater
+#### Isolate
 
-A `floater` is an [`entity`](#entities) that lacks any [relationship](#relkinds) in the [`web`](#web).
+A `isolate` is an [`entity`](#entities) that lacks any [relationship](#relkinds) in the [`web`](#web).
 
 ## Colors
 
