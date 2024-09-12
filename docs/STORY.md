@@ -32,9 +32,13 @@ These are the paths that led to the soul of this project: To learn in a manner w
   <img src="../static/natures-jungle-gym.jpeg" width=50%/>
 </p>
 
-> "...by their fruits you will know them."
+> "For everyone practicing evil hates the light and does not come to the light, lest his deeds should be exposed. But he who does the truth comes to the light, that his deeds may be clearly seen..."
 > 
-> ~ Matthew 7:16-27 NKJV
+> ~ John 3:21 NKJV
+
+> "You will know them by their fruits."
+> 
+> ~ Matthew 7:16 NKJV
 
 
 [^backdrop]: More of a 'backdrop' than a 'story'.
