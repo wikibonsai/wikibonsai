@@ -6,7 +6,7 @@ This document describes, step-by-step, how to get up and running with a WikiBons
 
 So, to get started:
 
-1. Install the [wikbonsai VSCode extension][wibomd-repo-vscode-wikibonsai] or open up your PKM app of choice.
+1. Install the [wikbonsai VSCode extension][wibomd-repo-vscode-tendr] or open up your PKM app of choice.
 2. Clone a starter [garden bed][wibomd-repo-garden-beds].
 
 Or...
@@ -297,4 +297,4 @@ The semantic tree is a very useful orienting structure once many concepts have b
 [wibomd-repo-garden-beds]: <https://github.com/wikibonsai/garden-beds>
 [wibomd-repo-caml-mkdn]: <https://github.com/wikibonsai/caml-mkdn>
 [wibomd-repo-garden-beds--how-to-read-a-book]: <https://github.com/wikibonsai/garden-beds/tree/main/bk.how-to-read-a-book>
-[wibomd-repo-vscode-wikibonsai]: <https://github.com/wikibonsai/vscode-wikibonsai>
+[wibomd-repo-vscode-tendr]: <https://github.com/wikibonsai/vscode-tendr>

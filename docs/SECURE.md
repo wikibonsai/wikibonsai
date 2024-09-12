@@ -10,7 +10,7 @@ This project does not store or backup any data, so it is up to you to protect ag
 
 ## Don't Look At My Stuff
 
-Absolutely no data is collected and no telemetry is used in any of the WikiBonsai projects. However, since WikiBonsai contains many plugins, privacy policies of projects WikiBonsai is built on top of should also be individually consulted (e.g. when using [vscode-wikibonsai][wibomd-repo-vscode-wikibonsai] be sure to also check the privacy policy of [vscode][vscode] [privacy policy][vscode-privacy]).
+Absolutely no data is collected and no telemetry is used in any of the WikiBonsai projects. However, since WikiBonsai contains many plugins, privacy policies of projects WikiBonsai is built on top of should also be individually consulted (e.g. when using [vscode-tendr][wibomd-repo-vscode-tendr] be sure to also check the privacy policy of [vscode][vscode] [privacy policy][vscode-privacy]).
 
 ## Trust, But Verify
 
@@ -27,4 +27,4 @@ While the workflows of the WikiBonsai project are meant to facilitate effective 
 [wiki-vrsn-ctrl]: <https://en.wikipedia.org/wiki/Version_control>
 
 [wiki-doc-readme]: <https://github.com/wikibonsai/wikibonsai/tree/main/docs/README.md>
-[wibomd-repo-vscode-wikibonsai]: <https://github.com/wikibonsai/vscode-wikibonsai>
+[wibomd-repo-vscode-tendr]: <https://github.com/wikibonsai/vscode-tendr>

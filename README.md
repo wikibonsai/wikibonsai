@@ -62,7 +62,7 @@ The following links point to repositories of the WikiBonsai project and are orga
       - [semtree-germ][wibomd-repo-semtree-germ]: An earlier version of the germinator that focused on [semantic trees][demo-semtree-germ].
     - [prompt][wibomd-repo-promp]: Prompts for AI-powered digital gardening.
   - Notes:
-    - [vscode-wikibonsai][wibomd-repo-vscode-wikibonsai]: A [VSCode][git-vscode] extension for tending a WikiBonsai digital garden.
+    - [vscode-tendr][wibomd-repo-vscode-tendr]: A [VSCode][git-vscode] extension for tending a WikiBonsai digital garden.
     - [tendr-cli][wibomd-repo-tendr-cli]: A CLI tool for tending a markdown-based WikiBonsai digital garden.
   - SSG:
     - [jekyll-wikibonsai][wibomd-repo-jekyll-wikibonsai]: A [jekyll][ssg-jekyll] template that can be imported as a gem or cloned as a template project.
@@ -177,7 +177,7 @@ Here's to making the road ahead a touch less bumpy and a bit more wonder-full fo
 [wibomd-repo-semtree-germ]: <https://github.com/wikibonsai/semtree-germ>
 [wibomd-repo-tendr-cli]: <https://github.com/wikibonsai/tendr-cli>
 [wibomd-repo-treehouze]: <https://github.com/wikibonsai/treehouze>
-[wibomd-repo-vscode-wikibonsai]: <https://github.com/wikibonsai/vscode-wikibonsai>
+[wibomd-repo-vscode-tendr]: <https://github.com/wikibonsai/vscode-tendr>
 [wibomd-repo-wikirefs]: <https://github.com/wikibonsai/wikirefs>
 [wibomd-repo-wikirefs-spec]: <https://github.com/wikibonsai/wikirefs/tree/main/spec>
 

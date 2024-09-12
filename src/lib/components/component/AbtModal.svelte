@@ -50,7 +50,7 @@
         </cite>
       </blockquote>
       <p class="modal-text">
-        Text output is formatted in markdown, which can be particularly useful for markdown-based PKMs like <a href={URL_VSCODE_PLUGIN}>vscode-wikibonsai</a>.
+        Text output is formatted in markdown, which can be particularly useful for markdown-based PKMs like <a href={URL_VSCODE_PLUGIN}>vscode-tendr</a>.
       </p>
       <p class="modal-text">
         A <a href={URL_REPO_WIKIBONSAI}>WikiBonsai</a> project;

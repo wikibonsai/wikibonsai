@@ -5,7 +5,7 @@
 
   let selected: string = 'ide';
   const demoSrcCli: string = '/img/demo-tendr-cli.gif';
-  const demoSrcApp: string = '/img/demo-vscode-wikibonsai.png';
+  const demoSrcApp: string = '/img/demo-vscode-tendr.png';
 
   function select(tab: string): void {
     selected = tab;
@@ -35,7 +35,7 @@
 {:else if selected === 'ide'}
   <div class="app-content">
     <a href={URL_VSCODE_PLUGIN}>
-      <img class="app-demo img-btn img-vscode" src={demoSrcApp} alt="vscode-wikibonsai"/>
+      <img class="app-demo img-btn img-vscode" src={demoSrcApp} alt="vscode-tendr"/>
     </a>
   </div>
 {/if}

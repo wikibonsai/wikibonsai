@@ -28,7 +28,7 @@
         <span class="footer-title">Projects</span>
         <a href={URL_REPO_WIKIBONSAI}>WikiBonsai</a>
         <a href={URL_REPO_GERMINATOR}>Germinator</a>
-        <a href={URL_REPO_VSCODE}>vscode-wikibonsai</a>
+        <a href={URL_REPO_VSCODE}>vscode-tendr</a>
         <a href={URL_REPO_TENDR}>tendr-cli</a>
         <a href={URL_REPO_ASTRO}>astro-wikibonsai</a>
         <a href={URL_REPO_ELEVENTY}>eleventy-wikibonsai</a>
