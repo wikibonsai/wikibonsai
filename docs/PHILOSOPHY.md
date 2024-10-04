@@ -72,10 +72,6 @@ WikiBonsai maintains neutrality when it comes to the big questions about free wi
 
 This project keeps in mind a few of those possible preconditions with a particular focus on preserving integrity of the individual, the environment, and the individual's relationship to said environment.
 
-### Freedom From Influence (For The Individual)
-
-As social creatures, we are very easily influenced and easily influence others. Thus, it is paramount that we have opportunities to ponder in private and think in solitude. This project deals primarily with raw text (markdown) so that handling one's own data on their own computer or system is an easy task, but also remains easily transferrable between systems. No data is collected from a person's notes (though other frameworks' and applications' privacy policies will need to be evaluated separately).
-
 ### Freedom From Censorship (Of The Environment)
 
 The following is a [precise definition of "censorship"][twt-censorship]:
@@ -94,6 +90,10 @@ The following is a definition of "censorship" with respect to information space:
 > - The disallowance of improving the information's concordance with observed reality.
 
 This project aims to provide tools for individuals to build such information spaces and evangelize this definition of censorship, which is more precise than is typical and helps uncover concrete courses of action to address censorship.
+
+### Freedom From Influence (For The Individual)
+
+As social creatures, we are very easily influenced and easily influence others. Thus, it is paramount that we have opportunities to ponder in private and think in solitude. This project deals primarily with raw text (markdown) so that handling one's own data on their own computer or system is an easy task, but also remains easily transferrable between systems. No data is collected from a person's notes (though other frameworks' and applications' privacy policies will need to be evaluated separately).
 
 ### Independence of Orientation (Of The Individual In The Environment)
 
