@@ -65,9 +65,10 @@ The following links point to repositories of the WikiBonsai project and are orga
     - [vscode-tendr][wibomd-repo-vscode-tendr]: A [VSCode][git-vscode] extension for tending a WikiBonsai digital garden.
     - [tendr-cli][wibomd-repo-tendr-cli]: A CLI tool for tending a markdown-based WikiBonsai digital garden.
   - SSG:
-    - [jekyll-wikibonsai][wibomd-repo-jekyll-wikibonsai]: A [jekyll][ssg-jekyll] template that can be imported as a gem or cloned as a template project.
-    - [astro-wikibonsai][wibomd-repo-astro-wikibonsai]: An example setup to enable WikiBonsai workflows for an [astro][ssg-astro]-based statically generated site (SSG).
-    - [eleventy-wikibonsai][wibomd-repo-eleventy-wikibonsai]: An example setup to enable WikiBonsai workflows for [eleventy][ssg-eleventy]-based static site generation (SSG).
+    - [jekyll-garden][wibomd-repo-jekyll-garden]: A [jekyll][ssg-jekyll] template that can be imported as a gem or cloned as a template project.
+    - [jekyll-bloomz][wibomd-repo-jekyll-bloomz]: An example setup to enable WikiBonsai workflows fro a [jekyll][ssg-jekyll]-bsaed statically generated site (SSG).
+    - [astro-bloomz][wibomd-repo-astro-bloomz]: An example setup to enable WikiBonsai workflows for an [astro][ssg-astro]-based statically generated site (SSG).
+    - [eleventy-bloomz][wibomd-repo-eleventy-bloomz]: An example setup to enable WikiBonsai workflows for [eleventy][ssg-eleventy]-based static site generation (SSG).
   - Starters:
     - [garden-beds][wibomd-repo-garden-beds]: A collection of starter WikiBonsai digital gardens -- includes starter markdown files and config files.
 - For Dev
@@ -157,16 +158,17 @@ Here's to making the road ahead a touch less bumpy and a bit more wonder-full fo
 [wibomd-doc-terms]: <https://github.com/wikibonsai/wikibonsai/tree/main/docs/TERMS.md>
 [wibomd-doc-use]: <https://github.com/wikibonsai/wikibonsai/tree/main/docs/USE.md>
 
-[wibomd-repo-astro-wikibonsai]: <https://github.com/wikibonsai/astro-wikibonsai>
+[wibomd-repo-astro-bloomz]: <https://github.com/wikibonsai/astro-bloomz>
 [wibomd-repo-caml-mkdn]: <https://github.com/wikibonsai/caml-mkdn>
 [wibomd-repo-caml-spec]: <https://github.com/wikibonsai/caml-mkdn/tree/main/spec>
 [wibomd-repo-caudex]: <https://github.com/wikibonsai/caudex>
-[wibomd-repo-eleventy-wikibonsai]: <https://github.com/wikibonsai/eleventy-wikibonsai>
+[wibomd-repo-eleventy-bloomz]: <https://github.com/wikibonsai/eleventy-bloomz>
 [wibomd-repo-garden-beds]: <https://github.com/wikibonsai/garden-beds>
 [wibomd-repo-germinator]: <https://github.com/wikibonsai/germinator>
+[wibomd-repo-jekyll-bloomz]: <https://github.com/wikibonsai/jekyll-bloomz>
 [wibomd-repo-jekyll-graph]: <https://github.com/wikibonsai/jekyll-graph>
 [wibomd-repo-jekyll-semtree]: <https://github.com/wikibonsai/jekyll-semtree>
-[wibomd-repo-jekyll-wikibonsai]: <https://github.com/wikibonsai/jekyll-wikibonsai>
+[wibomd-repo-jekyll-garden]: <https://github.com/wikibonsai/jekyll-garden>
 [wibomd-repo-jekyll-wikirefs]: <https://github.com/wikibonsai/jekyll-wikirefs>
 [wibomd-repo-markdown-it-caml]: <https://github.com/wikibonsai/markdown-it-caml>
 [wibomd-repo-markdown-it-wikirefs]: <https://github.com/wikibonsai/markdown-it-wikirefs>
