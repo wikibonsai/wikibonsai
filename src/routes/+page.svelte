@@ -11,6 +11,7 @@
     URL_SSG_ASTRO,
     URL_SSG_ELEVENTY,
     URL_SSG_JEKYLL,
+    URL_SSG_JEKYLL_PLUS,
     URL_VSCODE_PLUGIN,
   } from '$lib/util/const';
   import { goTo } from '$lib/util/func';
@@ -95,13 +96,16 @@
     description={'By simply turning on WikiBonsai workflows, you can extend a blog, publish a wiki, or simply showcase what you\'ve cultivated with your favorite static site generator.'}>
       <div class="ssg">
         <a href={URL_SSG_ASTRO}>
-          <img class="ssg-logo img-btn" src={logoImgSrcAstro} alt="astro-wikibonsai"/>
+          <img class="ssg-logo img-btn" src={logoImgSrcAstro} alt="astro-bloomz"/>
         </a>
         <a href={URL_SSG_ELEVENTY}>
-          <img class="ssg-logo img-btn" src={logoImgSrcEleventy} alt="eleventy-wikibonsai"/>
+          <img class="ssg-logo img-btn" src={logoImgSrcEleventy} alt="eleventy-bloomz"/>
         </a>
         <a href={URL_SSG_JEKYLL}>
-          <img class="ssg-logo img-btn" src={logoImgSrcJekyll} alt="jekyll-wikibonsai"/>
+          <img class="ssg-logo img-btn" src={logoImgSrcJekyll} alt="jekyll-bloomz"/>
+        </a>
+        <a href={URL_SSG_JEKYLL_PLUS}>
+          <img class="ssg-logo img-btn" src={logoImgSrcJekyll} alt="jekyll-garden"/>
         </a>
       </div>
   </DescriptionSection>

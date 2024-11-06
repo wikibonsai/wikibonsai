@@ -132,6 +132,8 @@
     margin: 0 auto;
   }
 
+  /* todo: put styles back to blockquote html tag */
+
   .modal-quote {
     border-left: 0.25em solid var(--accent-color-light);
     padding-left: 3rem;
@@ -163,6 +165,7 @@
   }
 
   .modal-footer {
+    justify-content: flex-end;
     text-align: center;
   }
 

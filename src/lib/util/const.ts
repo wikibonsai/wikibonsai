@@ -37,9 +37,10 @@ export const URL_REPO_WIKIREFS   : string = 'https://github.com/wikibonsai/wikir
 export const URL_SOCIAL_GITHUB   : string = 'https://github.com/wikibonsai/';
 export const URL_SOCIAL_X        : string = 'https://x.com/wibomd/';
 // ssg
-export const URL_SSG_ASTRO       : string = 'https://astro-wikibonsai.netlify.app';
-export const URL_SSG_ELEVENTY    : string = 'https://eleventy-wikibonsai.netlify.app';
-export const URL_SSG_JEKYLL      : string = 'https://jekyll-wikibonsai.netlify.app';
+export const URL_SSG_ASTRO       : string = 'https://astro-bloomz.netlify.app';
+export const URL_SSG_ELEVENTY    : string = 'https://eleventy-bloomz.netlify.app';
+export const URL_SSG_JEKYLL      : string = 'https://jekyll-bloomz.netlify.app';
+export const URL_SSG_JEKYLL_PLUS : string = 'https://jekyll-garden.netlify.app';
 // refs
 export const URL_REF_MAPPLE      : string = 'https://github.com/MaggieAppleton/digital-gardeners';
 export const URL_REF_ICONS8      : string = 'https://icons8.com';

@@ -8,7 +8,7 @@ The following are the basic expectations of `wikibonsai` projects. Divergences w
 $ git clone https://github.com/wikibonsai/<repo-name>
 ```
 
-## npm / typescript
+## node / typescript / javascript
 
 ### install
 
@@ -36,6 +36,26 @@ $ yarn rebuild
 $ yarn test
 ```
 
+### test local install
+
+```bash
+$ yarn add /path/to/build/files
+```
+
+### test commands
+
+Basic:
+
+```bash
+$ yarn test
+```
+
+Targeted:
+
+```bash
+$ yarn test -g 'general test scenario; specific test scenario;'
+```
+
 ### [publish] npm package
 
 1. Test project (see 'test' above).
@@ -50,6 +70,9 @@ yarn publish
 
 4. Copy build into `releases/` dir (not in repo).
 
+## python
+
+#todo
 
 ## gem / ruby
 

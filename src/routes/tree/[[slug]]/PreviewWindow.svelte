@@ -46,14 +46,14 @@
           <path d="M16.292 2.292l-1.584-1.584-6.708 6.708-6.708-6.708-1.584 1.584 6.708 6.708-6.708 6.708 1.584 1.584 6.708-6.708 6.708 6.708 1.584-1.584-6.708-6.708z"></path>
         </svg>
       </button>
-      {#if isLoading}
-        <span class="preview-window-loader">
-          <Loader />
-        </span>
-      {/if}
       <span class="title"><a href={url}>{title}</a></span>
     </div>
     <!-- content -->
+    {#if isLoading}
+      <span class="preview-window-loader">
+        <Loader />
+      </span>
+    {/if}
     <iframe id="iframe-content" on:load={handleLoad} src={url} title="Website Popover" />
   </div>
 {/if}
@@ -109,6 +109,7 @@
   }
 
   @media (min-width: 768px) {
+
     iframe {
       width: 100%;
       height: 100%;
