@@ -32,6 +32,7 @@
   const logoImgSrcAstro: string = '/img/logo/Astro.svg';
   const logoImgSrcJekyll: string = '/img/logo/jekyll.png';
   const logoImgSrcEleventy: string = '/img/logo/eleventy-logo.svg';
+  const logoImgSrcJekyllPlus: string = '/img/logo/jekyll-plus.svg';
   const ossImgSrc: string = '/img/logo/oss.svg';
 </script>
 
@@ -105,7 +106,7 @@
           <img class="ssg-logo img-btn" src={logoImgSrcJekyll} alt="jekyll-bloomz"/>
         </a>
         <a href={URL_SSG_JEKYLL_PLUS}>
-          <img class="ssg-logo img-btn" src={logoImgSrcJekyll} alt="jekyll-garden"/>
+          <img class="ssg-logo img-btn" src={logoImgSrcJekyllPlus} alt="jekyll-garden"/>
         </a>
       </div>
   </DescriptionSection>
