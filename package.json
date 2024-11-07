@@ -24,7 +24,6 @@
     "build": "vite build",
     "clean": "del-cli .svelte-kit .netlify build",
     "rebuild": "yarn clean && yarn build",
-    "prebuild": "node scripts/prebuild.js",
     "postbuild": "npx svelte-sitemap --domain https://wikibonsai.io",
     "build-cli": "tsc -p . --outDir dist && chmod +x dist/index.js",
     "dev": "vite dev",
