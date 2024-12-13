@@ -34,6 +34,7 @@ Below are a collection of resources that influenced and inspired this project.
 
 - [Andy's Notes][site-andys-notes]
 - [Boris Smus][site-borus-smus]
+- [Grok TiddlyWiki][site-grok-tiddlywiki]
 
 ### Site-Navs
 
@@ -111,6 +112,7 @@ Below are a collection of resources that influenced and inspired this project.
 [site-craig]: <https://craigslist.org/>
 [site-digital-gardeners]: <https://github.com/MaggieAppleton/digital-gardeners>
 [site-efratfurst]: <https://sites.google.com/view/efratfurst/teaching-with-learning-in-mind>
+[site-grok-tiddlywiki]: <https://groktiddlywiki.com/read/>
 [site-hyper-math]: <http://hyperphysics.phy-astr.gsu.edu/hbase/hmat.html#hmath>
 [site-hyper-physics]: <http://hyperphysics.phy-astr.gsu.edu/hbase/hframe.html>
 [site-hyphacoop]: <https://digitalgarden.hypha.coop>
