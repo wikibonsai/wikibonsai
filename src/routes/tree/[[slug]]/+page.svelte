@@ -2,7 +2,7 @@
   import type { PageData } from './$types'
   import { page } from '$app/stores';
   import { ROUTE_ROOT, ROUTE_TREE, URL_GERMINATOR } from '$lib/util/const';
-  import { goTo } from '$lib/util/func';
+  import { goTo } from '$lib/util/url';
   import { resultMkmp } from '$lib/util/store';
   import HamburgerMenu from '$lib/components/component/HamburgerMenu.svelte';
   import MarkMap from '$lib/components/component/MarkMap.svelte';

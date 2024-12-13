@@ -9,6 +9,7 @@ export const ROUTE_TREE          : string = '/tree';
 // external urls
 // apps
 export const URL_GERMINATOR      : string = 'https://germ-inator.netlify.app/';
+export const URL_TREE_TRAINER    : string = 'https://tree-trainer.netlify.app/';
 export const URL_TENDR_CLI       : string = 'https://www.npmjs.com/package/tendr-cli/';
 export const URL_VSCODE_PLUGIN   : string = 'https://marketplace.visualstudio.com/items?itemName=manunamz.vscode-tendr';
 // docs
@@ -53,6 +54,81 @@ export const URL_REF_R_MUSK_TREE : string = 'https://www.reddit.com/r/IAmA/comme
 
 // landing page markmap input
 
+export const DEMO_MERMD          : string = `
+graph TB
+  S[Sentence]
+  
+  %% Clause Structure
+  MC[Main Clause]
+  
+  %% Main Constituents
+  NP1[Noun Phrase: Subject]
+  VP[Verb Phrase: Predicate]
+  
+  S --> MC
+  MC --> NP1
+  MC --> VP
+  
+  %% Subject NP Structure
+  NP1 --> |determiner| DET1[A]
+  NP1 --> |head| N1[jungle gym]
+  NP1 --> PP1[Preposition Phrase: Modifier]
+  
+  %% PP1 Structure
+  PP1 --> |head| P1[for]
+  PP1 --> NP2[Noun Phrase: Complement]
+  
+  %% NP2 Structure
+  NP2 --> |head| N2[thought]
+  
+  %% VP Structure
+  VP --> |head| V[ellipsis]
+  VP --> PP2[Preposition Phrase: Complement]
+  
+  %% PP2 Structure
+  PP2 --> |head| P2[with]
+  PP2 --> NP3[Noun Phrase: Complement]
+  
+  %% NP3 Structure
+  NP3 --> |determiner| DET2[an]
+  NP3 --> |head| N3[API]
+  NP3 --> PP3[Preposition Phrase: Modifier]
+  
+  %% PP3 Structure
+  PP3 --> |head| P3[for]
+  PP3 --> NP4[Noun Phrase: Complement]
+  
+  %% NP4 Structure
+  NP4 --> |determiner| DET3[the]
+  NP4 --> |head| N4[mind]
+  
+  %% Force leaf nodes to same level
+  subgraph LEAVES [ ]
+      direction LR
+      DET1
+      N1
+      P1
+      N2
+      V
+      P2
+      DET2
+      N3
+      P3
+      DET3
+      N4
+  end
+  
+  %% Styling
+  linkStyle default interpolate basis stroke:#333,stroke-width:2px
+  classDef transparent fill:none,stroke:none
+  classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px,color:#333
+  classDef phrase fill:#f9f9f9,stroke:#8C6239,stroke-width:2px,color:#333
+  classDef word fill:white,stroke:#31AF31,stroke-width:2px,color:#333
+  
+  class S,MC,NP1,VP,PP1,NP2,PP2,NP3,PP3,NP4 phrase
+  class DET1,N1,P1,N2,V,P2,DET2,N3,P3,DET3,N4 word
+  class LEAVES transparent
+`;
 export const DEMO_MKDN           : string = `
 - WikiBonsai
   - markdown

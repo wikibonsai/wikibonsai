@@ -1,16 +1,9 @@
 <script lang='ts'>
+  import { slugify } from '$lib/util/url';
+
   export let title: string;
   export let description: string = '';
   export let orientation: 'col' | 'row' = 'col';
-
-  function slugify(text: string): string {
-    // remove diacritics (accents) from the text
-    const normalizedText = text.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-    // replace non-word characters with hyphens
-    const slug = normalizedText.replace(/\W+/g, '-').toLowerCase();
-    // remove leading and trailing hyphens
-    return slug.replace(/^-+|-+$/g, '');
-  }
 </script>
 
 <section class="description">

@@ -1,5 +1,5 @@
 <script lang='ts'>
-  import { goTo } from '$lib/util/func';
+  import { goTo } from '$lib/util/url';
   import AbtBtn from '$lib/components/element/AbtBtn.svelte';
   import CpyBtn from '$lib/components/element/CpyBtn.svelte';
   import DropDown from '$lib/components/element/DropDown.svelte';

@@ -1,20 +1,3 @@
-import { goto } from '$app/navigation';
-
-
-export function goTo(url: string): () => void {
-  // local url
-  if (url.startsWith('/')) {
-    return () => {
-      console.debug('goto: ', url);
-      goto(url);
-    }
-  // external url
-  } else {
-    console.debug('window.location.href: ', url);
-    return () => window.location.href = url;
-  }
-}
-
 // from:
 //  - https://github.com/sveltejs/svelte/issues/3012
 //  - https://svelte.dev/repl/0ace7a508bd843b798ae599940a91783?version=3.16.7

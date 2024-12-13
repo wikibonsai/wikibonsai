@@ -14,12 +14,13 @@
     URL_SSG_JEKYLL_PLUS,
     URL_VSCODE_PLUGIN,
   } from '$lib/util/const';
-  import { goTo } from '$lib/util/func';
+  import { goTo } from '$lib/util/url';
   import DropDown from '$lib/components/element/DropDown.svelte';
   import Footer from '$lib/components/section/Footer.svelte';
   import Header from '$lib/components/section/Header.svelte';
   import MarkMap from '$lib/components/component/MarkMap.svelte';
   // sections
+  import AIShowCase from '$lib/components/section/AIShowCase.svelte';
   import AppTabSelect from '$lib/components/section/AppTabSelect.svelte';
   import BonsaiJungleGymSVG from '$lib/components/section/BonsaiJungleGymSVG.svelte';
   import DescriptionSection from '$lib/components/section/DescriptionSection.svelte';
@@ -28,7 +29,6 @@
 
   export let data: PageData;
 
-  let temp: SVGSVGElement | null ;
   const logoImgSrcAstro: string = '/img/logo/Astro.svg';
   const logoImgSrcJekyll: string = '/img/logo/jekyll.png';
   const logoImgSrcEleventy: string = '/img/logo/eleventy-logo.svg';
@@ -64,26 +64,15 @@
   <BonsaiJungleGymSVG />
   <!-- workflows section -->
   <DescriptionSection
-    title={'Workflows'}
+    title={'🪨 Bedrock Workflows'}
     description={'The WikiBonsai project transforms a collection of markdown files into a text-based, easy-to-navigate, jungle gym for thought with an API for the mind. This is accomplished by enabling specific personal knowledge management (PKM) workflows:'}>
       <WorkflowsShowCase />
   </DescriptionSection>
   <!-- ai section -->
   <DescriptionSection
-    title={'🌱 Tools for Germinating'}
-    description={'Grow your knowledge base with the help of AI-generated seedlings. These starters can help kick off the process of conceptual analysis whether you\'re new to that topic or an old-hand looking for a reference.'}>
-      <div class="germ-viz">
-        <span class="germinator">🤖</span>
-        <MarkMap markdown={DEMO_MKDN}
-                markmap={temp}
-                move={false}
-                height={25}
-                width={45} />
-      </div>
-      <div class="come-with-me">
-        <span>Come with me if you want to</span>
-        <button class="btn" on:click={goTo(URL_GERMINATOR)}>grow</button>
-      </div>
+    title={'🌱 Tools for Growing'}
+    description={'Grow your knowledge base with the help of AI-generated seedlings and training: Starter-seedlings can help kick off the process of conceptual analysis whether you\'re new to that topic or an old-hand looking for a reference. And tree-training can illuminate underlying structures in order to improve your writing and thinking.'}>
+      <AIShowCase />
   </DescriptionSection>
   <!-- app section -->
   <DescriptionSection
@@ -224,29 +213,6 @@
     align-items: center;
     /* small */
     flex-direction: column;
-  }
-
-  .germ-viz {
-    align-self: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-  }
-
-  .germinator {
-    margin-right: 1rem;
-    /* small */
-    font-size: 3rem;
-  }
-
-  .come-with-me {
-    font-family: 'Terminator', sans-serif;
-    align-self: center;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 1rem;
   }
 
   .ssg {

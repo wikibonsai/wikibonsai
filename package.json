@@ -50,6 +50,7 @@
     "markmap-common": "^0.17.0",
     "markmap-lib": "^0.17.0",
     "markmap-view": "^0.17.0",
+    "mermaid": "^11.4.1",
     "prettier": "^3.2.5",
     "prettier-plugin-svelte": "^3.2.3",
     "svelte": "^4.2.17",

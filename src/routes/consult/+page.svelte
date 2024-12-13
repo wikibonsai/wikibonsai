@@ -1,6 +1,6 @@
 <script lang='ts'>
   import { URL_SOCIAL_X } from '$lib/util/const';
-  import { goTo } from '$lib/util/func';
+  import { goTo } from '$lib/util/url';
   import Footer from '$lib/components/section/Footer.svelte';
   import Header from '$lib/components/section/Header.svelte';
 </script>
