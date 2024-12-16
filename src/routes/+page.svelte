@@ -9,6 +9,8 @@
     URL_SSG_JEKYLL_PLUS,
     URL_GERMINATOR,
     URL_SOCIAL_GITHUB,
+    URL_TENDR_CLI,
+    URL_TREE_TRAINER,
     URL_VSCODE_PLUGIN,
   } from '$lib/util/const';
   import { goTo } from '$lib/util/url';
@@ -110,12 +112,13 @@
     title={'So Go Tend\'n\'Tinker...'}>
     <TendNTinkerCards content={
       {
-        'GitHub'         : [URL_SOCIAL_GITHUB , 'Tinker with projects and code.'],
-        'Bonsais'        : [ROUTE_TREE        , 'Browse some example knowledge bonsais.'],
-        'The Germinator' : [URL_GERMINATOR    , 'Query an LLM to generate conceptual analyses.'],
-        'Markdown'       : [URL_VSCODE_PLUGIN , 'Tend your markdown notes in VSCode.'],
-        // 'CLI'            : [URL_TENDR_CLI     , 'Tend your markdown notes in the CLI.'],
-        'Consult'        : [ROUTE_CONSULT     , 'Get help with workflows or tech setup.'],
+        'Bonsais'          : [ROUTE_TREE        , 'Browse some example knowledge bonsais.'],
+        // 'The Germinator'   : [URL_GERMINATOR    , 'Query an LLM to generate conceptual analyses.'],
+        // 'The Tree Trainer' : [URL_TREE_TRAINER  , 'Query an LLM to guide your linguistic tree-training.'],
+        'Markdown'         : [URL_VSCODE_PLUGIN , 'Tend your markdown notes in VSCode.'],
+        'CLI'              : [URL_TENDR_CLI     , 'Tend your markdown notes from the CLI.'],
+        'GitHub'           : [URL_SOCIAL_GITHUB , 'Tinker with projects and code.'],
+        'Consult'          : [ROUTE_CONSULT     , 'Get help with workflows or tech setup.'],
       }
     } />
   </DescriptionSection>
