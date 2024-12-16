@@ -76,9 +76,7 @@ This project keeps in mind a few of those possible preconditions with a particul
 
 The following is a [precise definition of "censorship"][twt-censorship]:
 
-> "the restriction of the _public expression_ of or _public access_ to information by _authority_ when the information is thought to have the capacity to undermine the authority by making it **accountable** to the public."
-> 
-> ~ Censored by Molly Roberts
+> "the restriction of the **public expression** of or **public access** to information by **authority** when the information is thought to diverge from the authority's preferred **narratives**, which would result in either: undermining the authority by making it **accountable** to the public or by artificially fortifying the authority by garnering it undeserved **opportunity**."
 
 The following is a definition of "censorship" with respect to information space:
 
@@ -139,7 +137,7 @@ So when any child asks, "Why are we learning this?" perhaps we should tell them:
 [pst-git-branch]: <https://nvie.com/posts/a-successful-git-branching-model/>
 [site-digital-gardeners]: <https://github.com/MaggieAppleton/digital-gardeners>
 [sydney-bing]: <https://stratechery.com/2023/from-bing-to-sydney-search-as-distraction-sentient-ai/>
-[twt-censorship]: <https://x.com/wibomd/status/1789366907952345513>
+[twt-censorship]: <https://x.com/wibomd/status/1789366898649350563>
 [utb-gorilla-exp]: <https://www.youtube.com/watch?v=vJG698U2Mvo>
 [utb-internet-search]: <https://www.youtube.com/watch?v=T3wiGSXbeQE>
 [utb-know-return]: <https://www.youtube.com/watch?v=8R-vkbxX8r4&t=2007s>
