@@ -1,39 +1,31 @@
 <script lang='ts'>
   import type { PageData } from './$types';
   import {
-    DEMO_MKDN,
     ROUTE_CONSULT,
     ROUTE_TREE,
-    URL_DOCS_STD_BED,
-    URL_GERMINATOR,
-    URL_REPO_WIKIBONSAI,
-    URL_SOCIAL_GITHUB,
     URL_SSG_ASTRO,
     URL_SSG_ELEVENTY,
     URL_SSG_JEKYLL,
     URL_SSG_JEKYLL_PLUS,
+    URL_GERMINATOR,
+    URL_SOCIAL_GITHUB,
     URL_VSCODE_PLUGIN,
   } from '$lib/util/const';
   import { goTo } from '$lib/util/url';
   import DropDown from '$lib/components/element/DropDown.svelte';
   import Footer from '$lib/components/section/Footer.svelte';
   import Header from '$lib/components/section/Header.svelte';
-  import MarkMap from '$lib/components/component/MarkMap.svelte';
   // sections
   import AIShowCase from '$lib/components/section/AIShowCase.svelte';
   import AppTabSelect from '$lib/components/section/AppTabSelect.svelte';
   import BonsaiJungleGymSVG from '$lib/components/section/BonsaiJungleGymSVG.svelte';
   import DescriptionSection from '$lib/components/section/DescriptionSection.svelte';
+  import OSSButtonDescription from '$lib/components/section/OSSButtonDescription.svelte';
+  import SSGButtons from '$lib/components/section/SSGButtons.svelte';
   import TendNTinkerCards from '$lib/components/section/TendNTinkerCards.svelte';
   import WorkflowsShowCase from '$lib/components/section/WorkflowsShowCase.svelte';
 
   export let data: PageData;
-
-  const logoImgSrcAstro: string = '/img/logo/Astro.svg';
-  const logoImgSrcJekyll: string = '/img/logo/jekyll.png';
-  const logoImgSrcEleventy: string = '/img/logo/eleventy-logo.svg';
-  const logoImgSrcJekyllPlus: string = '/img/logo/jekyll-plus.svg';
-  const ossImgSrc: string = '/img/logo/oss.svg';
 </script>
 
 <Header />
@@ -84,31 +76,34 @@
   <DescriptionSection
     title={'💐 Tools for Showcasing'}
     description={'By simply turning on WikiBonsai workflows, you can extend a blog, publish a wiki, or simply showcase what you\'ve cultivated with your favorite static site generator.'}>
-      <div class="ssg">
-        <a href={URL_SSG_ASTRO}>
-          <img class="ssg-logo img-btn" src={logoImgSrcAstro} alt="astro-bloomz"/>
-        </a>
-        <a href={URL_SSG_ELEVENTY}>
-          <img class="ssg-logo img-btn" src={logoImgSrcEleventy} alt="eleventy-bloomz"/>
-        </a>
-        <a href={URL_SSG_JEKYLL}>
-          <img class="ssg-logo img-btn" src={logoImgSrcJekyll} alt="jekyll-bloomz"/>
-        </a>
-        <a href={URL_SSG_JEKYLL_PLUS}>
-          <img class="ssg-logo img-btn" src={logoImgSrcJekyllPlus} alt="jekyll-garden"/>
-        </a>
-      </div>
+      <SSGButtons ssgs={[
+        {
+          url: URL_SSG_ASTRO,
+          imgSrc: '/img/logo/Astro.svg',
+          alt: 'astro-bloomz'
+        },
+        {
+          url: URL_SSG_ELEVENTY,
+          imgSrc: '/img/logo/eleventy-logo.svg',
+          alt: 'eleventy-bloomz'
+        },
+        {
+          url: URL_SSG_JEKYLL,
+          imgSrc: '/img/logo/jekyll.png',
+          alt: 'jekyll-bloomz'
+        },
+        {
+          url: URL_SSG_JEKYLL_PLUS,
+          imgSrc: '/img/logo/jekyll-plus.svg',
+          alt: 'jekyll-garden'
+        }
+      ]} />
   </DescriptionSection>
   <!-- open source section -->
   <DescriptionSection
     title={'✨ Tools for Tinkering'}
     orientation={'row'}>
-      <a class="oss-logo" href={URL_SOCIAL_GITHUB}>
-        <img class="img-btn" src={ossImgSrc} alt="oss" />
-      </a>
-      <div class="oss-description">
-        This project is about strategically implementing and open-sourcing functionality that will benefit the most users and developers across the digital ecosystem. Thus, it abides by the Unix Philosophy: Everything is modularized and implemented in such a way as to maximize re-use whether it be for the browser, desktop, mobile, or headset. It's about furthering the state of PKM as a whole by building atop <a href={URL_DOCS_STD_BED}>"standardization bedrock"</a> instead of just creating a single application.
-      </div>
+      <OSSButtonDescription />
   </DescriptionSection>
   <!-- call to action -->
   <DescriptionSection
@@ -130,10 +125,6 @@
 <style>
   /* todo: logo img + text styles are duplicated in header/footer */
   @import url('https://fonts.cdnfonts.com/css/terminator-2');
-
-  /* .btn-pad {
-    margin-right: 1rem;
-  } */
 
   .btn-container {
     display: flex;
@@ -176,103 +167,7 @@
     padding: 1rem;
   }
 
-  /* description sections */
-
-  /* todo: create description component */
-
-  .description {
-    text-align: center;
-    /* small */
-    padding: 1rem;
-  }
-
-  .description-title {
-    text-align: left;
-    font-weight: bold;
-    margin-bottom: 2rem;
-    /* small */
-    font-size: 2rem;
-  }
-
-  /* todo: split description-body into row v column arrangement */
-
-  .description-body {
-    height: 100%;
-    display: flex;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    text-align: left;
-  }
-
-  .description-body-col {
-    flex-direction: column;
-  }
-
-  .description-body-row {
-    justify-content: space-around;
-    align-items: center;
-    /* small */
-    flex-direction: column;
-  }
-
-  .ssg {
-    align-self: center;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* small */
-    padding: 2rem 0;
-  }
-
-  .ssg-logo {
-    width: 80%;
-    /* small */
-    height: 90px;
-    width: 90px;
-    margin: 0.5rem;
-  }
-
-  .oss-description {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 1rem;
-    padding: 2rem;
-    /* text */
-    font-size: 1.25rem;
-    padding: 1rem;
-    text-align: center;
-  }
-
-  .oss-logo {
-    /* small */
-    width: 25%;
-    margin: 1rem;
-  }
-
   @media (min-width: 768px) {
-
-    /* .btn-pad {
-      margin-right: 2rem;
-    } */
-
-    .description {
-      padding: 3rem 2rem;
-    }
-
-    .description-title {
-      /* margin-bottom: 2rem; */
-      font-size: 3rem;
-    }
-
-    .description-body-row {
-      flex-direction: row;
-    }
-
-    .germinator {
-      font-size: 5rem;
-    }
 
     .intro {
       padding-top: 5rem;
@@ -286,21 +181,6 @@
     .main-title {
       font-size: 3rem;
       margin: 0;
-    }
-
-    .oss-logo {
-      width: 100%;
-      margin: 4rem;
-    }
-
-    .ssg {
-      padding: 2rem;
-    }
-
-    .ssg-logo {
-      height: 150px;
-      width: 150px;
-      margin: 2rem;
     }
 
     .subtitle {
