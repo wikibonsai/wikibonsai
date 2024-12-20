@@ -60,6 +60,7 @@ The following links point to repositories of the WikiBonsai project and are orga
   - AI:
     - [germinator][wibomd-repo-germinator]: An AI-powered semantic seedling [germinator][demo-germinator] that generates starter semantic mappings of concepts which are easily transplantable into one's own digital garden.
       - [semtree-germ][wibomd-repo-semtree-germ]: An earlier version of the germinator that focused on [semantic trees][demo-semtree-germ].
+    - [tree-trainer][wibomd-repo-tree-trainer]: An AI-powered [tree trainer][demo-tree-trainer] that generates syntax trees for sentence(s).
     - [prompt][wibomd-repo-promp]: Prompts for AI-powered digital gardening.
   - Notes:
     - [vscode-tendr][wibomd-repo-vscode-tendr]: A [VSCode][git-vscode] extension for tending a WikiBonsai digital garden.
@@ -127,6 +128,7 @@ Here's to making the road ahead a touch less bumpy and a bit more wonder-full fo
 [britannica]: <https://britannica.com/>
 [demo-germinator]: <https://germ-inator.netlify.app>
 [demo-semtree-germ]: <https://semantic-tree.netlify.app>
+[demo-tree-trainer]: <https://tree-trainer.netlify.app>
 [reddit-musk]: <https://www.reddit.com/r/IAmA/comments/2rgsan/comment/cnfput4/>
 [git-markdown-it]: <https://github.com/markdown-it/markdown-it>
 [git-remark]: <https://github.com/remarkjs/remark>
@@ -177,6 +179,7 @@ Here's to making the road ahead a touch less bumpy and a bit more wonder-full fo
 [wibomd-repo-remark-wikirefs]: <https://github.com/wikibonsai/remark-wikirefs>
 [wibomd-repo-semtree]: <https://github.com/wikibonsai/semtree>
 [wibomd-repo-semtree-germ]: <https://github.com/wikibonsai/semtree-germ>
+[wibomd-repo-tree-trainer]: <https://github.com/wikibonsai/tree-trainer>
 [wibomd-repo-tendr-cli]: <https://github.com/wikibonsai/tendr-cli>
 [wibomd-repo-treehouze]: <https://github.com/wikibonsai/treehouze>
 [wibomd-repo-vscode-tendr]: <https://github.com/wikibonsai/vscode-tendr>
