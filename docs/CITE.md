@@ -110,7 +110,6 @@ Below are a collection of resources that influenced and inspired this project or
 ## Course
 
 #todo
-- [Vervaeke's Peterson Academy Course]
 
 ## Tech
 
