@@ -12,7 +12,7 @@ One of the quirky bits of human nature is that once we learn something, it [beco
 
 ## Studying To Tile The World
 
-In higher education, the pressure to "publish or perish" can sometimes obscure the true purpose of institutions. This project contends that education is like a [tiling problem][wiki-penrose], where the goal is to design tiles that fit together and cover a given space while minimizing the number of tiles needed to cover the maximum surface area. These "tiles" might be thought of as concepts we know and "space" might be observable phenomena in the world. Research is the process of shaping these "tiles" to cover the allotted "space" -- to develop a comprehensive and coherent understanding of the world around us.
+In higher education, the pressure to "publish or perish" can sometimes obscure the true purpose of the institution. This project contends that education is like a [tiling problem][wiki-penrose], where the goal is to design tiles that fit together and cover a given space while minimizing the number of tiles needed to cover the maximum surface area. These "tiles" might be thought of as concepts we know and "space" might be observable phenomena in the world. Research is the process of shaping these "tiles" to cover the allotted "space" -- to develop a comprehensive and coherent understanding of the world around us.
 
 ## Augment My Mind
 
