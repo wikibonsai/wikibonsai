@@ -34,19 +34,15 @@
 <main class="main-content">
   <section class="intro">
     <div class="title-container">
-      <h1 class="main-title">a jungle gym for thought,</h1>
-      <h1 class="main-title">with an API for the mind.</h1>
+      <h1 class="main-title">a jungle gym for thought</h1>
     </div>
     <div class="subtitle-container">
       <p class="subtitle">
-        WikiBonsai is a methodology and set of tools that
+        WikiBonsai is a collection of open source tools
       </p>
       <p class="subtitle">
-        nudge note-taking toward meaningful mind-training
+        for personal knowledge management with markdown
       </p>
-      <!-- <p class="subtitle">
-        and bridges the divide between plaintext, spatial computing, and AI.
-      </p> -->
     </div>
     <div class="btn-container">
       <!-- <button class="btn" on:click={goTo(URL_REPO_WIKIBONSAI)}>About</button> -->
