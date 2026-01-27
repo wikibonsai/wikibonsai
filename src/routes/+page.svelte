@@ -76,7 +76,7 @@
           url: URL_REPO_WIKIREFS,
         },
         {
-          title: 'Automated Indexing',
+          title: 'Index Utilities',
           description: 'Organize concept indexes across multiple notes, which are automatically merged into a unified knowledge bonsai',
           url: URL_REPO_SEMTREE,
         },
