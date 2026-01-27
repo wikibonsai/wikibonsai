@@ -23,6 +23,9 @@
               height={25}
               width={45} />
     </div>
+    <div class="germ-descr">
+      <p>The Germinator is an AI-powered concept analyzer. Enter a word and get a starter semantic mapping of the related concept.</p>
+    </div>
     <div class="come-with-me">
       <span>Come with me if you want to</span>
       <button class="btn" on:click={goTo(URL_GERMINATOR)}>grow</button>
@@ -37,6 +40,9 @@
       <SentenceTree markdown={DEMO_MKDN}
                     height={15}
                     width={25} />
+    </div>
+    <div class="tree-trainer-descr">
+      <p>The Tree Trainer is an AI-powered language trainer. Enter a sentence and get a diagram of the sentence.</p>
     </div>
     <div class="inside-strong-root">
       <span>Inside you have strong root. No need nothing except what inside you to </span>
@@ -69,6 +75,17 @@
     object-fit: contain;
     height: 5rem;
     width: 5rem;
+  }
+
+  .germ-descr,
+  .tree-trainer-descr {
+    /* align at the top of the container */
+    align-items: flex-start;
+    /* align-self: center; */
+    /* max-width: 20rem; */
+    /* text */
+    font-size: 1.25rem;
+    padding: 1rem;
   }
 
   /* germinator */
@@ -109,20 +126,6 @@
     padding-top: 1rem;
   }
 
-  @media (min-width: 768px) {
-    .ai-container {
-      flex-direction: row;
-      /* justify-content: space-around; */
-      /* align-items: flex-start; */
-    }
-
-    .germinator-container,
-    .tree-trainer-container {
-      flex: 1;
-      max-width: 45%;
-    }
-  }
-
   .come-with-me,
   .inside-strong-root {
     min-height: 4rem;
@@ -139,5 +142,19 @@
   .inside-strong-root span {
     display: inline-flex;
     align-items: center;
+  }
+
+  @media (min-width: 768px) {
+    .ai-container {
+      flex-direction: row;
+      /* justify-content: space-around; */
+      /* align-items: flex-start; */
+    }
+
+    .germinator-container,
+    .tree-trainer-container {
+      flex: 1;
+      max-width: 45%;
+    }
   }
 </style>

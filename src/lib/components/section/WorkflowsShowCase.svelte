@@ -1,59 +1,32 @@
 <script lang='ts'>
-  import {
-    URL_REPO_CAML,
-    URL_REPO_SEMTREE,
-    URL_REPO_TREEHOUZE,
-    URL_REPO_WIKIREFS,
-  } from '$lib/util/const';
-
   let hovered: boolean = false;
+
+  interface WorkFlow {
+    title: string;
+    description: string;
+    url: string;
+  }
+
+  export let workflows: WorkFlow[];
+
+   // Replace `code` with <code>code</code>
+   const highlight = (text: string) => text.replace(/`([^`]+)`/g, '<code>$1</code>');
 </script>
 
 <div class="workflow-container" role="list">
-  <div class="workflow"
-       on:click="{() => window.location.href = URL_REPO_WIKIREFS}"
-       on:mouseover="{() => hovered = 1}"
-       on:mouseout="{() => hovered = 0}"
-       on:focus="{() => hovered = 2}"
-       on:blur="{() => hovered = 0}"
-       role="listitem"
-       tabindex="-1">
-    <h2 class="workflow-title">Concept Webs</h2>
-    <p class="workflow-description">Extend markdown with <code>[[wikirefs]]</code> for quick associative linking</p>
-  </div>
-  <div class="workflow"
-       on:click="{() => window.location.href = URL_REPO_SEMTREE}"
-       on:mouseover="{() => hovered = 2}"
-       on:mouseout="{() => hovered = 0}"
-       on:focus="{() => hovered = 2}"
-       on:blur="{() => hovered = 0}"
-       role="listitem"
-       tabindex="-1">
-    <h2 class="workflow-title">Semantic Trees</h2>
-    <p class="workflow-description">Cultivate and train a unified knowledge bonsai across a collection of markdown files</p>
-  </div>
-  <div class="workflow"
-       on:click="{() => window.location.href = URL_REPO_CAML}"
-       on:mouseover="{() => hovered = 2}"
-       on:mouseout="{() => hovered = 0}"
-       on:focus="{() => hovered = 2}"
-       on:blur="{() => hovered = 0}"
-       role="listitem"
-       tabindex="-1">
-    <h2 class="workflow-title">Attribute Metadata</h2>
-    <p class="workflow-description">Defines <code>:semantic::attributes</code> for clean, lean, yaml-like structured data</p>
-  </div>
-  <div class="workflow"
-       on:click="{() => window.location.href = URL_REPO_TREEHOUZE}"
-       on:mouseover="{() => hovered = 3}"
-       on:mouseout="{() => hovered = 0}"
-       on:focus="{() => hovered = 2}"
-       on:blur="{() => hovered = 0}"
-       role="listitem"
-       tabindex="-1">
-    <h2 class="workflow-title">Memory Palaces</h2>
-    <p class="workflow-description">Experience and interact with a unified visual-spatial representation that emerges from the relationships formed across markdown notes</p>
-  </div>
+  {#each workflows as workflow}
+    <div class="workflow"
+        on:click="{() => window.location.href = workflow.url}"
+        on:mouseover="{() => hovered = 1}"
+        on:mouseout="{() => hovered = 0}"
+        on:focus="{() => hovered = 2}"
+        on:blur="{() => hovered = 0}"
+        role="listitem"
+        tabindex="-1">
+      <h2 class="workflow-title">{@html highlight(workflow.title)}</h2>
+      <p class="workflow-description">{@html highlight(workflow.description)}</p>
+    </div>
+  {/each}
 </div>
 
 <style>

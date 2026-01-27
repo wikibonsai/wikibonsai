@@ -52,6 +52,8 @@ The documentation in this repository describe the philosophies, mechanics, and t
 - For Input:
   - [Questions][wibomd-doc-questions]
 
+And be sure to check out [other writings][social-x] for art, writing, memes, and more.
+
 ### Repos
 
 The following links point to repositories of the WikiBonsai project and are organized by stack depth. Projects toward the top are ready-to-use and meant for the end user, while projects toward the bottom are meant for developers to build with and integrate into other solutions:
@@ -142,6 +144,8 @@ Here's to making the road ahead a touch less bumpy and a bit more wonder-full fo
 [utb-mind-bike]: <https://www.youtube.com/watch?v=KmuP8gsgWb8>
 [wikipedia]: <https://www.wikipedia.org>
 [yaml]: <https://yaml.org/>
+
+[social-x]: <https://x.com/wibomd>
 
 [wibomd-doc-cite]: <https://github.com/wikibonsai/wikibonsai/tree/main/docs/CITE.md>
 [wibomd-doc-cite-this]: <https://github.com/wikibonsai/wikibonsai/tree/main/CITATION.bib>

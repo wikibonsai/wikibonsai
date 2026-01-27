@@ -15,7 +15,8 @@ export const URL_VSCODE_PLUGIN   : string = 'https://marketplace.visualstudio.co
 // docs
 export const URL_DOCS_CITE       : string = 'https://github.com/wikibonsai/wikibonsai/tree/main/docs/CITE.md';
 export const URL_DOCS_DESIGN     : string = 'https://github.com/wikibonsai/wikibonsai/tree/main/docs/DESIGN.md';
-export const URL_DOCS_PHILOSOPHY : string = 'https://github.com/wikibonsai/wikibonsai/tree/main/docs/PHILOSOPHY.md';
+export const URL_DOCS_PHIL       : string = 'https://github.com/wikibonsai/wikibonsai/tree/main/docs/PHILOSOPHY.md';
+export const URL_DOCS_PHIL_GYM   : string = 'https://github.com/wikibonsai/wikibonsai/blob/main/docs/PHILOSOPHY.md#a-jungle-gym-for-thought';
 export const URL_DOCS_USE        : string = 'https://github.com/wikibonsai/wikibonsai/tree/main/docs/USE.md';
 export const URL_DOCS_STD_BED    : string = 'https://github.com/wikibonsai/wikibonsai/tree/main/docs/DESIGN.md#drilling-down-to-standardization-bedrock';
 ////

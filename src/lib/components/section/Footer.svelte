@@ -9,7 +9,7 @@
     // URL_REPO_JEKYLL,
     URL_DOCS_CITE,
     URL_DOCS_DESIGN,
-    URL_DOCS_PHILOSOPHY,
+    URL_DOCS_PHIL,
     URL_DOCS_USE,
   } from '$lib/util/const';
 
@@ -36,11 +36,11 @@
       </div> -->
       <div class="footer-column">
         <span class="footer-title">How To</span>
-        <a href={URL_DOCS_USE}>Getting Started</a>
+        <a href={URL_DOCS_USE}>Get Started</a>
       </div>
       <div class="footer-column">
         <span class="footer-title">About</span>
-        <a href={URL_DOCS_PHILOSOPHY}>Philosophy</a>
+        <a href={URL_DOCS_PHIL}>Philosophy</a>
         <a href={URL_DOCS_DESIGN}>Design</a>
         <a href={URL_DOCS_CITE}>Influences</a>
       </div>

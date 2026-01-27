@@ -3,6 +3,11 @@
   import {
     ROUTE_CONSULT,
     ROUTE_TREE,
+    URL_DOCS_PHIL_GYM,
+    URL_REPO_CAML,
+    URL_REPO_SEMTREE,
+    URL_REPO_TREEHOUZE,
+    URL_REPO_WIKIREFS,
     URL_SSG_ASTRO,
     URL_SSG_ELEVENTY,
     URL_SSG_JEKYLL,
@@ -34,14 +39,16 @@
 <main class="main-content">
   <section class="intro">
     <div class="title-container">
-      <h1 class="main-title">a jungle gym for thought</h1>
+      <h1 class="main-title">
+        <a href={URL_DOCS_PHIL_GYM}>a jungle gym for thought</a>
+      </h1>
     </div>
     <div class="subtitle-container">
       <p class="subtitle">
-        WikiBonsai is a collection of open source tools
+        WikiBonsai is a method and set of tools that
       </p>
       <p class="subtitle">
-        for personal knowledge management with markdown
+        nudge note-taking toward meaningful mind-training
       </p>
     </div>
     <div class="btn-container">
@@ -52,28 +59,55 @@
     </div>
   </section>
   <BonsaiJungleGymSVG />
+  <!-- tldr section -->
+   <!-- workflows section -->
+  <DescriptionSection
+    title={'✨ Guiding Lights'}
+    description={'WikiBonsai defines suggested standards and provides open source tooling to extend the markdown syntax based on common convention in personal knowledge management or PKM. These conventions transform a collection of plain text files into a jungle gym for thought: Note-taking turns into a practice of mind-training, while notes become useful and accessible in the long run.'}>
+  </DescriptionSection>
   <!-- workflows section -->
   <DescriptionSection
-    title={'🪨 Bedrock Workflows'}
-    description={'The WikiBonsai project transforms a collection of markdown files into a text-based, easy-to-navigate, jungle gym for thought with an API for the mind. This is accomplished by enabling specific personal knowledge management (PKM) workflows:'}>
-      <WorkflowsShowCase />
+    title={'🪨 Bedrock Workflow'}
+    description={'The bedrock of the WikiBonsai project relies on four workfow components:'}>
+      <WorkflowsShowCase workflows={[
+        {
+          title: 'Wiki Syntax',
+          description: 'Extend markdown with `[[wikirefs]]` syntax for quick associative linking to build vibrant concept webs',
+          url: URL_REPO_WIKIREFS,
+        },
+        {
+          title: 'Automated Indexing',
+          description: 'Organize concept indexes across multiple notes, which are automatically merged into a unified knowledge bonsai',
+          url: URL_REPO_SEMTREE,
+        },
+        {
+          title: 'CAML Syntax',
+          description: 'Add CAML-style metadata like `:semantic::attributes` for clean, lean, YAML-like structured data -- without the bloat of frontmatter separators (`---`)',
+          url: URL_REPO_CAML,
+        },
+        {
+          title: 'Note Visualizations',
+          description: 'Experience and interact with the unified visual-spatial representation that emerges from the relationships formed across notes',
+          url: URL_REPO_TREEHOUZE,
+        },
+      ]} />
   </DescriptionSection>
   <!-- ai section -->
   <DescriptionSection
     title={'🌱 Tools for Growing'}
-    description={'Grow your knowledge base with the help of AI-generated seedlings and training: Starter-seedlings can help kick off the process of conceptual analysis whether you\'re new to that topic or an old-hand looking for a reference. And tree-training can illuminate underlying structures in order to improve your writing and thinking.'}>
+    description={'Grow and train your knowledge with the help of AI generation.'}>
       <AIShowCase />
   </DescriptionSection>
   <!-- app section -->
   <DescriptionSection
     title={'✂️ Tools for Tending'}
-    description={'With WikiBonsai workflows, a collection of notes or a wiki is transformed into a unified, growing collection and taking notes becomes synonymous with gardening -- whose results will surely bear fruit. Tending your markdown digital garden is possible from...'}>
+    description={'Use WikiBonsai workflows together for your markdown notes from...'}>
       <AppTabSelect />
   </DescriptionSection>
   <!-- ssg section -->
   <DescriptionSection
     title={'💐 Tools for Showcasing'}
-    description={'By simply turning on WikiBonsai workflows, you can extend a blog, publish a wiki, or simply showcase what you\'ve cultivated with your favorite static site generator.'}>
+    description={'Showcase WikiBonsai workflows to extend a blog or wiki for your favorite static site generator.'}>
       <SSGButtons ssgs={[
         {
           url: URL_SSG_ASTRO,
@@ -99,7 +133,7 @@
   </DescriptionSection>
   <!-- open source section -->
   <DescriptionSection
-    title={'✨ Tools for Tinkering'}
+    title={'🪏 Tools for Tinkering'}
     orientation={'row'}>
       <OSSButtonDescription />
   </DescriptionSection>
