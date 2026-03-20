@@ -25,27 +25,30 @@
   }
 
   .card {
-    /* card-content */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* card */
-    background-color: var(--accent-color-light);
-    border: 1px solid var(--accent-color-dark);
+    background: var(--surface-card);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--border-subtle);
     height: 200px;
-    border-radius: 8px;
+    border-radius: 0.875rem;
     text-align: center;
     padding: 1rem;
     margin: 1rem;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    /* small */
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.25s ease, box-shadow 0.25s ease;
     width: 80%;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.05);
   }
 
   .card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px var(--hover-color);
+    transform: translateY(-4px);
+    border-color: var(--border-accent);
+    box-shadow: 0 12px 40px var(--shadow-accent-soft), inset 0 1px 0 var(--surface-inset-highlight);
   }
 
   .card-title {

@@ -3,7 +3,7 @@
   "displayName": "WikiBonsai",
   "version": "0.0.1",
   "type": "module",
-  "description": "A jungle gym for thought with an API for the mind.",
+  "description": "A structured knowledge layer in plain text.",
   "license": "GPL-3.0",
   "author": {
     "name": "manunamz",

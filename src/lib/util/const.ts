@@ -13,10 +13,13 @@ export const URL_TREE_TRAINER    : string = 'https://tree-trainer.netlify.app/';
 export const URL_TENDR_CLI       : string = 'https://www.npmjs.com/package/tendr-cli/';
 export const URL_VSCODE_PLUGIN   : string = 'https://marketplace.visualstudio.com/items?itemName=manunamz.vscode-tendr';
 // docs
+export const URL_DOCS            : string = 'https://github.com/wikibonsai/wikibonsai/tree/main/docs';
 export const URL_DOCS_CITE       : string = 'https://github.com/wikibonsai/wikibonsai/tree/main/docs/CITE.md';
 export const URL_DOCS_DESIGN     : string = 'https://github.com/wikibonsai/wikibonsai/tree/main/docs/DESIGN.md';
+export const URL_DOCS_DESIGN_PRESERVING : string = 'https://github.com/wikibonsai/wikibonsai/blob/main/docs/DESIGN.md#preserving-relational-integrity';
 export const URL_DOCS_PHIL       : string = 'https://github.com/wikibonsai/wikibonsai/tree/main/docs/PHILOSOPHY.md';
 export const URL_DOCS_PHIL_GYM   : string = 'https://github.com/wikibonsai/wikibonsai/blob/main/docs/PHILOSOPHY.md#a-jungle-gym-for-thought';
+export const URL_DOCS_PHIL_LEARNING_LOOPS : string = 'https://github.com/wikibonsai/wikibonsai/blob/main/docs/PHILOSOPHY.md#learning-loops';
 export const URL_DOCS_USE        : string = 'https://github.com/wikibonsai/wikibonsai/tree/main/docs/USE.md';
 export const URL_DOCS_STD_BED    : string = 'https://github.com/wikibonsai/wikibonsai/tree/main/docs/DESIGN.md#drilling-down-to-standardization-bedrock';
 ////
@@ -36,7 +39,7 @@ export const URL_REPO_SEMTREE    : string = 'https://github.com/wikibonsai/semtr
 export const URL_REPO_TREEHOUZE  : string = 'https://github.com/wikibonsai/treehouze';
 export const URL_REPO_WIKIREFS   : string = 'https://github.com/wikibonsai/wikirefs';
 // social
-export const URL_SOCIAL_GITHUB   : string = 'https://github.com/wikibonsai/';
+export const URL_SOCIAL_GITHUB   : string = 'https://github.com/wikibonsai';
 export const URL_SOCIAL_X        : string = 'https://x.com/wibomd/';
 // ssg
 export const URL_SSG_ASTRO       : string = 'https://astro-bloomz.netlify.app';

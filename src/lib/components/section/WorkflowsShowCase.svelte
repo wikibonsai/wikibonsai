@@ -40,31 +40,35 @@
   }
 
   .workflow {
-    /* workflow content */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* workflow */
     height: 200px;
-    background-color: var(--background-color);
-    border: 1px solid var(--accent-color-dark);
-    border-radius: 8px;
+    background: var(--surface-card);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--border-subtle);
+    border-radius: 0.875rem;
     padding: 1rem;
     margin: 1rem;
     text-align: center;
-    transition: background-color 0.3s ease;
-    transition: color 0.3s ease; /* transition for hover */
-    /* small */
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.25s ease,
+      box-shadow 0.25s ease, background 0.25s ease;
     width: 100%;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
   }
 
   .workflow:hover .workflow-title {
     color: var(--hover-color);
   }
 
-  .workflow:hover, .workflow:focus {
-    background-color: var(--accent-color-light); /* Tint color on hover/focus */
+  .workflow:hover,
+  .workflow:focus {
+    transform: translateY(-4px);
+    border-color: var(--border-accent);
+    box-shadow: 0 12px 40px var(--shadow-accent-soft), inset 0 1px 0 var(--surface-inset-highlight);
+    background: var(--surface-card-strong);
   }
 
   .workflow-title {

@@ -18,7 +18,7 @@
   }
 
   .sprout {
-    background-color: #31af31;
+    background-color: var(--leaf, #3dbd3d);
     width: 2px;
     height: 5px;
     border-radius: 50%;
@@ -30,7 +30,7 @@
   }
 
   .leaf {
-    background-color: #31af31;
+    background-color: var(--leaf, #3dbd3d);
     width: 15px;
     height: 8px;
     border-radius: 50%;

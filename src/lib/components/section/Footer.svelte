@@ -67,6 +67,10 @@
     width: 100%;
     z-index: var(--footer-z);
     padding: 1rem 0;
+    border-top: 1px solid var(--border-subtle);
+    background: color-mix(in srgb, var(--surface-card-strong) 75%, transparent);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
   }
 
   .footer-column {

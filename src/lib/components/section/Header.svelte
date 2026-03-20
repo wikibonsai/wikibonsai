@@ -76,8 +76,10 @@
   }
 
   .header {
-    background-color: var(--background-color);
-    border-bottom: 1px solid var(--accent-color-light);
+    background: color-mix(in srgb, var(--surface-card-strong) 82%, transparent);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--border-subtle);
     position: sticky;
     top: 0;
     height: 10vh;
@@ -106,11 +108,13 @@
     flex-direction: column;
     right: 0;
     top: 60px;
-    background-color: var(--background-color);
-    border: 1px solid var(--accent-color-light);
-    border-radius: 4px;
+    background: var(--surface-card-strong);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid var(--border-subtle);
+    border-radius: 0.75rem;
     padding: 1rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 12px 40px var(--shadow-accent-soft), inset 0 1px 0 var(--surface-inset-highlight);
   }
 
   .nav-container {
@@ -130,6 +134,7 @@
   }
 
   .nav-link {
+    font-size: 1.0625rem;
     color: var(--text-color);
   }
 

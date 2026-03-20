@@ -12,15 +12,15 @@
     <span class="description-body"><strong>Are you an organization...</strong></span>
     <span class="description-body"><strong>...with a need to preserve institutional knowledge?</strong></span>
     <span class="description-body"><strong>...struggling to onboard new hires quickly due to slow knowledge-share?</strong></span>
-    <span class="description-body"><strong>...that wants to increase sales by just showcasing products and services more effectively?</strong></span>
+    <span class="description-body"><strong>...that wants to showcase products and services more effectively?</strong></span>
     <span class="description-body">
-      By capturing, curating, consolidating, and cataloging knowledge, we can harness the know-how we're exposed to in a systematic way that can grow in usefulness over time, while preventing erosion of meaning.
+      By capturing, organizing, and connecting knowledge systematically, we can harness what we know in a way that grows in usefulness over time -- while preventing erosion of meaning.
     </span>
     <span class="description-body">
-      Improve your knowledge management practices and learning processes with the WikiBonsai philosophy, which has been grown in the intersection of a diverse range of disciplines from learning theory, to computer and information science, to machine learning and more.
+      WikiBonsai's approach draws from learning theory, computer and information science, and machine learning to improve how knowledge is managed, shared, and built upon.
     </span>
     <span class="description-body">
-      Contact today to schedule a consultation and discover how WikiBonsai can help you achieve your goals.
+      Reach out to schedule a consultation and see how WikiBonsai can help.
     </span>
     <button class="btn" on:click={goTo(URL_SOCIAL_X)}>DM on X</button>
   </section>
@@ -53,7 +53,7 @@
   }
 
   .main-content {
-    background-color: var(--background-color);
+    background: transparent;
     padding: 1rem;
   }
 

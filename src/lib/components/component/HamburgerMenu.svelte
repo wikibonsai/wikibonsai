@@ -94,7 +94,10 @@
     left: -250px;
     width: 250px;
     height: 100%;
-    background-color: var(--background-color);
+    background: var(--surface-card-strong);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-right: 1px solid var(--border-subtle);
     color: var(--text-color);
     display: flex;
     flex-direction: column;

@@ -3,7 +3,13 @@
   import {
     ROUTE_CONSULT,
     ROUTE_TREE,
+    URL_DOCS,
+    URL_DOCS_DESIGN_PRESERVING,
+    URL_DOCS_PHIL,
     URL_DOCS_PHIL_GYM,
+    URL_DOCS_PHIL_LEARNING_LOOPS,
+    URL_DOCS_STD_BED,
+    URL_DOCS_USE,
     URL_REPO_CAML,
     URL_REPO_SEMTREE,
     URL_REPO_TREEHOUZE,
@@ -37,20 +43,18 @@
 
 <Header />
 <main class="main-content">
-  <section class="intro">
-    <div class="title-container">
-      <h1 class="main-title">
-        <a href={URL_DOCS_PHIL_GYM}>a jungle gym for thought</a>
-      </h1>
-    </div>
-    <div class="subtitle-container">
-      <p class="subtitle">
-        WikiBonsai is a method and set of tools that
-      </p>
-      <p class="subtitle">
-        nudge note-taking toward meaningful mind-training
-      </p>
-    </div>
+  <section class="intro hero" aria-labelledby="hero-title">
+    <h1 id="hero-title" class="title">
+      <span class="title-main">WikiBonsai</span>
+    </h1>
+    <p class="tagline">
+      <a href={URL_DOCS_PHIL_GYM}>A structured knowledge layer in plain text</a>
+    </p>
+    <p class="hero-description">
+      Organize what you know into a semantic graph
+      <br />
+      All in plain text, readable by anyone, any model, any tool.
+    </p>
     <div class="btn-container">
       <!-- <button class="btn" on:click={goTo(URL_REPO_WIKIBONSAI)}>About</button> -->
       <button class="btn" on:click={goTo(ROUTE_TREE)}>Knowledge Bonsai</button>
@@ -63,12 +67,16 @@
    <!-- workflows section -->
   <DescriptionSection
     title={'✨ Guiding Lights'}
-    description={'WikiBonsai defines suggested standards and provides open source tooling to extend the markdown syntax based on common convention in personal knowledge management or PKM. These conventions transform a collection of plain text files into a jungle gym for thought: Note-taking turns into a practice of mind-training, while notes become useful and accessible in the long run.'}>
+    sectionLinkHref={URL_DOCS_PHIL}
+    sectionLinkLabel={'Philosophy'}
+    description={'WikiBonsai extends markdown with conventions drawn from personal knowledge management (PKM). These conventions turn a collection of plain text files into a jungle gym for thought: Note-taking becomes a practice of building understanding, and your notes stay useful and accessible in the long run.'}>
   </DescriptionSection>
   <!-- workflows section -->
   <DescriptionSection
     title={'🪨 Bedrock Workflow'}
-    description={'The bedrock of the WikiBonsai project relies on four workfow components:'}>
+    sectionLinkHref={URL_DOCS_STD_BED}
+    sectionLinkLabel={'Standardization'}
+    description={'The bedrock of the WikiBonsai project relies on four workflow components:'}>
       <WorkflowsShowCase workflows={[
         {
           title: 'Wiki Syntax',
@@ -76,18 +84,18 @@
           url: URL_REPO_WIKIREFS,
         },
         {
-          title: 'Index Utilities',
+          title: 'Link Type Support',
+          description: 'Add CAML-style metadata like `:semantic::attributes` for clean, lean, YAML-like structured data -- without frontmatter separators (`---`)',
+          url: URL_REPO_CAML,
+        },
+        {
+          title: 'Knowledge Tree',
           description: 'Organize concept indexes across multiple notes, which are automatically merged into a unified knowledge bonsai',
           url: URL_REPO_SEMTREE,
         },
         {
-          title: 'CAML Syntax',
-          description: 'Add CAML-style metadata like `:semantic::attributes` for clean, lean, YAML-like structured data -- without the bloat of frontmatter separators (`---`)',
-          url: URL_REPO_CAML,
-        },
-        {
-          title: 'Note Visualizations',
-          description: 'Experience and interact with the unified visual-spatial representation that emerges from the relationships formed across notes',
+          title: 'Graph View',
+          description: 'See your notes as an interactive graph -- a visual map that emerges from the relationships between concepts',
           url: URL_REPO_TREEHOUZE,
         },
       ]} />
@@ -95,19 +103,25 @@
   <!-- ai section -->
   <DescriptionSection
     title={'🌱 Tools for Growing'}
+    sectionLinkHref={URL_DOCS_PHIL_LEARNING_LOOPS}
+    sectionLinkLabel={'Learning Loops'}
     description={'Grow and train your knowledge with the help of AI generation.'}>
       <AIShowCase />
   </DescriptionSection>
   <!-- app section -->
   <DescriptionSection
     title={'✂️ Tools for Tending'}
-    description={'Use WikiBonsai workflows together for your markdown notes from...'}>
+    sectionLinkHref={URL_DOCS_USE}
+    sectionLinkLabel={'Usage'}
+    description={'Tend your markdown notes with WikiBonsai workflows from...'}>
       <AppTabSelect />
   </DescriptionSection>
   <!-- ssg section -->
   <DescriptionSection
     title={'💐 Tools for Showcasing'}
-    description={'Showcase WikiBonsai workflows to extend a blog or wiki for your favorite static site generator.'}>
+    sectionLinkHref={URL_DOCS_DESIGN_PRESERVING}
+    sectionLinkLabel={'Preserving Relational Integrity'}
+    description={'Publish your notes as a blog or wiki with your favorite static site generator.'}>
       <SSGButtons ssgs={[
         {
           url: URL_SSG_ASTRO,
@@ -134,12 +148,16 @@
   <!-- open source section -->
   <DescriptionSection
     title={'🪏 Tools for Tinkering'}
+    sectionLinkHref={URL_DOCS}
+    sectionLinkLabel={'Documentation'}
     orientation={'row'}>
       <OSSButtonDescription />
   </DescriptionSection>
   <!-- call to action -->
   <DescriptionSection
-    title={'So Go Tend\'n\'Tinker...'}>
+    title={'So Go Tend\'n\'Tinker...'}
+    sectionLinkHref={URL_SOCIAL_GITHUB}
+    sectionLinkLabel={'GitHub'}>
     <TendNTinkerCards content={
       {
         'Bonsais'          : [ROUTE_TREE        , 'Browse some example knowledge bonsais.'],
@@ -171,39 +189,82 @@
     padding: 1rem;
   }
 
-  .main-content {
-    background-color: var(--background-color);
-    padding: 1rem;
-  }
-
-  .main-title {
-    text-align: center;
-    /* small */
-    font-size: 2rem;
-    margin: 0.5rem 0;
-  }
-
-  .subtitle {
-    color: var(--accent-text-color);
-    /* small */
-    font-size: 0.83rem;
-  }
-
-  .subtitle-container {
+  .hero {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
 
-  .title-container {
+  .title {
+    margin: 0 0 0.75rem;
+    padding: 0;
+    line-height: 1;
+  }
+
+  .title-main {
+    display: inline-block;
+    font-size: clamp(2.75rem, 10vw, 4.5rem);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 1.05;
+    background: linear-gradient(
+      135deg,
+      var(--text-color) 0%,
+      var(--btn-color) 42%,
+      var(--leaf) 100%
+    );
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: heroTitleGradient 10s ease infinite;
+  }
+
+  @keyframes heroTitleGradient {
+    0%,
+    100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+
+  .tagline {
+    margin: 0 0 1rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  }
+
+  .tagline a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .tagline a:hover {
+    color: var(--hover-color);
+  }
+
+  .hero-description {
+    margin: 0;
+    max-width: 32rem;
+    font-size: 1rem;
+    line-height: 1.55;
+    color: var(--accent-text-color);
+  }
+
+  .main-content {
+    background: transparent;
     padding: 1rem;
   }
 
   @media (min-width: 768px) {
-
     .intro {
-      padding-top: 5rem;
+      padding-top: 4rem;
     }
 
     .main-content {
@@ -211,20 +272,13 @@
       max-width: 1200px;
     }
 
-    .main-title {
-      font-size: 3rem;
-      margin: 0;
+    .tagline {
+      font-size: 0.95rem;
+      margin-bottom: 1.25rem;
     }
 
-    .subtitle {
-      font-size: 1.25rem;
-    }
-  }
-
-  @media (min-width: 1200px) {
-
-    .main-content {
-      padding: 2rem;
+    .hero-description {
+      font-size: 1.125rem;
     }
   }
 </style>

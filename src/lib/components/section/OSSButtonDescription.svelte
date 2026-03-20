@@ -8,7 +8,7 @@
   <img class="img-btn" src={ossImgSrc} alt="oss" />
 </a>
 <div class="oss-description">
-  This project abides by the Unix Philosophy: Everything is modularized and implemented in such a way as to maximize re-use whether it be for the browser, desktop, mobile, or headset, in the hopes of benefitting the most users and developers across the digital ecosystem. It's about furthering the state of PKM as a whole by building atop <a href={URL_DOCS_STD_BED}>"standardization bedrock."</a>
+  This project follows the Unix Philosophy: Modular by design, built to work across browser, desktop, mobile, and headset. The goal is to further the state of PKM as a whole by building on <a href={URL_DOCS_STD_BED}>"standardization bedrock."</a>
 </div>
 
 <style>

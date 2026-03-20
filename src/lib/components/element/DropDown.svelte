@@ -39,13 +39,15 @@
 
   .dropdown-button {
     padding: 0.5rem 1rem;
-    border: 1px solid var(--accent-color-dark);
-    border-radius: 0.25rem;
+    border: 1px solid var(--border-subtle);
+    border-radius: 0.5rem;
     cursor: pointer;
+    background: var(--surface-card);
+    backdrop-filter: blur(10px);
   }
 
   .dropdown-button:hover {
-    border-color: var(--accent-color-light);
+    border-color: var(--border-accent);
   }
 
   .dropdown-item {
@@ -61,9 +63,11 @@
   .dropdown-menu {
     display: block;
     position: absolute;
-    background-color: var(--background-color);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 0.25rem;
+    background: var(--surface-card-strong);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--border-subtle);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+    border-radius: 0.5rem;
     margin-top: 0.5rem;
     min-width: 100%;
   }

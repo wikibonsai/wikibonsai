@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { onMount, onDestroy } from 'svelte';
+  import { onMount } from 'svelte';
   import mermaid from 'mermaid';
   import { theme } from '$lib/util/store';
   import { DEMO_MERMD } from '$lib/util/const';
@@ -17,18 +17,50 @@
     render();
   }
 
-  export function appendStyles(markdown: string): string {
-  if (typeof document === 'undefined') {
-    return markdown;
+  /** Mermaid classDef uses commas as delimiters — rgba()/rgb() strings break parsing; use hex. */
+  function rgbOrRgbaToHex(css: string): string {
+    const m = css.match(/rgba?\(\s*([\d.]+)\s*,\s*([\d.]+)\s*,\s*([\d.]+)(?:\s*,\s*([\d.]+))?\s*\)/);
+    if (!m) {
+      if (/^#([0-9a-f]{3}|[0-9a-f]{6}|[0-9a-f]{8})$/i.test(css.trim())) return css.trim();
+      return '#cccccc';
+    }
+    const r = Math.min(255, Math.round(Number(m[1])));
+    const g = Math.min(255, Math.round(Number(m[2])));
+    const b = Math.min(255, Math.round(Number(m[3])));
+    const a = m[4] !== undefined ? Math.min(1, Math.max(0, Number(m[4]))) : 1;
+    const hex = (n: number) => n.toString(16).padStart(2, '0');
+    const rgb = `#${hex(r)}${hex(g)}${hex(b)}`;
+    if (a >= 1 - 1e-6) return rgb;
+    return `${rgb}${hex(Math.round(a * 255))}`;
   }
-  const root = document.documentElement;
-  const style = getComputedStyle(root);
-  const textColor = style.getPropertyValue('--text-color').trim() || '#333';
-  const backgroundColor = style.getPropertyValue('--box-background').trim() || '#f9f9f9';
-  const leafColor = style.getPropertyValue('--leaf').trim() || '#333';
-  const accentColor = style.getPropertyValue('--accent-color').trim() || '#8C6239';
-  // Add class definitions to the markdown
-  return markdown + `
+
+  function resolveCssColorToHex(value: string, mode: 'color' | 'background'): string {
+    if (typeof document === 'undefined') return '#cccccc';
+    const v = value.trim();
+    if (!v) return '#cccccc';
+    if (/^#([0-9a-f]{3}|[0-9a-f]{6}|[0-9a-f]{8})$/i.test(v)) return v;
+    const el = document.createElement('div');
+    el.style.cssText = 'position:absolute;left:-9999px;visibility:hidden;pointer-events:none';
+    if (mode === 'background') el.style.backgroundColor = v;
+    else el.style.color = v;
+    document.documentElement.appendChild(el);
+    const resolved =
+      mode === 'background' ? getComputedStyle(el).backgroundColor : getComputedStyle(el).color;
+    document.documentElement.removeChild(el);
+    return rgbOrRgbaToHex(resolved);
+  }
+
+  export function appendStyles(markdown: string): string {
+    if (typeof document === 'undefined') {
+      return markdown;
+    }
+    const style = getComputedStyle(document.documentElement);
+    const textColor = resolveCssColorToHex(style.getPropertyValue('--text-color').trim() || '#333', 'color');
+    const backgroundColor = resolveCssColorToHex(style.getPropertyValue('--box-background').trim() || '#f9f9f9', 'background');
+    const leafColor = resolveCssColorToHex(style.getPropertyValue('--leaf').trim() || '#333', 'color');
+    const accentRaw = style.getPropertyValue('--accent-color').trim();
+    const accentColor = resolveCssColorToHex(accentRaw || style.getPropertyValue('--branch-light').trim() || '#8C6239', 'color');
+    return markdown + `
 
   linkStyle default interpolate basis stroke:${textColor},stroke-width:2px;
   classDef transparent fill:none,stroke:none;

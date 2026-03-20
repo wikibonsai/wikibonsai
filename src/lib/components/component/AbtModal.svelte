@@ -98,13 +98,17 @@
   }
 
   .modal-content {
-    background-color: var(--background-color);
+    background: var(--surface-card-strong);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid var(--border-subtle);
     padding: 1.5rem;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
     position: relative;
     max-width: 90%;
     max-height: 90%;
     overflow-y: auto;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
   }
 
   .modal-close {

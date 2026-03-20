@@ -27,7 +27,7 @@
 
 <style>
   .logo {
-    font-size: 1.5rem;
+    font-size: 1.625rem;
   }
 
   .logo-container {

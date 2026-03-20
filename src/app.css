@@ -1,20 +1,12 @@
-/* src: https://github.com/wikibonsai/jekyll-wikibonsai/blob/ddc978d53c2eb40f018060207a0760f6e2f42cb4/_data/themes.yml */
-
-/* base */
+/* Theme inspired by openclaw.ai: glass surfaces, subtle borders, bioluminescent jungle palette (teal / emerald / blue). */
 
 :root {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  /* dimensions */
 
-  --toolbar-top-height: 40px; /* width should be 100vw minus the width of the side toolbar */
-  --toolbar-side-width: 40px; /* height should be 100vh */
-
-  /* depth (z-indices) */
+  --toolbar-top-height: 40px;
+  --toolbar-side-width: 40px;
 
   --germinator-ad-z: 100;
-  /* --modal-close-z: 57; */
-  /* --modal-z: 55; */
-  /* --modal-container-z: 55; */
   --hamburger-menu-toggle-z: 51;
   --hamburger-menu-z: 50;
   --markmap-z: 200;
@@ -23,95 +15,265 @@
   --header-z: 2;
   --footer-z: 2;
 
-  /* editor */
-  /* split highlights */
-  /* modals */
+  /* OpenClaw-like tokens (shared) */
+  --border-subtle: rgba(15, 45, 42, 0.14);
+  --border-accent: rgba(20, 184, 166, 0.35);
+  --surface-card: rgba(255, 255, 255, 0.78);
+  --surface-card-strong: rgba(255, 255, 255, 0.9);
+  --surface-inset-highlight: rgba(255, 255, 255, 0.45);
+  --shadow-accent-soft: rgba(20, 184, 166, 0.18);
+  --shadow-accent-mid: rgba(20, 184, 166, 0.28);
+  --glow-teal: rgba(45, 212, 191, 0.35);
+  --glow-blue: rgba(59, 130, 246, 0.12);
 
-  /* colors */
+  /* Legacy aliases — mapped to the new system */
+  --hover-color: #0d9488;
+  --btn-color: #0f766e;
+  --btn-color--hover: #0d9488;
 
-  --hover-color: #22c55e;
-  --btn-color: #22c55e;
-  --btn-color--hover: #16a34a;
-
-  /* light */
-  --text-color: #5c5962;
-  --accent-text-color: #918f96;
-  --background-color: #e4f3ea;
-  --box-background: #fff;
-  --accent-color-light: #D1ECDC;
-  --accent-color-dark: #b6d1c1;
-  --textbox-color: #f7f6eb;
-  --link-color: #01946a;
-  --internal-link-color: #01946a;
-  --external-link-color: #264caf;
-  --branch-light: #8C6239;
+  --text-color: #1a2e2a;
+  --accent-text-color: #4a6670;
+  --background-color: rgba(252, 254, 253, 0.72);
+  --box-background: var(--surface-card-strong);
+  --accent-color-light: rgba(204, 251, 241, 0.55);
+  --accent-color-dark: rgba(13, 148, 136, 0.22);
+  --textbox-color: #f0fdfa;
+  --link-color: #0f766e;
+  --internal-link-color: #0f766e;
+  --external-link-color: #2563eb;
+  /* Bonsai SVG / illustration (warm wood + classic sapling green — matches legacy palette, works with teal UI) */
+  --branch-light: #8c6239;
   --branch-dark: #36290e;
-  --leaf: #31AF31;
+  --leaf: #3dbd3d;
   --dirt: #f7f6eb;
+
+  --bg-deep: #f6fffc;
+  --page-overlay: rgba(255, 255, 255, 0.5);
 }
 
-/* default themes */
-
 html[data-theme='light'] {
-  --text-color: #5c5962;
-  --accent-text-color: #918f96;
-  --background-color: #e4f3ea;
-  --box-background: #fff;
-  --accent-color-light: #D1ECDC;
-  --accent-color-dark: #b6d1c1;
-  --textbox-color: #f7f6eb;
-  --link-color: #01946a;
-  --internal-link-color: #01946a;
-  --external-link-color: #264caf; /* #0097e6 */
-  --branch-light: #8C6239;
+  --border-subtle: rgba(15, 45, 42, 0.14);
+  --border-accent: rgba(20, 184, 166, 0.35);
+  --surface-card: rgba(255, 255, 255, 0.78);
+  --surface-card-strong: rgba(255, 255, 255, 0.9);
+  --surface-inset-highlight: rgba(255, 255, 255, 0.45);
+  --shadow-accent-soft: rgba(20, 184, 166, 0.18);
+  --shadow-accent-mid: rgba(20, 184, 166, 0.28);
+  --glow-teal: rgba(45, 212, 191, 0.22);
+  --glow-blue: rgba(59, 130, 246, 0.1);
+
+  --text-color: #1a2e2a;
+  --accent-text-color: #4a6670;
+  --background-color: rgba(252, 254, 253, 0.72);
+  --box-background: var(--surface-card-strong);
+  --accent-color-light: rgba(204, 251, 241, 0.55);
+  --accent-color-dark: rgba(13, 148, 136, 0.22);
+  --textbox-color: #f0fdfa;
+  --link-color: #0f766e;
+  --internal-link-color: #0f766e;
+  --external-link-color: #2563eb;
+  /* Bonsai SVG / illustration (warm wood + classic sapling green — matches legacy palette, works with teal UI) */
+  --branch-light: #8c6239;
   --branch-dark: #36290e;
-  --leaf: #31AF31;
+  --leaf: #3dbd3d;
   --dirt: #f7f6eb;
+
+  --hover-color: #0d9488;
+  --btn-color: #0f766e;
+  --btn-color--hover: #0d9488;
+
+  --bg-deep: #f6fffc;
+  --page-overlay: rgba(255, 255, 255, 0.5);
 }
 
 html[data-theme='dark'] {
-  --text-color: #e1e8e3;
-  --accent-text-color: #959f99;
-  --background-color: #27262b;
-  --accent-color-light: #44434d;
-  --accent-color-dark: #313036;
-  --box-background: #44434d;
-  --textbox-color: #2f3038;
-  --link-color: #00CC92;
-  --internal-link-color: #00CC92;
-  --external-link-color: #0097e6;
-  --branch-light: #2d565e;
-  --branch-dark: #1d1d1f;
-  --leaf: #31AF31;
-  --dirt: #2f3038;
+  --border-subtle: rgba(120, 180, 170, 0.12);
+  --border-accent: rgba(45, 212, 191, 0.32);
+  --surface-card: rgba(8, 18, 22, 0.55);
+  --surface-card-strong: rgba(10, 24, 28, 0.72);
+  --surface-inset-highlight: rgba(255, 255, 255, 0.06);
+  --shadow-accent-soft: rgba(45, 212, 191, 0.14);
+  --shadow-accent-mid: rgba(45, 212, 191, 0.24);
+  --glow-teal: rgba(45, 212, 191, 0.28);
+  --glow-blue: rgba(59, 130, 246, 0.14);
+
+  --text-color: #e4f4ef;
+  --accent-text-color: #8aa99e;
+  --background-color: rgba(5, 12, 14, 0.4);
+  --box-background: var(--surface-card-strong);
+  --accent-color-light: rgba(45, 212, 191, 0.12);
+  --accent-color-dark: rgba(72, 110, 102, 0.35);
+  --textbox-color: #0c1618;
+  --link-color: #5eead4;
+  --internal-link-color: #5eead4;
+  --external-link-color: #7dd3fc;
+  /* Bonsai SVG: dark cool bark (espresso / charcoal wood) — enough chroma to read as trunk vs branches vs bg, without tan or neon leaf */
+  --branch-light: #454038;
+  --branch-dark: #221c17;
+  /* Canopy green shifted toward --text-color (#e4f4ef): cooler mint-green, still reads as foliage */
+  --leaf: #48a882;
+  --dirt: #2c2723;
+
+  --hover-color: #2dd4bf;
+  --btn-color: #14b8a6;
+  --btn-color--hover: #2dd4bf;
+
+  --bg-deep: #050b0d;
+  --page-overlay: rgba(5, 12, 14, 0.25);
+}
+
+/* Atmospheric glow aligned with BonsaiJungleGymSVG: leaf green, warm branch, deep wood */
+html {
+  min-height: 100%;
+  background-color: var(--bg-deep);
+  background-image:
+    radial-gradient(1200px circle at 12% -10%, rgba(61, 189, 61, 0.065), transparent 58%),
+    radial-gradient(900px circle at 88% -12%, rgba(140, 98, 57, 0.055), transparent 56%),
+    radial-gradient(ellipse 100% 60% at 50% 100%, rgba(22, 163, 74, 0.045), transparent 50%),
+    linear-gradient(180deg, #f6fffc 0%, #f0fdf9 100%);
+  background-attachment: fixed;
+}
+
+html[data-theme='dark'] {
+  background-image:
+    radial-gradient(ellipse 120% 80% at 12% 8%, rgba(61, 189, 61, 0.09), transparent 52%),
+    radial-gradient(ellipse 90% 70% at 88% 18%, rgba(45, 86, 94, 0.11), transparent 48%),
+    radial-gradient(ellipse 100% 85% at 48% 100%, rgba(21, 101, 52, 0.08), transparent 55%),
+    linear-gradient(180deg, #050b0d 0%, #071a18 45%, #050b0d 100%);
+}
+
+/* Soft color clouds — same pigment story as the hero bonsai (leaf / branch-light / branch-dark) */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 88% 70% at 16% 22%, rgba(61, 189, 61, 0.11), transparent 58%),
+    radial-gradient(ellipse 74% 76% at 84% 18%, rgba(140, 98, 57, 0.085), transparent 52%),
+    radial-gradient(ellipse 92% 58% at 52% 90%, rgba(22, 163, 74, 0.075), transparent 55%),
+    radial-gradient(ellipse 46% 44% at 68% 48%, rgba(54, 41, 14, 0.065), transparent 50%);
+  background-attachment: fixed;
+  animation: nebula-breathe-light 22s ease-in-out infinite alternate;
+}
+
+html[data-theme='dark'] body::before {
+  background:
+    radial-gradient(ellipse 88% 70% at 16% 22%, rgba(61, 189, 61, 0.08), transparent 58%),
+    radial-gradient(ellipse 74% 76% at 84% 18%, rgba(45, 86, 94, 0.12), transparent 52%),
+    radial-gradient(ellipse 92% 58% at 52% 90%, rgba(21, 101, 52, 0.09), transparent 55%),
+    radial-gradient(ellipse 46% 44% at 68% 48%, rgba(29, 29, 31, 0.14), transparent 50%);
+  background-attachment: fixed;
+  animation: nebula-breathe-dark 22s ease-in-out infinite alternate;
+}
+
+@keyframes nebula-breathe-light {
+  0% {
+    opacity: 0.55;
+  }
+  100% {
+    opacity: 0.78;
+  }
+}
+
+@keyframes nebula-breathe-dark {
+  0% {
+    opacity: 0.72;
+  }
+  100% {
+    opacity: 0.95;
+  }
+}
+
+/* Tiled leaf + branch-mist art (see static/img); blur reads as canopy haze */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-image: url('/img/bg-leaf-clouds.svg');
+  background-size: min(120vw, 1400px) min(120vh, 1400px);
+  background-repeat: repeat;
+  background-position: 48% 42%;
+  filter: blur(28px) saturate(1.05);
+  opacity: 0.34;
+  mix-blend-mode: soft-light;
+  animation: leaf-cloud-drift 28s ease-in-out infinite alternate;
+}
+
+html[data-theme='dark'] body::after {
+  filter: blur(42px) saturate(1.08);
+  opacity: 0.48;
+  mix-blend-mode: soft-light;
+}
+
+@keyframes leaf-cloud-drift {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  100% {
+    transform: translate(-1.2%, 0.8%) scale(1.02);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body::before,
+  body::after {
+    animation: none;
+  }
+
+  body::before {
+    opacity: 0.65;
+  }
+
+  html[data-theme='dark'] body::before {
+    opacity: 0.82;
+  }
+
+  body::after {
+    opacity: 0.32;
+  }
+
+  html[data-theme='dark'] body::after {
+    opacity: 0.5;
+  }
 }
 
 body {
-  background-color: var(--background-color);
+  position: relative;
+  margin: 0;
+  min-height: 100vh;
+  background: transparent;
   color: var(--text-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* default */
+::selection {
+  background: color-mix(in srgb, var(--btn-color) 55%, transparent);
+  color: #fff;
+}
+
+html[data-theme='light'] ::selection {
+  color: #0a1a18;
+}
+
 a {
   color: var(--link-color);
   text-decoration: none;
 }
 
-/* make internal/external distinction in specified links */
-/* 'invext' -> 'internal vs. external' */
-
-/* internal link */
 .invext a[href^="/"] {
   color: var(--internal-link-color) !important;
   text-decoration: none;
 }
 
-/* external links */
 .invext a[href^="http"] {
   color: var(--external-link-color) !important;
   text-decoration: none;
 }
-
 
 a:hover {
   cursor: pointer;
@@ -119,28 +281,30 @@ a:hover {
 
 code {
   background-color: var(--accent-color-light);
+  border-radius: 0.35rem;
+  padding: 0.1em 0.35em;
+  border: 1px solid var(--border-subtle);
 }
 
 select {
   flex-grow: 1;
 }
 
-/* uniform element patterns */
-
-/*******/
-/* btn */
-/*******/
-
 .btn {
-  background: var(--btn-color);
-  color: white;
-  border-radius: 0.5rem;
+  background: linear-gradient(135deg, var(--btn-color) 0%, #0d5c56 100%);
+  color: #fff;
+  border: 1px solid var(--border-accent);
+  border-radius: 0.75rem;
   padding: 0.5rem 1rem;
   margin: 0.5rem;
+  box-shadow: 0 4px 18px var(--shadow-accent-mid);
+  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.2s ease;
 }
 
 .btn:hover {
-  background: var(--btn-color--hover);
+  background: linear-gradient(135deg, var(--btn-color--hover) 0%, var(--btn-color) 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 26px var(--shadow-accent-mid);
 }
 
 .btn-close {
@@ -152,47 +316,48 @@ select {
   height: 1.5rem;
 }
 
-/* utility buttons (for toolbars etc.) */
-
 .util-btn {
   min-width: 2.5rem;
-  border-color: var(--accent-color-dark);
-  border-radius: 0.25rem;
-  border-width: 1px;
+  border: 1px solid var(--border-subtle);
+  border-radius: 0.5rem;
   padding: 0.5rem;
   margin: 0.25rem;
+  background: var(--surface-card);
+  backdrop-filter: blur(10px);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .util-btn:hover {
   cursor: pointer;
-  border-color: var(--accent-color-light);
+  border-color: var(--border-accent);
+  box-shadow: 0 6px 20px var(--shadow-accent-soft);
 }
-
-/* image buttons */
 
 .img-btn {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .img-btn:hover {
-  transform: scale(1.15);
+  transform: scale(1.06);
 }
-
-/* box */
 
 .box-border {
-  border-color: var(--accent-color-light);
-  border-width: 2px;
+  border: 1px solid var(--border-subtle);
+  border-radius: 1rem;
+  background: var(--surface-card);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
 }
 
-/* hide scrollbar */
+html[data-theme='dark'] .box-border {
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+}
 
 .hide-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
 
-/* hide actual scrollbar */
 .hide-scrollbar::-webkit-scrollbar {
   display: none;
 }

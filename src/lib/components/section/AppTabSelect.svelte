@@ -64,22 +64,24 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--background-color);
+    background: var(--surface-card);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     color: var(--text-color);
-    border: 1px solid var(--accent-color-dark);
-    border-radius: 8px;
+    border: 1px solid var(--border-subtle);
+    border-radius: 0.75rem;
     padding: 0.5rem 1rem;
     margin: 0.5rem;
     cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    /* small */
-    /* width: 70%; */
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.25s ease, box-shadow 0.25s ease,
+      background 0.25s ease, color 0.25s ease;
   }
 
   .tab:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px var(--hover-color);
-    background-color: var(--accent-color-light);
+    transform: translateY(-2px);
+    border-color: var(--border-accent);
+    box-shadow: 0 8px 28px var(--shadow-accent-soft);
+    background: var(--surface-card-strong);
     color: var(--hover-color);
   }
 
@@ -93,8 +95,10 @@
   }
 
   .selected {
-    background-color: var(--accent-color-light);
+    background: var(--surface-card-strong);
+    border-color: var(--border-accent);
     color: var(--hover-color);
+    box-shadow: 0 4px 20px var(--shadow-accent-soft);
   }
 
   .tab:focus {
