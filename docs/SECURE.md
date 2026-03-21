@@ -4,11 +4,11 @@ Since this project is meant to facilitate consolidatation of knowledge and data,
 
 By default everything is text-based (in markdown) so that data is universal and easily transferrable between environments.
 
-## Don't Lose My Stuff
+## Protecting Against Data Loss
 
 This project does not store or backup any data, so it is up to you to protect against data loss. It is recommended to use [version control][wiki-vrsn-ctrl] tools, like [git][git]. It is also preferrable to backup important data in at least 3 separate, physical locations (ex: 1. mobile phone, 2. laptop, and 3. external hard drive).
 
-## Don't Look At My Stuff
+## Data Privacy
 
 Absolutely no data is collected and no telemetry is used in any of the WikiBonsai projects. However, since WikiBonsai contains many plugins, privacy policies of projects WikiBonsai is built on top of should also be individually consulted (e.g. when using [vscode-tendr][wibomd-repo-vscode-tendr] be sure to also check the privacy policy of [vscode][vscode] [privacy policy][vscode-privacy]).
 
@@ -18,7 +18,7 @@ Most of this project and associated projects' code is open source and viewable o
 
 ## Perils of Centralization
 
-While the workflows of the WikiBonsai project are meant to facilitate effective and efficient knowledge consolidation into a single personal knowledgement management (PKM) system, there is risk inherent to putting all eggs in one basket in general. So while the mechanics enable easy centralization, it is also recommended to at least consider separating one's knowledge into separate projects to reduce the inherent risks of centralization.
+While the workflows of the WikiBonsai project are meant to facilitate effective and efficient knowledge consolidation into a single personal knowledgement management (PKM) system, there is risk inherent to centralizing all data in a single system. So while the mechanics enable easy centralization, it is also recommended to at least consider separating one's knowledge into separate projects to reduce the inherent risks of centralization.
 
 
 [git]: <https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F>
