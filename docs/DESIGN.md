@@ -24,13 +24,13 @@ By fleshing out those documents with textual descriptions or media, we can inter
 
 The goal of the WikiBonsai system is to create a tangible mental tile problem. This allows us to think about how we think and explicitly map the territory using APIs that run parallel to the natural APIs of the mind.
 
-### Wiki All The Thingz
+### Wiki All The Things
 
 The mechanic that allows these "tiles" to be stitched together is called a "wikiref", though is mostly synonymous with "wikilink", "bidirectional link", "internal link", among others. A wikiref is a kind of [markdown][mkdn] link defined by double square brackets -- like `[[this]]`. This type of reference allows connections to be made between entities (often files) quickly and easily. It is a well-known concept in the [personal knowledge management][wiki-pkm] (pkm) space and is an integral tool in leveraging associations and making old entities re-discoverable by defining these links between entities.
 
 For example, while reading a book one might take notes on its concepts by breaking them down into individual words and phrases. Definitions, details, or thoughts might be added to those words. But how can these notes be useful in the future -- instead of sitting alone in a book or forgotten folder? `[[wikirefs]]` allow those words and ideas to be broken down and connected to other entities or files so that the contents of that book may be naturally revisited, when relevant, far into the future. (For a more detailed walkthrough of this process, see [here][wibomd-doc-use]) The mind has a strong associative component, so being able to draw random associations for later use is a powerful mechanic to integrate into a note-taking system.
 
-Thus, many tools provide `[[wikiref]]`-like functionality. But as others have pointed out, (over)use of such systems can lead to fractured writing[^rank-n-file-fract] and does not tend to help build toward unified, coherent sets of ideas[^rank-n-file-uni]. A collection of modular facts, observations, and potentially insights, accrues but what has been accomplished other than making spagehtti notes?
+Thus, many tools provide `[[wikiref]]`-like functionality. But as others have pointed out, (over)use of such systems can lead to fractured writing[^rank-n-file-fract] and does not tend to help build toward unified, coherent sets of ideas[^rank-n-file-uni]. A collection of modular facts, observations, and potentially insights, accrues but what has been accomplished other than making fragmented notes?
 
 WikiBonsai acknowledges and addresses these weaknesses by providing scaffolding for a larger, coherent framework to help fit the pieces together.[^essay]
 
@@ -50,7 +50,7 @@ Ultimately, an entire collection of markdown files should be easily viewable and
 
 ### Graphical Visualization
 
-Graphs have [exploded in popularity][twit-pkm-graph] among the PKM crowd, but there are some questions and a lot of debate with regard to their actual utility. This project firmly believes that graphs in their current form are largely gimmicks, albeit pretty ones. But what would make them extraordinarily useful is if they use **fixed coordinates**. Just imagine a detective's corkboard when analyzing and tracking a case. Adding the ability to "pin" information in-place is useful for organizing that information into an easy-to-remember structure.
+Graphs have [exploded in popularity][twit-pkm-graph] among the PKM crowd, but there are some questions and a lot of debate with regard to their actual utility. Graphs in their current form are often more visually appealing than practically useful. But what would make them extraordinarily useful is if they use **fixed coordinates**. Just imagine a detective's corkboard when analyzing and tracking a case. Adding the ability to "pin" information in-place is useful for organizing that information into an easy-to-remember structure.
 
 These structures could then be used as "[memory palaces][memory-palace]" which is a memory trick with a long history: People have used them to memorize large swathes of information long before the printing press was invented and is still a common practice in memory competitions to this day. This project aims to provide a real, digital, tangible memory palace that will make remembering your documents and their relationships easier and make them more explorable.
 
@@ -84,7 +84,7 @@ After all, it's said that "[text is the universal interface][^universal-interfac
 
 ### Universal Language
 
-Besides being universal for knowledge workers, this project also aims to be universal for developers[^carmack]. All projects are deployable to web ecosystems like `npm` and written largely in Typescript (for types) and Javascript (when there aren't types).[^rust] This is so regardless if someone wants to use these tools for the browser, the web, desktop, or mobile there are likely (easy-ish) ways to integrate these workflows into those solutions.
+Besides being universal for knowledge workers, this project also aims to be universal for developers[^carmack]. All projects are deployable to web ecosystems like `npm` and written largely in Typescript and Javascript.[^rust] This is so regardless if someone wants to use these tools for the browser, the web, desktop, or mobile there are likely (easy-ish) ways to integrate these workflows into those solutions.
 
 ### Why So Modular?
 
@@ -123,7 +123,7 @@ Thus, WikiBonsai is designed to provide mechanics to make transitioning to analo
 [^rank-n-file-uni]: "Seeing the shape of your ideas is not the same as having new ideas. Creating a too-comprehensive portrait of your own thoughts can amount to locking yourself into a labyrinth of your own preconceptions." ~ [src][pst-rank-n-file]
 [^refactor]: The process of whittling down the tree stems can be thought of as "refactoring", which is a concept in software that describes the process of simplifying a software system similar to editing writing. Working with a tree such as this can give nontechnical people practice with this process of refactoring.
 [^rust]: Rust was another consideration but at the time of development there weren't any markdown parsers with plugin capabilities. Also, many popular and extensible productivity tools already exist in the Javascript ecosystem.
-[^symbolic-ai]: I am wondering if these are the symbols the symbolic AI people are looking for...
+[^symbolic-ai]: These structures may relate to the symbols sought by the symbolic AI community.
 [^tree-nav]: The (semantic) tree would then be the most efficient route of traversal through the set of said tiles.
 [^weave]: A motto of this project is: "Meaning is in the weave".
 [^universal-interface]: [Article][pst-txt] and [video][utb-lex-karpathy].
