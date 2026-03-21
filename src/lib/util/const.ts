@@ -40,6 +40,7 @@ export const URL_REPO_TREEHOUZE  : string = 'https://github.com/wikibonsai/treeh
 export const URL_REPO_WIKIREFS   : string = 'https://github.com/wikibonsai/wikirefs';
 // social
 export const URL_SOCIAL_GITHUB   : string = 'https://github.com/wikibonsai';
+export const URL_SOCIAL_SUBSTACK : string = 'https://wibomd.substack.com/';
 export const URL_SOCIAL_X        : string = 'https://x.com/wibomd/';
 // ssg
 export const URL_SSG_ASTRO       : string = 'https://astro-bloomz.netlify.app';

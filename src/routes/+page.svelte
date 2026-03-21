@@ -10,6 +10,7 @@
     URL_DOCS_PHIL_LEARNING_LOOPS,
     URL_DOCS_STD_BED,
     URL_DOCS_USE,
+    URL_SOCIAL_SUBSTACK,
     URL_REPO_CAML,
     URL_REPO_SEMTREE,
     URL_REPO_TREEHOUZE,
@@ -57,9 +58,9 @@
     </p>
     <div class="btn-container">
       <!-- <button class="btn" on:click={goTo(URL_REPO_WIKIBONSAI)}>About</button> -->
-      <button class="btn" on:click={goTo(ROUTE_TREE)}>Knowledge Bonsai</button>
+      <!-- <button class="btn" on:click={goTo(ROUTE_TREE)}>Knowledge Bonsai</button> -->
       <!-- <DropDown title={'Knowledge Bonsais'} items={data.trees}></DropDown> -->
-      <button class="btn" on:click={goTo(ROUTE_CONSULT)}>Consult</button>
+      <button class="btn" on:click={goTo(URL_SOCIAL_SUBSTACK)}>SubStack</button>
     </div>
   </section>
   <BonsaiJungleGymSVG />
