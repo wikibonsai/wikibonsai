@@ -12,13 +12,11 @@
 
 > ⚠️ Please remember to backup all data and use version control.
 
-The WikiBonsai project[^ai] transforms a collection of markdown files into a text-based, easy-to-navigate [jungle gym for thought][wibomd-doc-philosophy--a-jungle-gym-for-thought][^mind] with an [API for the mind][wibomd-doc-design--an-api-for-the-mind][^mixed-metaphors]. This is accomplished by enabling personal knowledge management (PKM) workflows that rely on `[[wiki]]` syntaxes, "semantic trees" or "knowledge bonsais", and data visualizations that are viewable on screens or in augmented/virtual reality.
+The WikiBonsai project transforms a collection of markdown files into a structured knowledge layer in plain text (in markdown). This is accomplished by enabling text-based workflows that rely on `[[wiki]]` syntaxes, knowledge trees, and data visualizations.
 
-This project is about strategically implementing and open-sourcing functionality that will benefit the most users and developers across the digital ecosystem. Thus, it abides by the [Unix Philosophy][art-unix-phil]: Everything is modularized and implemented in such a way as to maximize re-use whether it be for the browser, desktop, mobile, or headset. It's about furthering the state of PKM as a whole by building atop "[standardization bedrock][wibomd-doc-design--drilling-down-to-standardization-bedrock]" instead of just creating a single application.
+This project is about strategically implementing and open-sourcing functionality that will benefit the most users and developers across the digital ecosystem. Thus, it abides by the [Unix Philosophy][art-unix-phil]: Everything is modularized and implemented in such a way as to maximize re-use whether it be for the browser, desktop, mobile, or headset. It's about furthering structured knowledge tooling by building atop "[standardization bedrock][wibomd-doc-design--drilling-down-to-standardization-bedrock]" instead of just creating a single application.
 
 Further, these workflows may also facilitate the mapping of [semantic space][wibomd-doc-design--semantic-space] which could prove an invaluable resource in building a better understanding of how neural nets work and furthering the development of interpretable, explainable AI.
-
-Only time will tell how far this path may [go][wibomd-doc-philosophy--finding-free-will].
 
 ## Notable Workflows
 
@@ -59,11 +57,14 @@ And be sure to check out [other writings][social-x] for art, writing, memes, and
 The following links point to repositories of the WikiBonsai project and are organized by stack depth. Projects toward the top are ready-to-use and meant for the end user, while projects toward the bottom are meant for developers to build with and integrate into other solutions:
 
 - For Use:
+  - Starters:
+    - [garden-beds][wibomd-repo-garden-beds]: A collection of starter WikiBonsai digital gardens -- includes starter markdown files and config files.
   - AI:
     - [germinator][wibomd-repo-germinator]: An AI-powered semantic seedling [germinator][demo-germinator] that generates starter semantic mappings of concepts which are easily transplantable into one's own digital garden.
       - [semtree-germ][wibomd-repo-semtree-germ]: An earlier version of the germinator that focused on [semantic trees][demo-semtree-germ].
     - [tree-trainer][wibomd-repo-tree-trainer]: An AI-powered [tree trainer][demo-tree-trainer] that generates syntax trees for sentence(s).
     - [prompt][wibomd-repo-promp]: Prompts for AI-powered digital gardening.
+    - [tendr-skill][wibomd-repo-skill]: A skill for AI agents to tend their knowledge base.
   - Notes:
     - [vscode-tendr][wibomd-repo-vscode-tendr]: A [VSCode][git-vscode] extension for tending a WikiBonsai digital garden.
     - [tendr-cli][wibomd-repo-tendr-cli]: A CLI tool for tending a markdown-based WikiBonsai digital garden.
@@ -72,8 +73,6 @@ The following links point to repositories of the WikiBonsai project and are orga
     - [jekyll-bloomz][wibomd-repo-jekyll-bloomz]: An example setup to enable WikiBonsai workflows fro a [jekyll][ssg-jekyll]-bsaed statically generated site (SSG).
     - [astro-bloomz][wibomd-repo-astro-bloomz]: An example setup to enable WikiBonsai workflows for an [astro][ssg-astro]-based statically generated site (SSG).
     - [eleventy-bloomz][wibomd-repo-eleventy-bloomz]: An example setup to enable WikiBonsai workflows for [eleventy][ssg-eleventy]-based static site generation (SSG).
-  - Starters:
-    - [garden-beds][wibomd-repo-garden-beds]: A collection of starter WikiBonsai digital gardens -- includes starter markdown files and config files.
 - For Dev
   - Markdown Parsers:
     - [markdown-it-caml][wibomd-repo-markdown-it-caml]: A [markdown-it][git-markdown-it] plugin to enable  `:colon::attributes`.
@@ -85,10 +84,12 @@ The following links point to repositories of the WikiBonsai project and are orga
     - [jekyll-semtree][wibomd-repo-jekyll-semtree]: A jekyll plugin to generate a semantic tree from index collections.
     - [jekyl-wikirefs][wibomd-repo-jekyll-wikirefs]: A jekyll plugin to enable `[[wikirefs]]`.
   - Base:
+    - [almanac][wibomd-repo-almanac]: A type system for PKM notes.
     - [caml][wibomd-repo-caml-mkdn]: Base utilities for Colon Attribute Markup Language (`:colon::attributes`).
     - [caudex][wibomd-repo-caudex]: An index to cache and store WikiBonsai relationships.
     - [semtree][wibomd-repo-semtree]: Base utilities for "semantic tree" or "knowledge bonsai" building in markdown.
-    - [treehouze][wibomd-repo-treehouze]: Generalized graph utilities with minor specialized features for visualizing WikiBonsai-enabled markdown-based PKMs.
+    - [treehouze][wibomd-repo-treehouze]: Generalized graph utilities with minor specialized features for visualizing WikiBonsai-enabled markdown-based knowledge collections.
+    - [trug][wibomd-repo-trug]: A config handler for WikiBonsai-style knowledge collections.
     - [wikirefs][wibomd-repo-wikirefs]: Base utilities for internal links (`[[wikirefs]]`).
   - Spec:
     - [caml-spec][wibomd-repo-caml-spec]: Test suite for Colon Attribute Markup Language, CAML, (`:colon::attributes`) specification.
@@ -96,7 +97,7 @@ The following links point to repositories of the WikiBonsai project and are orga
 
 ## ⚠️ Usage Note
 
-The systems you interact with have an effect on the way you think. This system is meant to provide a ["jungle gym for the thought,"][wibomd-doc-philosophy--a-jungle-gym-for-thought] but it can't do everything and might even have negative consequences if used improperly. Here are some supplemental suggestions for adopting a PKM-framework such as this, especially for educational purposes:
+The systems you interact with have an effect on the way you think. This system is meant to provide a ["jungle gym for thought,"][wibomd-doc-philosophy--a-jungle-gym-for-thought] but it can't do everything and might even have negative consequences if used improperly. Here are some supplemental suggestions for adopting a knowledge framework such as this, especially for educational purposes:
 
 ### Write Full Essays
 
@@ -117,14 +118,12 @@ The digital world cannot replace practical, hands-in-the-mud experience. No matt
 
 ## Forward
 
-Here's to making the road ahead a touch less bumpy and a bit more wonder-full for those that follow.
+Here's to making the road ahead a bit smoother for those that follow.
 
 [**just keep tending...🪴**][wibomd-doc-use]
 
 
-[^ai]: 🤖 AI Collaboration: To date, code and prose of the WikiBonsai project was not written by AI, but was _occasionally_ consulted to improve overall quality. This may or may not change going forward.
 [^mind]: Not too dissimilar from a ["bicycle for the mind"][utb-mind-bike].
-[^mixed-metaphors]: Please excuse the mixed metaphor soup.
 
 [art-unix-phil]: <https://ia902701.us.archive.org/12/items/bstj57-6-1899/bstj57-6-1899_text.pdf>
 [britannica]: <https://britannica.com/>
@@ -164,6 +163,7 @@ Here's to making the road ahead a touch less bumpy and a bit more wonder-full fo
 [wibomd-doc-terms]: <https://github.com/wikibonsai/wikibonsai/tree/main/docs/TERMS.md>
 [wibomd-doc-use]: <https://github.com/wikibonsai/wikibonsai/tree/main/docs/USE.md>
 
+[wibomd-repo-almanac]: <https://github.com/wikibonsai/almanac>
 [wibomd-repo-astro-bloomz]: <https://github.com/wikibonsai/astro-bloomz>
 [wibomd-repo-caml-mkdn]: <https://github.com/wikibonsai/caml-mkdn>
 [wibomd-repo-caml-spec]: <https://github.com/wikibonsai/caml-mkdn/tree/main/spec>
@@ -183,7 +183,9 @@ Here's to making the road ahead a touch less bumpy and a bit more wonder-full fo
 [wibomd-repo-remark-wikirefs]: <https://github.com/wikibonsai/remark-wikirefs>
 [wibomd-repo-semtree]: <https://github.com/wikibonsai/semtree>
 [wibomd-repo-semtree-germ]: <https://github.com/wikibonsai/semtree-germ>
+[wibomd-repo-skill]: <https://github.com/wikibonsai/tendr-skill>
 [wibomd-repo-tree-trainer]: <https://github.com/wikibonsai/tree-trainer>
+[wibomd-repo-trug]: <https://github.com/wikibonsai/trug>
 [wibomd-repo-tendr-cli]: <https://github.com/wikibonsai/tendr-cli>
 [wibomd-repo-treehouze]: <https://github.com/wikibonsai/treehouze>
 [wibomd-repo-vscode-tendr]: <https://github.com/wikibonsai/vscode-tendr>
