@@ -43,7 +43,7 @@
 <svelte:window on:resize={updateScreenSize} />
 
 <header class="header">
-  <Logo size={'small'} wTxt={true}></Logo>
+  <Logo size={'small'} wTxt={false}></Logo>
   <div class="nav-container" use:clickOutside on:click_outside={handleClickOutside}>
     <button class="hamburger" on:click={toggleMenu}>
       <div class="line"></div>
