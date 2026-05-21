@@ -12,9 +12,9 @@
 
 > ⚠️ Please remember to backup all data and use version control.
 
-The WikiBonsai project transforms a collection of markdown files into a structured knowledge layer in plain text (in markdown). This is accomplished by enabling text-based workflows that rely on `[[wiki]]` syntaxes, knowledge trees, and data visualizations.
+The WikiBonsai project transforms a collection of markdown files into a structured knowledge layer in plain-text markdown. This is accomplished by enabling text-based workflows that rely on `[[wiki]]` syntaxes, knowledge trees, and data visualizations.
 
-This project is about strategically implementing and open-sourcing functionality that will benefit the most users and developers across the digital ecosystem. Thus, it abides by the [Unix Philosophy][art-unix-phil]: Everything is modularized and implemented in such a way as to maximize re-use whether it be for the browser, desktop, mobile, or headset. It's about furthering structured knowledge tooling by building atop "[standardization bedrock][wibomd-doc-design--drilling-down-to-standardization-bedrock]" instead of just creating a single application.
+This project is about strategically implementing and open-sourcing functionality that will benefit the most users and developers across the digital ecosystem. Thus, it abides by the [Unix Philosophy][art-unix-phil]. Everything is modularized and implemented in such a way as to maximize re-use whether it be for the browser, desktop, mobile, or headset. It's about furthering structured knowledge tooling by building atop "[standardization bedrock][wibomd-doc-design--drilling-down-to-standardization-bedrock]" instead of just creating a single application.
 
 Further, these workflows may also facilitate the mapping of [semantic space][wibomd-doc-design--semantic-space] which could prove an invaluable resource in building a better understanding of how neural nets work and furthering the development of interpretable, explainable AI.
 
@@ -27,13 +27,13 @@ These are the workflows the WikiBonsai project enables for markdown-based collec
 3. A clean, lean, [yaml][yaml]-like [markup language for structured attributes][wibomd-repo-caml-mkdn] (with built-in `[[wikiref]]` support).
 4. [Graph][wibomd-repo-treehouze] utilities to experience and interact with a unified visual-spatial "[memory palace][memory-palace]" that emerges from the relationships formed across markdown notes (syntaxes 1 + 2).
 
-These workflows are what distinguish "WikiBonsai" from other styles of digital garden -- particularly the [semantic tree][reddit-musk].
+These workflows are what distinguish "WikiBonsai" from other styles of digital garden -- particularly the cultivation of a [semantic tree][reddit-musk].
 
 ## Project Info
 
 ### Docs
 
-The documentation in this repository describe the philosophies, mechanics, and terminologies that are adopted throughout all of the WikiBonsai projects:
+The documentation in this repository describes the philosophies, mechanics, and terminologies that are adopted throughout all of the WikiBonsai projects:
 
 - For Use:
   - [Getting Started][wibomd-doc-use]
@@ -50,7 +50,7 @@ The documentation in this repository describe the philosophies, mechanics, and t
 - For Input:
   - [Questions][wibomd-doc-questions]
 
-And be sure to check out [other writings][social-x] for art, writing, memes, and more.
+And be sure to check out [other][social-substack] [writings][social-x] for art, writing, memes, and more.
 
 ### Repos
 
@@ -70,19 +70,19 @@ The following links point to repositories of the WikiBonsai project and are orga
     - [tendr-cli][wibomd-repo-tendr-cli]: A CLI tool for tending a markdown-based WikiBonsai digital garden.
   - SSG:
     - [jekyll-garden][wibomd-repo-jekyll-garden]: A [jekyll][ssg-jekyll] template that can be imported as a gem or cloned as a template project.
-    - [jekyll-bloomz][wibomd-repo-jekyll-bloomz]: An example setup to enable WikiBonsai workflows fro a [jekyll][ssg-jekyll]-bsaed statically generated site (SSG).
+    - [jekyll-bloomz][wibomd-repo-jekyll-bloomz]: An example setup to enable WikiBonsai workflows for a [jekyll][ssg-jekyll]-based statically generated site (SSG).
     - [astro-bloomz][wibomd-repo-astro-bloomz]: An example setup to enable WikiBonsai workflows for an [astro][ssg-astro]-based statically generated site (SSG).
     - [eleventy-bloomz][wibomd-repo-eleventy-bloomz]: An example setup to enable WikiBonsai workflows for [eleventy][ssg-eleventy]-based static site generation (SSG).
-- For Dev
+- For Dev:
   - Markdown Parsers:
-    - [markdown-it-caml][wibomd-repo-markdown-it-caml]: A [markdown-it][git-markdown-it] plugin to enable  `:colon::attributes`.
+    - [markdown-it-caml][wibomd-repo-markdown-it-caml]: A [markdown-it][git-markdown-it] plugin to enable `:colon::attributes`.
     - [markdown-it-wikirefs][wibomd-repo-markdown-it-wikirefs]: A [markdown-it][git-markdown-it] plugin to enable `[[wikirefs]]`.
     - [remark-caml][wibomd-repo-remark-caml]: A [remark][git-remark] plugin to enable `:colon::attributes`.
     - [remark-wikirefs][wibomd-repo-remark-wikirefs]: A [remark][git-remark] plugin to enable `[[wikirefs]]`.
   - Jekyll:
     - [jekyll-graph][wibomd-repo-jekyll-graph]: A jekyll plugin to generate graphs of blog content.
     - [jekyll-semtree][wibomd-repo-jekyll-semtree]: A jekyll plugin to generate a semantic tree from index collections.
-    - [jekyl-wikirefs][wibomd-repo-jekyll-wikirefs]: A jekyll plugin to enable `[[wikirefs]]`.
+    - [jekyll-wikirefs][wibomd-repo-jekyll-wikirefs]: A jekyll plugin to enable `[[wikirefs]]`.
   - Base:
     - [almanac][wibomd-repo-almanac]: A type system for PKM notes.
     - [caml][wibomd-repo-caml-mkdn]: Base utilities for Colon Attribute Markup Language (`:colon::attributes`).
@@ -116,14 +116,12 @@ Like this project it is best to view a set of notes and explicit knowledge as a 
 
 The digital world cannot replace practical, hands-in-the-mud experience. No matter what you learn or study be sure to learn something, _anything_, that requires your hands in the real world.
 
-## Forward
+## Foreword
 
 Here's to making the road ahead a bit smoother for those that follow.
 
 [**just keep tending...🪴**][wibomd-doc-use]
 
-
-[^mind]: Not too dissimilar from a ["bicycle for the mind"][utb-mind-bike].
 
 [art-unix-phil]: <https://ia902701.us.archive.org/12/items/bstj57-6-1899/bstj57-6-1899_text.pdf>
 [britannica]: <https://britannica.com/>
@@ -144,6 +142,7 @@ Here's to making the road ahead a bit smoother for those that follow.
 [wikipedia]: <https://www.wikipedia.org>
 [yaml]: <https://yaml.org/>
 
+[social-substack]: <https://wibomd.substack.com>
 [social-x]: <https://x.com/wibomd>
 
 [wibomd-doc-cite]: <https://github.com/wikibonsai/wikibonsai/tree/main/docs/CITE.md>
