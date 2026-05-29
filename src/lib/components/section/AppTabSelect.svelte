@@ -2,6 +2,9 @@
   import { URL_TENDR_CLI, URL_VSCODE_PLUGIN } from '$lib/util/const';
   import WindowAppIcon from '$lib/components/icons/WindowAppIcon.svelte';
   import WindowCliIcon from '$lib/components/icons/WindowCLIIcon.svelte';
+  import RobotIcon from '$lib/components/icons/RobotIcon.svelte';
+
+  const URL_TENDR_SKILL: string = 'https://github.com/wikibonsai/tendr-skill';
 
   let selected: string = 'ide';
   const demoSrcCli: string = '/img/demo-tendr-cli.gif';
@@ -25,6 +28,12 @@
     </a>
     ...an IDE
   </button>
+  <button class="tab" class:selected={selected === 'skill'} on:click={() => select('skill')}>
+    <a href={URL_TENDR_SKILL}>
+      <RobotIcon class="img-btn" />
+    </a>
+    ...an AI Agent
+  </button>
 </div>
 {#if selected === 'cli'}
   <div class="app-content">
@@ -37,6 +46,13 @@
     <a href={URL_VSCODE_PLUGIN}>
       <img class="app-demo img-btn img-vscode" src={demoSrcApp} alt="vscode-tendr"/>
     </a>
+  </div>
+{:else if selected === 'skill'}
+  <div class="app-content">
+    <div class="skill-demo">
+      <p class="skill-description">Give your AI agent a structured knowledge base it can read, write, and reason over -- powered by WikiBonsai primitives.</p>
+      <a class="skill-link" href={URL_TENDR_SKILL}>View on GitHub</a>
+    </div>
   </div>
 {/if}
 
@@ -108,6 +124,34 @@
   .img-btn {
     cursor: pointer;
     margin-bottom: 1rem;
+  }
+
+  .skill-demo {
+    max-width: 28rem;
+    margin: 2rem auto;
+    text-align: center;
+  }
+
+  .skill-description {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: var(--accent-text-color);
+    margin-bottom: 1.5rem;
+  }
+
+  .skill-link {
+    display: inline-block;
+    padding: 0.5rem 1.25rem;
+    border: 1px solid var(--border-accent);
+    border-radius: 0.5rem;
+    color: var(--link-color);
+    text-decoration: none;
+    transition: background 0.2s ease, color 0.2s ease;
+  }
+
+  .skill-link:hover {
+    background: var(--surface-card-strong);
+    color: var(--hover-color);
   }
 
   @media (min-width: 768px) {
