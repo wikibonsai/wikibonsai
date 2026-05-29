@@ -2,10 +2,8 @@
   import { onMount } from 'svelte';
   import {
     ROUTE_CONSULT,
-    ROUTE_TREE,
-    URL_GERMINATOR,
     URL_SOCIAL_GITHUB,
-    URL_VSCODE_PLUGIN,
+    URL_SOCIAL_SUBSTACK,
   } from '$lib/util/const';
   import { clickOutside } from '$lib/util/func';
   import Logo from '$lib/components/element/Logo.svelte';
@@ -56,9 +54,7 @@
           <Theme />
         {/if}
         <a href={URL_SOCIAL_GITHUB} class="nav-link">GitHub</a>
-        <a href={ROUTE_TREE} class="nav-link">Bonsais</a>
-        <a href={URL_GERMINATOR} class="nav-link">Germinator</a>
-        <a href={URL_VSCODE_PLUGIN} class="nav-link">Markdown</a>
+        <a href={URL_SOCIAL_SUBSTACK} class="nav-link">SubStack</a>
         <a href={ROUTE_CONSULT} class="nav-link">Consult</a>
       </div>
     </nav>
