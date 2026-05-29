@@ -1,21 +1,17 @@
 # How To Use
 
-When first faced with personal knowledge management (PKM) as a topic, it is very common for people to ask, "How do I start?" "How should I organize it?" Below are some opinionated step-by-step tips for getting started.
-
-This document describes, step-by-step, how to get up and running with a WikiBonsai flavoured digital garden. Some details are specific to WikiBonsai (e.g. configs and [`doctypes`](#doctypes)), but the rest of the workflow descriptions and overall structure could be adopted in other personal knowledge management applications or frameworks.
+This document describes, step-by-step, how to get up and running with a WikiBonsai digital garden. Some details are specific to WikiBonsai (e.g. configs and [`doctypes`](#doctypes)), but the rest of the workflow descriptions and overall structure could be adopted in other knowledge management applications or frameworks -- whether tended by a person, an AI agent, or both.
 
 So, to get started:
 
-1. Install the [wikbonsai VSCode extension][wibomd-repo-vscode-tendr] or open up your PKM app of choice.
+1. Pick your tool: the [VSCode extension][wibomd-repo-vscode-tendr], the [CLI][wibomd-repo-tendr-cli], or the [agent skill][wibomd-repo-tendr-skill].
 2. Clone a starter [garden bed][wibomd-repo-garden-beds].
 
 Or...
 
-- If you just want to see the end result, you can check out the [the bird's eye view](#a-birds-eye-view) and the ["How To Read A Book" garden bed][wibomd-repo-garden-beds--how-to-read-a-book].
+- If you just want to see the end result, you can check out [the bird's eye view](#a-birds-eye-view) and the ["How To Read A Book" garden bed][wibomd-repo-garden-beds--how-to-read-a-book].
 
-As a sidenote, it is common in the PKM space to see people with two vaults, or separate collections of notes. One a touch chaotic and meant for tracking widely across all of one's work, while another is more ordered and finely curated. WikiBonsai aims for the latter vault-type where order, orientation, and sense-making are the primary goal, but is not limited to only that use.
-
-## Placing Files: Directory Structure
+## Directory Structure
 
 The suggested WikiBonsai project structure is heavily influenced by [jekyll][jekyll]: Create a directory for each type of document you want to make (`doctype`; e.g. book, entry, essay, etc.) and place markdown files of that `doctype` into the target directory.
 
@@ -32,27 +28,57 @@ If you take a look at the [minimal starter bed][wibomd-repo-bed-starter], you mi
     └── t.default.md
 ```
 
-`config.toml` defines some basic configuration for your vault, such as which markdown file is the root of your bonsai and what attribute engine to use ([`caml`][wibomd-repo-caml-mkdn] or [`yaml`][yaml]).
+`config.toml` defines some basic configuration for your garden, such as which markdown file is the root of your bonsai and what attribute engine to use ([`caml`][wibomd-repo-caml-mkdn] or [`yaml`][yaml]).
 
-`t.doc.toml` contains doctype information, such as which directory the documents live in or what emoji corresponds to that type.
+`t.doc.toml` contains [doctype](#doctypes) information, such as which directory the documents live in or what emoji corresponds to that type.
 
-`index`, `entries`, and `templates` are the directories which correspond to the doctypes `index`, `entry`, and `template` which are special doctypes with particular meaning in the WikiBonsai framework.
+`index`, `entries`, and `templates` are the directories which correspond to those [doctypes](#doctypes).
 
 ## Doctypes
 
-Document types are used to determine what can be done with a document, like what metadata attributes can be expected, what directory those document are in, or what the markdown filename prefixes are. These attributes are defined in the doctype file whose default is `t.doc.toml`. `Doctype`s are mostly defined by you, but there are three kinds of types that are generally expected: `template`, `index`, `entry` doctypes.
+Organizing files by type makes it easy to know what kind of content you're looking at and what you can do with it -- whether you're browsing your own notes or an agent is traversing the garden programmatically.
+
+Document types determine what can be done with a markdown file, like what metadata attributes can be expected, what directory those documents are in, or what the filename prefixes are. These attributes are defined in the doctype file whose default is `t.doc.toml`. Doctypes are mostly defined by you, but there are three kinds of types that are generally expected: `index`, `entry`, and `template` doctypes.
+
+`Index` documents are used to build the [semantic tree][wibomd-repo-semtree] and can be thought of as the "trunk" of that tree. They typically contain metadata attributes and a markdown list outline of `- [[wikilinks]]` that represents the shape of the tree. If an index document is linked, it will be traversed in full and appended to the tree. (This is useful in breaking the tree up over multiple files.) Any other documents that are linked will be included as "leaves", but will not be traversed.
+
+```markdown
+// i.bonsai.md
+
+: title :: knowledge bonsai
+: tldr  :: "index of concepts."
+
+- [[learn]]
+  - [[discovery]]
+  - [[read]]
+```
+
+The main "leaves" are `entry` documents, which act like wikipedia entries. Each entry doc should map to a particular sense of a word (wikipedia-style [disambiguation][wiki-disam] is useful for making distinctions here) and contains descriptive information of the concept the word represents. For example, for the word "read" there might be one file called "read-(learn).md" to refer to humans reading to learn and another "read-(computer).md" to refer to computers reading data from disk. This separation allows us to distinguish between the different senses of the word "read".
+
+```markdown
+// active-reading.md
+
+: title :: active reading
+: tldr  :: "an effortful activity of cooperation between reader/writer."
+
+- what a [[demanding-reader]] does.
+```
 
 Template documents are used to define what attributes can be expected for that particular doctype. New files will be populated with the same attributes listed in the corresponding template document of that doctype.
 
-Index documents are used to build the semantic tree and can be thought of as the "trunk" of that tree. They should only contain metadata attributes and an unordered markdown list outline of `- [[wikilinks]]` that represents the shape of the tree. If an index document is linked, it will be traversed in full and appended to the tree. (This is useful in breaking the tree up over multiple files.) Any other documents that are linked will be included as "leaves", but will not traversed.
+```markdown
+// t.book.md
 
-The main "leaves" are entry documents, which act like wikipedia entries. Each entry doc should map to a particular sense of a word (wikipedia-style [disambiguation][wiki-disam] is useful for making distinctions here) and contains descriptive information of the concept the word represents. For example, for the word "read" there might be one file called "read-(learn).md" to refer to humans reading to learn and another "read-(computer).md" to refer to computers reading data from disk. This separation allows us to distinguish between the different senses of the word "read".
+: title  :: 
+: author ::
+: pdate  ::
+```
 
 ## Cultivating A Semantic Tree
 
-As for the process of actually filling in notes, let's walk through part of "[How To Read A Book][bk-how-to-read]":
+A flat collection of notes is hard to navigate once it grows beyond a handful of files. A semantic tree gives your concepts a place in a hierarchy -- like a table of contents for everything you know. It makes large gardens navigable and gives both people and agents a structured way to find and relate concepts.
 
-Create a file for the book and call it `bk.how-to-read-a-book.md` (the `bk.` prefix means that it is a `book` doctype). Add a heading for the first chapter. Then add some of the vocab words from that chapter:
+Let's walk through how you might build one as you're reading a book. Say we're reading "[How To Read A Book][bk-how-to-read]": Create a file for the book and call it `bk.how-to-read-a-book.md` (the `bk.` prefix means that it is a `book` doctype). Add a heading for the first chapter. Then add some of the vocab words from that chapter:
 
 ```markdown
 // bk.how-to-read-a-book.md
@@ -202,7 +228,9 @@ When building out the semantic tree, it's helpful to think of it as a hierarchic
 
 ## Mapping A Semantic Web
 
-For those interested in leveraging WikiBonsai tooling to map semantic webs (in a [semantic space][how-chatgpt--meaning-space]), just be sure to pay attention to `:caml-attributes::[[and-wikiattrs]]`.
+A semantic tree tells you *where* a concept sits in a hierarchy. But concepts also have relationships that cut across the tree -- "active reading" isn't just a child of "read," it's also an attribute of "demanding reader" and involves "effort." Capturing these cross-cutting relationships turns your tree into a richer semantic web (in a [semantic space][how-chatgpt--meaning-space]).
+
+To map these relationships, pay attention to `:caml-attributes::[[and-wikiattrs]]`.
 
 For example, let's look at the concept `active-reading` again:
 
@@ -239,9 +267,9 @@ To flesh out this concept's place in a semantic web, just add `:caml::[[wikiattr
 : tag          :: [[read]]
 ```
 
-Keep in mind that these new links would register as zombie links in our new vault because there is no corresponding markdown file. But WikiBonsai will still provide functionailty based on the existence of zombie links, such as showing the reference in forward and backward reference panels and so on.
+Keep in mind that these new links would register as zombie links in our new garden because there is no corresponding markdown file. But WikiBonsai will still provide functionality based on the existence of zombie links, such as showing the reference in forward and backward reference panels and so on.
 
-Anyway, our `active-reading.md` file could look something like this at the end:
+Putting it all together, our `active-reading.md` file could look something like this:
 
 ```markdown
 // active-reading.md
@@ -255,11 +283,11 @@ Anyway, our `active-reading.md` file could look something like this at the end:
 : tldr         :: "an effortful activity of cooperation between reader/writer; to continually ask questions as you read and search for the corresponding answers."
 ```
 
-Once you've added enough concepts, markdown files, and wikiattrs you can visualize the relationships in the (web) graph. To get a feel for the "semantic space", you would need to used fixed coordinates and ensure those coordinates pertain to some specific meaning coordinate system. (WikiBonsai does not currently provide meaningful coordinate systems...yet :))
+Once you've added enough concepts, markdown files, and wikiattrs you can visualize the relationships in the (web) graph. To get a feel for the "semantic space", you would need to use fixed coordinates and ensure those coordinates pertain to some specific meaning coordinate system. (WikiBonsai does not currently provide meaningful coordinate systems...yet :))
 
 ### In The Abstract
 
-If all has gone well, this process of note-making will feel like unrolling a map of the material you're reading, listening to, watching or experiencing. It will lay bare the concepts within and make available via [touchpoints][wibomd-doc-design--an-api-for-the-mind] which will make original sources easier to rediscover, make new connections to, and integrate with the rest of what you know. It should feel fairly intuitive.
+If all has gone well, this process of note-making will feel like unrolling a map of the material you're reading, listening to, watching or experiencing. It will lay bare the concepts within and make them available via [touchpoints][wibomd-doc-design--an-api-for-the-mind] which will make original sources easier to rediscover, make new connections to, and integrate with the rest of what you know. It should feel fairly intuitive.
 
 ## A Bird's Eye View
 
@@ -278,16 +306,41 @@ As a sidenote, WikiBonsai has kept in mind legacy information organization techn
 
 The semantic tree is a very useful orienting structure once many concepts have been integrated into it. To see some larger examples for guidance, see the cited [site-navs][wibomd-doc-cite--sites].
 
+## Usage Note
+
+The systems you interact with have an effect on the way you think. This system is meant to provide a ["jungle gym for thought,"][wibomd-doc-philosophy--a-jungle-gym-for-thought] but it can't do everything and might even have negative consequences if used improperly. Here are some supplemental suggestions for adopting a knowledge framework such as this, especially for educational purposes:
+
+### Write Full Essays
+
+The workflows this project enables are meant to help develop an explicit relationship with the words you use. It's possible over-reliance on a tool like this (like many other digital productivity tools) can allow, or even facilitate, overly modular and fractured trains of thought. Writing [full essays][utb-essay] can combat fractured thinking and exercise those parts of the mind.
+
+### Refer to Common Cultural Reference Points
+###### (such as [britannica][britannica] or [wikipedia][wikipedia])
+
+By adopting a tool specifically meant for mapping vocabulary, it can be tempting to use niche words or make up one's own to demarcate an idea. But too much of this risks building a Tower of Babel and losing the ability to communicate effectively with others. Use shared vocabulary where you can and if you've found a word of better fit, use it with others. That is the purpose of language after all.
+
+### There is Never a "Final Word"
+
+Like this project it is best to view a set of notes and explicit knowledge as a current state of affairs -- it's the state of the trail; of how much clutter has been cleared away. The goal is to build a navigable path for yourself, but to remain aware of what other things lie beyond the already-explored path. Always be open to what hard reality is telling you, especially while getting your hands dirty.
+
+### Get Your Hands Dirty
+
+The digital world cannot replace practical, hands-in-the-mud experience. No matter what you learn or study be sure to learn something, _anything_, that requires your hands in the real world.
+
 
 [^iyow]: There are folks that say you should write everything "in your own words" and while this is an extraordinarily useful exercise, finding a good definition you want to integrate into your own knowledge is also good practice. That is what good ideas are for after all.
 [^zombie-node]: It is not strictly necessary to create a document. Zombie nodes, wikirefs whose document does not yet exist, will be tracked as a single node in the system and can be created at any time.
 
+[britannica]: <https://britannica.com/>
 [bk-how-to-read]: <https://www.goodreads.com/book/show/567610.How_to_Read_a_Book>
 [how-chatgpt--meaning-space]: <https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/#meaning-space-and-semantic-laws-of-motion>
 [jekyll]: <https://jekyllrb.com/docs/structure/>
 [wiki-disam]: <https://en.wikipedia.org/wiki/Wikipedia:Disambiguation>
+[utb-essay]: <https://www.youtube.com/watch?v=XHIhtWPpDVI>
+[wikipedia]: <https://www.wikipedia.org>
 [yaml]: <https://yaml.org/>
 
+[wibomd-doc-philosophy--a-jungle-gym-for-thought]: <https://github.com/wikibonsai/wikibonsai/tree/main/docs/PHILOSOPHY.md#a-jungle-gym-for-thought>
 [wibomd-doc-design]: <https://github.com/wikibonsai/wikibonsai/tree/main/docs/DESIGN.md>
 [wibomd-doc-design--an-api-for-the-mind]: <https://github.com/wikibonsai/wikibonsai/tree/main/docs/DESIGN.md#an-api-for-the-mind>
 [wibomd-doc-design--legacy-techniques-of-organizing-information]: <https://github.com/wikibonsai/wikibonsai/tree/main/docs/DESIGN.md#legacy-techniques-of-organizing-information>
@@ -297,4 +350,7 @@ The semantic tree is a very useful orienting structure once many concepts have b
 [wibomd-repo-garden-beds]: <https://github.com/wikibonsai/garden-beds>
 [wibomd-repo-caml-mkdn]: <https://github.com/wikibonsai/caml-mkdn>
 [wibomd-repo-garden-beds--how-to-read-a-book]: <https://github.com/wikibonsai/garden-beds/tree/main/bk.how-to-read-a-book>
+[wibomd-repo-tendr-cli]: <https://github.com/wikibonsai/tendr-cli>
+[wibomd-repo-tendr-skill]: <https://github.com/wikibonsai/tendr-skill>
+[wibomd-repo-semtree]: <https://github.com/wikibonsai/semtree>
 [wibomd-repo-vscode-tendr]: <https://github.com/wikibonsai/vscode-tendr>

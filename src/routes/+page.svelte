@@ -52,32 +52,22 @@
       <a href={URL_DOCS_PHIL_GYM}>A structured knowledge layer in plain text</a>
     </p>
     <p class="hero-description">
-      Organize what you know into a semantic graph
+      Organize what you know into a structured knowledge base.
       <br />
-      All in plain text, readable by anyone, any model, any tool.
+      All in plain text. Legible by anyone, any model, any tool.
     </p>
     <div class="btn-container">
-      <!-- <button class="btn" on:click={goTo(URL_REPO_WIKIBONSAI)}>About</button> -->
-      <!-- <button class="btn" on:click={goTo(ROUTE_TREE)}>Knowledge Bonsai</button> -->
-      <!-- <DropDown title={'Knowledge Bonsais'} items={data.trees}></DropDown> -->
-      <button class="btn" on:click={goTo(URL_SOCIAL_SUBSTACK)}>SubStack</button>
+      <button class="btn btn-primary" on:click={goTo(URL_DOCS_USE)}>Get Started</button>
+      <button class="btn" on:click={goTo(ROUTE_TREE)}>View Wikipedia's Missing Feature</button>
     </div>
   </section>
   <BonsaiJungleGymSVG />
-  <!-- tldr section -->
-   <!-- workflows section -->
-  <DescriptionSection
-    title={'✨ Guiding Lights'}
-    sectionLinkHref={URL_DOCS_PHIL}
-    sectionLinkLabel={'Philosophy'}
-    description={'WikiBonsai extends markdown with conventions drawn from personal knowledge management (PKM). These conventions turn a collection of plain text files into a jungle gym for thought: Note-taking becomes a practice of building understanding, and your notes stay useful and accessible in the long run.'}>
-  </DescriptionSection>
   <!-- workflows section -->
   <DescriptionSection
     title={'🪨 Bedrock Workflow'}
     sectionLinkHref={URL_DOCS_STD_BED}
     sectionLinkLabel={'Standardization'}
-    description={'The bedrock of the WikiBonsai project relies on four workflow components:'}>
+    description={'The bedrock of the WikiBonsai project relies on four workflow components -- all in plain text, readable by people, AI agents, and any tool:'}>
       <WorkflowsShowCase workflows={[
         {
           title: 'Wiki Syntax',
@@ -91,7 +81,7 @@
         },
         {
           title: 'Knowledge Tree',
-          description: 'Organize concept indexes across multiple notes, which are automatically merged into a unified knowledge bonsai',
+          description: 'Organize concept indexes across multiple notes, which are automatically merged into a unified knowledge tree',
           url: URL_REPO_SEMTREE,
         },
         {
@@ -100,6 +90,13 @@
           url: URL_REPO_TREEHOUZE,
         },
       ]} />
+  </DescriptionSection>
+  <!-- philosophy section -->
+  <DescriptionSection
+    title={'✨ Guiding Lights'}
+    sectionLinkHref={URL_DOCS_PHIL}
+    sectionLinkLabel={'Philosophy'}
+    description={'WikiBonsai extends markdown with conventions drawn from personal knowledge management (PKM). These conventions turn a collection of plain text files into a jungle gym for thought: Note-taking becomes a practice of building understanding, and your notes stay useful and accessible -- to you, your tools, and your AI agents -- in the long run.'}>
   </DescriptionSection>
   <!-- ai section -->
   <DescriptionSection
@@ -161,13 +158,9 @@
     sectionLinkLabel={'GitHub'}>
     <TendNTinkerCards content={
       {
-        'Bonsais'          : [ROUTE_TREE        , 'Browse some example knowledge bonsais.'],
-        // 'The Germinator'   : [URL_GERMINATOR    , 'Query an LLM to generate conceptual analyses.'],
-        // 'The Tree Trainer' : [URL_TREE_TRAINER  , 'Query an LLM to guide your linguistic tree-training.'],
-        'Markdown'         : [URL_VSCODE_PLUGIN , 'Tend your markdown notes in VSCode.'],
-        'CLI'              : [URL_TENDR_CLI     , 'Tend your markdown notes from the CLI.'],
-        'GitHub'           : [URL_SOCIAL_GITHUB , 'Tinker with projects and code.'],
-        'Consult'          : [ROUTE_CONSULT     , 'Get help with workflows or tech setup.'],
+        'GitHub'           : [URL_SOCIAL_GITHUB    , 'Tinker with projects and code.'],
+        'Substack'         : [URL_SOCIAL_SUBSTACK  , 'Read about cognition, mental models, and knowledge systems.'],
+        'Consult'          : [ROUTE_CONSULT        , 'Get help with workflows or tech setup.'],
       }
     } />
   </DescriptionSection>
