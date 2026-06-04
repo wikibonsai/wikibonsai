@@ -50,18 +50,14 @@
     </button>
     <nav class={isMenuOpen ? 'nav open' : 'nav'}>
       <div class="nav-items">
-        {#if screensize === 'small'}
-          <Theme />
-        {/if}
+        <span class="theme-mobile"><Theme /></span>
         <a href={URL_SOCIAL_GITHUB} class="nav-link">GitHub</a>
         <a href={URL_SOCIAL_SUBSTACK} class="nav-link">SubStack</a>
         <a href={ROUTE_CONSULT} class="nav-link">Consult</a>
       </div>
     </nav>
   </div>
-  {#if screensize === 'large'}
-    <Theme />
-  {/if}
+  <span class="theme-desktop"><Theme /></span>
 </header>
 
 <style>
@@ -115,8 +111,17 @@
 
   .nav-container {
     padding: 0em 1em;
-    /* small */
+    /* small: push hamburger to the right */
     flex-direction: column;
+    margin-left: auto;
+  }
+
+  .theme-mobile {
+    display: block;
+  }
+
+  .theme-desktop {
+    display: none;
   }
 
   .nav-items {
@@ -159,12 +164,20 @@
       align-items: center;
       justify-content: space-between;
       flex-grow: 1;
+      margin-left: 0;
     }
 
     .nav-items {
       flex-direction: row;
       padding: 0;
+    }
 
+    .theme-mobile {
+      display: none;
+    }
+
+    .theme-desktop {
+      display: block;
     }
   }
 </style>
