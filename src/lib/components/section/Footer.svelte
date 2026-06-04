@@ -47,7 +47,7 @@
     </div>
   </div>
   <div class="copyright">
-    © 2024 WikiBonsai
+    © 2026 WikiBonsai
   </div>
 </footer>
 
