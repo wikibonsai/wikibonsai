@@ -1,8 +1,9 @@
 <script lang='ts'>
-  import { URL_SOCIAL_GITHUB, URL_SOCIAL_X } from '$lib/util/const';
+  import { URL_SOCIAL_GITHUB, URL_SOCIAL_SUBSTACK, URL_SOCIAL_X } from '$lib/util/const';
   import { theme } from '$lib/util/store';
 
   $: logoGitHub = `/img/social/github-mark-${$theme}.svg`;
+  $: logoSubstack = `/img/social/substack-${$theme}.svg`;
   $: logoX = `/img/social/x-${$theme}.png`;
 </script>
 
@@ -10,6 +11,9 @@
   <div class="social-links">
     <a href={URL_SOCIAL_GITHUB} class="social-link img-btn" aria-label="GitHub">
       <img src={logoGitHub} class="social-icon" alt="GitHub">
+    </a>
+    <a href={URL_SOCIAL_SUBSTACK} class="social-link img-btn" aria-label="Substack">
+      <img src={logoSubstack} class="social-icon" alt="Substack">
     </a>
     <a href={URL_SOCIAL_X} class="social-link img-btn" aria-label="X">
       <img src={logoX} class="social-icon" alt="X">
