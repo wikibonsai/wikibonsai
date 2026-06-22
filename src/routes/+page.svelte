@@ -52,9 +52,9 @@
       <a href={URL_DOCS_PHIL_GYM}>A structured knowledge layer in plain text</a>
     </p>
     <p class="hero-description">
-      Organize what you know into a structured knowledge base.
+      Organize what you know in a format that's legible, editable, and truly yours.
       <br />
-      All in plain text. Legible by anyone, any model, any tool.
+      Tend it yourself or let it be your AI agent's memory.
     </p>
     <div class="btn-container">
       <button class="btn btn-primary" on:click={goTo(URL_DOCS_USE)}>Get Started</button>
