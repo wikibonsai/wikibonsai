@@ -68,6 +68,7 @@
           <select id="interest" name="interest">
             <option value="discovery">Free discovery call</option>
             <option value="knowledge-arch">Knowledge architecture</option>
+            <option value="agentic-memory">Agentic memory and context</option>
             <option value="other">Something else</option>
           </select>
         </div>
