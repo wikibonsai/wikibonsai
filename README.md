@@ -72,7 +72,7 @@ The following links point to repositories of the WikiBonsai project and are orga
   - Notes:
     - [vscode-tendr][wibomd-repo-vscode-tendr]: A [VSCode][git-vscode] extension for tending a WikiBonsai digital garden.
     - [tendr-cli][wibomd-repo-tendr-cli]: A CLI tool for tending a markdown-based WikiBonsai digital garden.
-    - [garden-beds][wibomd-repo-garden-beds]: A collection of starter WikiBonsai digital gardens -- includes starter markdown files and config files.
+    - [transplant-starters][wibomd-repo-transplant-starters]: A collection of starter WikiBonsai digital gardens -- includes starter markdown files and config files.
   - SSG:
     - [jekyll-garden][wibomd-repo-jekyll-garden]: A [jekyll][ssg-jekyll] template that can be imported as a gem or cloned as a template project.
     - [jekyll-bloomz][wibomd-repo-jekyll-bloomz]: An example setup to enable WikiBonsai workflows for a [jekyll][ssg-jekyll]-based statically generated site (SSG).
@@ -147,7 +147,7 @@ Here's to making the road ahead a bit smoother for those that follow.
 [wibomd-repo-caml-spec]: <https://github.com/wikibonsai/caml-mkdn/tree/main/spec>
 [wibomd-repo-caudex]: <https://github.com/wikibonsai/caudex>
 [wibomd-repo-eleventy-bloomz]: <https://github.com/wikibonsai/eleventy-bloomz>
-[wibomd-repo-garden-beds]: <https://github.com/wikibonsai/garden-beds>
+[wibomd-repo-transplant-starters]: <https://github.com/wikibonsai/transplant-starters>
 [wibomd-repo-germinator]: <https://github.com/wikibonsai/germinator>
 [wibomd-repo-jekyll-bloomz]: <https://github.com/wikibonsai/jekyll-bloomz>
 [wibomd-repo-jekyll-graph]: <https://github.com/wikibonsai/jekyll-graph>

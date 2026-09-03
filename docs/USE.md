@@ -5,11 +5,11 @@ This document describes, step-by-step, how to get up and running with a WikiBons
 So, to get started:
 
 1. Pick your tool: the [VSCode extension][wibomd-repo-vscode-tendr], the [CLI][wibomd-repo-tendr-cli], or the [agent skill][wibomd-repo-tendr-skill].
-2. Clone a starter [garden bed][wibomd-repo-garden-beds].
+2. Clone a starter [garden bed][wibomd-repo-transplant-starters].
 
 Or...
 
-- If you just want to see the end result, you can check out [the bird's eye view](#a-birds-eye-view) and the ["How To Read A Book" garden bed][wibomd-repo-garden-beds--how-to-read-a-book].
+- If you just want to see the end result, you can check out [the bird's eye view](#a-birds-eye-view) and the ["How To Read A Book" garden bed][wibomd-repo-transplant-starters--how-to-read-a-book].
 
 ## Directory Structure
 
@@ -346,10 +346,10 @@ The digital world cannot replace practical, hands-in-the-mud experience. No matt
 [wibomd-doc-design--legacy-techniques-of-organizing-information]: <https://github.com/wikibonsai/wikibonsai/tree/main/docs/DESIGN.md#legacy-techniques-of-organizing-information>
 [wibomd-doc-cite--sites]: <https://github.com/wikibonsai/wikibonsai/tree/main/docs/CITE.md#site-navs>
 
-[wibomd-repo-bed-starter]: <https://github.com/wikibonsai/garden-beds/tree/main/minima>
-[wibomd-repo-garden-beds]: <https://github.com/wikibonsai/garden-beds>
+[wibomd-repo-bed-starter]: <https://github.com/wikibonsai/transplant-starters/tree/main/minima>
+[wibomd-repo-transplant-starters]: <https://github.com/wikibonsai/transplant-starters>
 [wibomd-repo-caml-mkdn]: <https://github.com/wikibonsai/caml-mkdn>
-[wibomd-repo-garden-beds--how-to-read-a-book]: <https://github.com/wikibonsai/garden-beds/tree/main/bk.how-to-read-a-book>
+[wibomd-repo-transplant-starters--how-to-read-a-book]: <https://github.com/wikibonsai/transplant-starters/tree/main/bk.how-to-read-a-book>
 [wibomd-repo-tendr-cli]: <https://github.com/wikibonsai/tendr-cli>
 [wibomd-repo-tendr-skill]: <https://github.com/wikibonsai/tendr-skill>
 [wibomd-repo-semtree]: <https://github.com/wikibonsai/semtree>
