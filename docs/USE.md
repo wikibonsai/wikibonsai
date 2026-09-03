@@ -30,7 +30,7 @@ If you take a look at the [minimal starter bed][wibomd-repo-bed-starter], you mi
 
 `config.toml` defines some basic configuration for your garden, such as which markdown file is the root of your bonsai and what attribute engine to use ([`caml`][wibomd-repo-caml-mkdn] or [`yaml`][yaml]).
 
-`t.doc.toml` contains [doctype](#doctypes) information, such as which directory the documents live in or what emoji corresponds to that type.
+`t.doc.toml` contains [doctype](#doctypes) information, such as which directory the documents live in or what icon corresponds to that type.
 
 `index`, `entries`, and `templates` are the directories which correspond to those [doctypes](#doctypes).
 
